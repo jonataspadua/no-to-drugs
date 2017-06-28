@@ -1,0 +1,26 @@
+﻿[iniciotitulo]
+Voltando da escola
+[entranpc1]
+Pafuncio: Fala ai Cleison, tudo bem cara? Vai ter uma festa esse fim de semana, quer ir com a gente? Vai ser bem divertido!
+Cleison: Hm... Não sei não, acho que minha mãe não vai gostar muito!
+[som:risos]
+Pafuncio: Filhinho da mamãe, a mamãezinha não vai deixar é? Coitadinho.
+Borracha: Então sua mamãe precisa autorizar?
+Cleison: N... Na... Não... Não é isso, é que vocês sabem como ela é brava e se me pegar eu não vou poder sair mais.
+[som:risos]
+Cleison: Ok. Vamos sim.
+[iniciotitulo]
+Na festa
+[cena1]
+Cleison: Nossa quanta gente!
+Pafuncio: Não falei que ia valer a pena.
+Borracha: Nossa está bem lotado aqui, vou ali falar com umas amigas que vi.
+Pafuncio: E eu com a amiga dela.
+Cleison pensando: Muita gente aqui, mas não sei sobre o que conversar, acho que vou ficar por aqui mesmo.
+Pafuncio: Ei Cleison, chega aqui!
+Cleison: Não Pafuncio, estou de boa aqui só curtindo um som.
+Borracha cochicha com Pafuncio: Iiiiii cara, ele é meio tímido, vamos dar uma ajudinha pra ele.
+Pafuncio: Bora! 
+Pafuncio: Aí Cleison, se liga, toma um gole dessa bebida aqui que você se solta rapidinho.
+Cleison: Acho melhor não.
+Borracha: Vai, é gostoso, não esquenta não faz mal.
