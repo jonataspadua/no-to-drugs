@@ -1,0 +1,34 @@
+﻿[iniciotitulo]
+Na balada após várias doses.
+
+[som:soluco]
+Cleison: É bom mesmo.
+Pafuncio: Cara, ele disse que ia tomar apenas um golinho, e acabou tomando vários. 
+[som:risos]
+Borracha: Verdade.
+[som:soluco]
+Cleison: E aí moça, posso te conhecer?
+Garota desconhecida: Sai fora, você está bêbado.
+Cleison: Nem queria mesmo!
+Cleison: Ei você, posso te conhecer?
+[entranpc3]
+[som:soluco]
+Alecrina: Oi Cleison, tudo bem? Nós já nos conhecemos hahaha.
+[som:soluco]
+Cleison: Só agora que percebi, é você Alecrina, está gostando da festa?
+Alecrina: Estou sim, e você?
+[som:soluco]
+Cleison: Estou, só estou meio zonzo. Será que bebi demais?
+[som:soluco]
+Alecrina: Bebeu sim, nunca vi você tão falante assim.
+[som:soluco]
+Alecrina: Mudando de assunto, vamos ali fora comigo? Aqui dentro não pode fumar.
+Cleison: Bora.
+Alecrina: Você já tinha vindo nessa festa? Eu sempre venho.
+[som:soluco]
+Cleison: Não, é minha primeira vez.
+Alecrina: Então depois vou te apresentar para uma galera.
+[som:soluco]
+Alecrina: Você fuma?
+Cleison: Não, nunca fumei.
+Alecrina: Quer experimentar?
