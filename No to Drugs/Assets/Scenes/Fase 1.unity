@@ -125,7 +125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6566534
 RectTransform:
   m_ObjectHideFlags: 0
@@ -142,7 +142,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.32477576}
+  m_AnchorMax: {x: 1, y: 0.39301774}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -281,11 +281,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &52801633 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1043476267949720, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-    type: 2}
-  m_PrefabInternal: {fileID: 709244838}
 --- !u!1 &74126944
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,6 +362,21 @@ GameObject:
   m_PrefabParentObject: {fileID: 1829082846747616, guid: 01878a77e73bdc64e9d5af1cb628ef18,
     type: 2}
   m_PrefabInternal: {fileID: 709244838}
+--- !u!114 &78952151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 78952150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e7f8a6d49f27dd409d6f370e2892c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skins:
+  - {fileID: 2800000, guid: 4762b2f4ec238ab4ab751f4a5ea9159d, type: 3}
+  - {fileID: 2800000, guid: c20d9ded39d6d974383e064a2cd06ff4, type: 3}
+  index: 0
 --- !u!1 &117165367
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,7 +388,7 @@ GameObject:
   - component: {fileID: 117165370}
   - component: {fileID: 117165369}
   m_Layer: 5
-  m_Name: Panel Danos
+  m_Name: Panel Danos Cigarro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1199,6 +1209,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 709244842}
+        m_MethodName: TrocaOlho
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &277037230
@@ -1724,7 +1745,7 @@ RectTransform:
   - {fileID: 117165368}
   - {fileID: 718999515}
   m_Father: {fileID: 442707412}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.24210544, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1927,7 +1948,7 @@ GameObject:
   - component: {fileID: 442707413}
   - component: {fileID: 442707415}
   m_Layer: 5
-  m_Name: Drogas
+  m_Name: Menu Drogas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1944,13 +1965,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1541373419}
+  - {fileID: 352523037}
   - {fileID: 926896753}
   - {fileID: 1573313599}
   - {fileID: 824371406}
   - {fileID: 1654678207}
   - {fileID: 1136680578}
   - {fileID: 992548656}
-  - {fileID: 352523037}
   - {fileID: 1850649774}
   - {fileID: 1054019495}
   - {fileID: 467213631}
@@ -2007,6 +2028,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64949f9f17d9db24aa3a6feff91a5725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TipoDroga: 0
+  menu: {fileID: 442707411}
+  InfoAlcool: {fileID: 1541373418}
+  InfoCigarro: {fileID: 352523036}
+  descAlcool: {fileID: 1291141573}
+  efeitoAlcool: {fileID: 1190059621}
+  danoAlcool: {fileID: 1999554277}
+  outrosDanosAlcool: {fileID: 1456654578}
+  descCigarro: {fileID: 760430498}
+  efeitoCigarro: {fileID: 1576375988}
+  danoCigarro: {fileID: 117165367}
+  outrosDanosCigarro: {fileID: 718999514}
 --- !u!1 &462637982
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,7 +2131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &467213631
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2156,7 +2189,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 467213633}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 442707415}
+        m_MethodName: MostraDanos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &467213633
@@ -2309,6 +2353,21 @@ GameObject:
   m_PrefabParentObject: {fileID: 1562121267861624, guid: 01878a77e73bdc64e9d5af1cb628ef18,
     type: 2}
   m_PrefabInternal: {fileID: 709244838}
+--- !u!114 &517412331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 517412330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e7f8a6d49f27dd409d6f370e2892c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skins:
+  - {fileID: 2800000, guid: 24e0eceaacb3f3a47a5486682622dcae, type: 3}
+  - {fileID: 2800000, guid: 16610d383f17cfc419c0ded7d264c2ac, type: 3}
+  index: 0
 --- !u!1 &549530606
 GameObject:
   m_ObjectHideFlags: 0
@@ -2439,7 +2498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &554544561
 Transform:
   m_ObjectHideFlags: 0
@@ -2718,7 +2777,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4528656380647842, guid: 01878a77e73bdc64e9d5af1cb628ef18, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.7283097
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 4528656380647842, guid: 01878a77e73bdc64e9d5af1cb628ef18, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2744,57 +2803,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 33185597168230944, guid: 01878a77e73bdc64e9d5af1cb628ef18,
+    - target: {fileID: 33318542418255298, guid: 01878a77e73bdc64e9d5af1cb628ef18,
         type: 2}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 33013241972457948, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 33729316223147524, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 33918109586781732, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 33130193865487342, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 33447373976597696, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 33809555547426738, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 33038109570021758, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 33023609397510514, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 33662874113143406, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 33415646323945162, guid: 01878a77e73bdc64e9d5af1cb628ef18,
+    - target: {fileID: 33867661057762974, guid: 01878a77e73bdc64e9d5af1cb628ef18,
         type: 2}
       propertyPath: m_Mesh
       value: 
@@ -2804,163 +2818,68 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 23529640090408732, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 21226186852691818, guid: 768c64764f6b1b547aecd557c882df8c,
-        type: 2}
-    - target: {fileID: 23620248260855914, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 21570216456006268, guid: 22b3d8c20f20e6c4788106f84e13d7d4,
-        type: 2}
-    - target: {fileID: 23090536379988562, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 21309223968200232, guid: 5ae1b47a3f2eb2d4389a12b22ab3baa8,
-        type: 2}
-    - target: {fileID: 23315554726677688, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 21894545094817074, guid: 0714f941f95f9cf44a1bafd12418d4a2,
-        type: 2}
-    - target: {fileID: 23915689302173330, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 21361881716846260, guid: ae160a08ee8fbbf40b2f507d944c9a79,
-        type: 2}
-    - target: {fileID: 23080459385879114, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 21434291103178538, guid: 22f6d7087903f764689b4eddbb9e1b28,
-        type: 2}
-    - target: {fileID: 23042151178401284, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 21737113055672270, guid: 635565d0241ce4343875f83876cb3059,
-        type: 2}
-    - target: {fileID: 23224534818837348, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 21246202193356580, guid: 4365a25a049ea6d459338184d6ffaf25,
-        type: 2}
-    - target: {fileID: 23141494226710278, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 21634353786770216, guid: 2e69591c60fe66946a62c22c2a511f72,
-        type: 2}
-    - target: {fileID: 114053365196698182, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: olhoDNormal
-      value: 
-      objectReference: {fileID: 78952150}
-    - target: {fileID: 114053365196698182, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: olhoDVermelho
-      value: 
-      objectReference: {fileID: 52801633}
-    - target: {fileID: 114053365196698182, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: olhoEVermelho
-      value: 
-      objectReference: {fileID: 1459054702}
-    - target: {fileID: 114053365196698182, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: olhoENormal
-      value: 
-      objectReference: {fileID: 517412330}
-    - target: {fileID: 33867661057762974, guid: 01878a77e73bdc64e9d5af1cb628ef18,
+    - target: {fileID: 33415646323945162, guid: 01878a77e73bdc64e9d5af1cb628ef18,
         type: 2}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 33318542418255298, guid: 01878a77e73bdc64e9d5af1cb628ef18,
+    - target: {fileID: 33662874113143406, guid: 01878a77e73bdc64e9d5af1cb628ef18,
         type: 2}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 1829082846747616, guid: 01878a77e73bdc64e9d5af1cb628ef18, type: 2}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 33023609397510514, guid: 01878a77e73bdc64e9d5af1cb628ef18,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 1562121267861624, guid: 01878a77e73bdc64e9d5af1cb628ef18, type: 2}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 33038109570021758, guid: 01878a77e73bdc64e9d5af1cb628ef18,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 33809555547426738, guid: 01878a77e73bdc64e9d5af1cb628ef18,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33447373976597696, guid: 01878a77e73bdc64e9d5af1cb628ef18,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33130193865487342, guid: 01878a77e73bdc64e9d5af1cb628ef18,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33918109586781732, guid: 01878a77e73bdc64e9d5af1cb628ef18,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114663353858147748, guid: 01878a77e73bdc64e9d5af1cb628ef18,
+        type: 2}
+      propertyPath: grid
+      value: 
+      objectReference: {fileID: 1986704594}
     - target: {fileID: 1043476267949720, guid: 01878a77e73bdc64e9d5af1cb628ef18, type: 2}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4254681055176964, guid: 01878a77e73bdc64e9d5af1cb628ef18, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1695991892779434, guid: 01878a77e73bdc64e9d5af1cb628ef18, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4764420958107034, guid: 01878a77e73bdc64e9d5af1cb628ef18, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 23678715622729988, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 21513512284038160, guid: 9ad78fa36c4256f4899965028d6ab6ce,
-        type: 2}
-    - target: {fileID: 23509017380833258, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 21909797756387256, guid: d606c4048a534804f8ca5d0e924d972a,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01878a77e73bdc64e9d5af1cb628ef18, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &709244839 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1477920685107096, guid: 01878a77e73bdc64e9d5af1cb628ef18,
+--- !u!114 &709244842 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114053365196698182, guid: 01878a77e73bdc64e9d5af1cb628ef18,
     type: 2}
   m_PrefabInternal: {fileID: 709244838}
---- !u!114 &709244840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 709244839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5361956508f7248bc5f09fcc72132b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grid: {fileID: 1986704594}
---- !u!95 &709244841
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 709244839}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 255bed9126032374baf9a80a9b7f6286, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_Script: {fileID: 11500000, guid: 119f8349def0f014a88fe682daf0d14c, type: 3}
 --- !u!1 &718999514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2972,7 +2891,7 @@ GameObject:
   - component: {fileID: 718999517}
   - component: {fileID: 718999516}
   m_Layer: 5
-  m_Name: Panel Outros Danos
+  m_Name: Panel Outros Danos Cigarro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3041,7 +2960,7 @@ GameObject:
   - component: {fileID: 760430501}
   - component: {fileID: 760430500}
   m_Layer: 5
-  m_Name: Panel Descricao
+  m_Name: Panel Descricao Cigarro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3205,7 +3124,7 @@ RectTransform:
   m_Children:
   - {fileID: 1893172225}
   m_Father: {fileID: 442707412}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5873658}
   m_AnchorMax: {x: 0.24210544, y: 0.7228196}
@@ -3781,7 +3700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &875511591
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3839,7 +3758,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 875511593}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 442707415}
+        m_MethodName: MostraOutrosDanos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &875511593
@@ -3986,7 +3916,7 @@ RectTransform:
   m_Children:
   - {fileID: 301835267}
   m_Father: {fileID: 442707412}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.85496974}
   m_AnchorMax: {x: 0.24210544, y: 1}
@@ -4014,7 +3944,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4031,7 +3961,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 926896755}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 442707415}
+        m_MethodName: MostraAlcool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &926896755
@@ -4179,7 +4120,7 @@ RectTransform:
   m_Children:
   - {fileID: 2002034856}
   m_Father: {fileID: 442707412}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.18552452}
   m_AnchorMax: {x: 0.24210544, y: 0.32083842}
@@ -4361,6 +4302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771eb28c9e2686749b5438d2e92a6512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trocaSprite: {fileID: 827081665}
   dialogBox: {fileID: 6566533}
   choiceBox: {fileID: 1563041320}
   luzes: {fileID: 1236671156}
@@ -4414,7 +4356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1054019495
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4472,7 +4414,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1054019497}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 442707415}
+        m_MethodName: MostraEfeitos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1054019497
@@ -4707,7 +4660,7 @@ RectTransform:
   m_Children:
   - {fileID: 1734256486}
   m_Father: {fileID: 442707412}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.32083842}
   m_AnchorMax: {x: 0.24210544, y: 0.44385105}
@@ -4901,7 +4854,7 @@ GameObject:
   - component: {fileID: 1190059624}
   - component: {fileID: 1190059623}
   m_Layer: 5
-  m_Name: Panel Efeitos
+  m_Name: Panel Efeitos Alcool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5235,7 +5188,7 @@ GameObject:
   - component: {fileID: 1291141576}
   - component: {fileID: 1291141575}
   m_Layer: 5
-  m_Name: Panel Descricao
+  m_Name: Panel Descricao Alcool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5526,9 +5479,10 @@ MonoBehaviour:
   txtAceita: {fileID: 1398329905}
   txtRecusa: {fileID: 572811885}
   dialogo: {fileID: 554544560}
-  controlAceitaAlcool: {fileID: 0}
-  AnimAceitaAlcool: {fileID: 0}
-  animClipAceitaAlcool: {fileID: 0}
+  controlAceitaAlcool: {fileID: 1826019981}
+  AnimAceitaAlcool: {fileID: 1826019982}
+  animClipAceitaAlcool: {fileID: 7400000, guid: c70c65af787e6914c9e6901e1484d6ff,
+    type: 2}
   AnimConsAlcool: {fileID: 0}
   animClipConsAlcool: {fileID: 0}
   controlAceitaCigarro: {fileID: 0}
@@ -5823,11 +5777,11 @@ RectTransform:
   m_Father: {fileID: 235286505}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMin: {x: 0.8648326, y: 0}
+  m_AnchorMax: {x: 1, y: 0.3983091}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 24.3}
-  m_Pivot: {x: 1, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1449427680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5924,7 +5878,7 @@ GameObject:
   - component: {fileID: 1456654581}
   - component: {fileID: 1456654580}
   m_Layer: 5
-  m_Name: Panel Outros Danos
+  m_Name: Panel Outros Danos Alcool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5982,11 +5936,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1456654578}
---- !u!1 &1459054702 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1695991892779434, guid: 01878a77e73bdc64e9d5af1cb628ef18,
-    type: 2}
-  m_PrefabInternal: {fileID: 709244838}
 --- !u!1 &1487026738
 GameObject:
   m_ObjectHideFlags: 0
@@ -6284,6 +6233,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 709244842}
+        m_MethodName: TrocaOlho
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1557942509
@@ -6499,7 +6459,7 @@ RectTransform:
   m_Children:
   - {fileID: 1007877265}
   m_Father: {fileID: 442707412}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.7228196}
   m_AnchorMax: {x: 0.24210544, y: 0.85496974}
@@ -6591,7 +6551,7 @@ GameObject:
   - component: {fileID: 1576375991}
   - component: {fileID: 1576375990}
   m_Layer: 5
-  m_Name: Panel Efeitos
+  m_Name: Panel Efeitos Cigarro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6679,7 +6639,7 @@ RectTransform:
   m_Children:
   - {fileID: 298028999}
   m_Father: {fileID: 442707412}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.44385105}
   m_AnchorMax: {x: 0.24210544, y: 0.5873658}
@@ -6868,10 +6828,10 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.13907188, y: 0.3983091}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 24.3}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714657080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7197,7 +7157,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1387271662292794, guid: 226b49374bb36904f96562fc164dedb6, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4790419802224212, guid: 226b49374bb36904f96562fc164dedb6, type: 2}
       propertyPath: m_LocalPosition.x
@@ -7208,6 +7168,16 @@ Prefab:
     - {fileID: 95628955849732198, guid: 226b49374bb36904f96562fc164dedb6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 226b49374bb36904f96562fc164dedb6, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1826019981 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1387271662292794, guid: 226b49374bb36904f96562fc164dedb6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1826019980}
+--- !u!95 &1826019982 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95024777164681960, guid: 226b49374bb36904f96562fc164dedb6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1826019980}
 --- !u!1 &1829135827
 GameObject:
   m_ObjectHideFlags: 0
@@ -7327,7 +7297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1845398911
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7384,7 +7354,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1845398913}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 442707415}
+        m_MethodName: Iniciar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1845398913
@@ -7437,7 +7418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1850649774
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7495,7 +7476,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1850649776}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 442707415}
+        m_MethodName: MostraDescricao
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1850649776
@@ -7946,7 +7938,7 @@ GameObject:
   - component: {fileID: 1999554280}
   - component: {fileID: 1999554279}
   m_Layer: 5
-  m_Name: Panel Danos
+  m_Name: Panel Danos Alcool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

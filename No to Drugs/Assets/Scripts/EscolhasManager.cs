@@ -72,11 +72,11 @@ public class EscolhasManager : MonoBehaviour
 			*/
 
 			if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "a") { //Se o dialogo atual for o primeiro da fase
-				//AceitaAlcool(true);
-				//Invoke ("CarregaAnimAlcool", animClipAceitaAlcool.length);
-				//AnimAceitaAlcool.SetBool ("start",true);
-				//Invoke ("CarregaDialogoB", animClipConsAlcool.length + animClipAceitaAlcool.length);
-				CarregaDialogoB ();
+				AceitaAlcool(true);
+				Invoke ("CarregaAnimAlcool", animClipAceitaAlcool.length);
+				AnimAceitaAlcool.SetBool ("start",true);
+				Invoke ("CarregaDialogoB", animClipConsAlcool.length + animClipAceitaAlcool.length);
+				//CarregaDialogoB ();
 			} else if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "b") { //se o dialogo atual for o de aceitar, vamos procurar o texto e a cena correspondentes ao próximo
 				//AceitaCigarro(true);
 				//Invoke ("CarregaAnimCigarro", animClipAceitaAlcool.length);
@@ -90,11 +90,11 @@ public class EscolhasManager : MonoBehaviour
 			}
 		} else {
 			if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "a") {
-				/*dialogo.SetActive(false);
+				dialogo.SetActive(false);
 				controlRecusaAlcool.SetActive (true);
 				Invoke ("CarregaDialogoC", animClipAceitaAlcool.length);
-				AnimAceitaAlcool.SetBool ("start",true);*/
-				CarregaDialogoC ();
+				AnimAceitaAlcool.SetBool ("start",true);
+				//CarregaDialogoC ();
 			} else if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "b") {
 				//RecusaCigarro(true);
 				//Invoke ("CarregaAnimCigarro", animClipAceitaAlcool.length);
@@ -113,6 +113,12 @@ public class EscolhasManager : MonoBehaviour
 
 	void CarregaAnimAlcool(){
 		AnimConsAlcool.SetBool ("start",true);
+		AnimConsAlcool.SetBool ("aceita",true);
+	}
+
+	void DescarregaAnimAlcool(){
+		AnimConsAlcool.SetBool ("start",false);
+		AnimConsAlcool.SetBool ("aceita",false);
 	}
 
 	void CarregaAnimCigarro(){

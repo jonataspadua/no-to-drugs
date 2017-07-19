@@ -13,7 +13,7 @@ public class ControleAnimNPC2 : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 		if (dialogManager.isSpeakingn) {
 			animNPC2.SetBool ("fala",true);
 		} else {

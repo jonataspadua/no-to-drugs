@@ -9,8 +9,6 @@ using System.Collections;
 
 public class TrocaSprite : MonoBehaviour
 {
-
-	public static TrocaSprite trocaSprite;
  
 	// drop all the "skins" you want to be swappable here, these are the multi-sprite textures in your Assets
 	public Texture2D[] skins;
@@ -21,7 +19,6 @@ public class TrocaSprite : MonoBehaviour
 	// Use this for initialization
 	void Awake ()
 	{
-		trocaSprite = this;
 		// default loaded sprites
 		SpriteRenderer[] loadedRenderers = GetComponentsInChildren <SpriteRenderer> (true);
  
@@ -40,6 +37,17 @@ public class TrocaSprite : MonoBehaviour
 		// sprites we want
 		Sprite[] sprites = AssetDatabase.LoadAllAssetRepresentationsAtPath ("Assets/Sprites/" + skins [index].name + ".png").OfType<Sprite> ().ToArray ();
 		Debug.Log ("Passou pela troca de slides");
+		for (int i = 0; i < sprites.Length; i++) {
+			replaceMatchingSprite (loadedRenderers, sprites [i]);
+		}
+	}
+
+	public void TrocarOlho (int ind)
+	{
+
+		SpriteRenderer[] loadedRenderers = GetComponentsInChildren <SpriteRenderer> (true);
+		// sprites we want
+		Sprite[] sprites = AssetDatabase.LoadAllAssetRepresentationsAtPath ("Assets/Sprites/Personagem/" + skins [ind].name + ".png").OfType<Sprite> ().ToArray ();
 		for (int i = 0; i < sprites.Length; i++) {
 			replaceMatchingSprite (loadedRenderers, sprites [i]);
 		}

@@ -32,18 +32,21 @@ public class ControleAnimacao : MonoBehaviour {
 				animPersonagem.SetBool ("olhoV", false);
 			}
 		}
+	}
 
-		if (dialogManager.olhoVermelhoP) {
-			olhoDNormal.SetActive (false);
-			olhoDVermelho.SetActive (true);
-			olhoENormal.SetActive (false);
-			olhoEVermelho.SetActive (true);
-
+	public void TrocaOlho(bool OlhoV){
+		/*if (OlhoV) {
+			if (dialogManager.olhoVermelhoP) {	
+				olhoDNormal.SetActive (false);
+				olhoDVermelho.SetActive (true);
+				olhoENormal.SetActive (false);
+				olhoEVermelho.SetActive (true);
+			}
 		} else {
 			olhoDNormal.SetActive(true);
 			olhoDVermelho.SetActive (false);
 			olhoENormal.SetActive(true);
 			olhoEVermelho.SetActive (false);
-		}
+		}*/
 	}
 }

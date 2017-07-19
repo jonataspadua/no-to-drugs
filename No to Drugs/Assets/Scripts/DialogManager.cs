@@ -10,12 +10,12 @@ using UnityEditor;
 public class DialogManager : MonoBehaviour
 {
 	public static DialogManager dialogManager;
-	TrocaSprite trocaSprite;
+	public TrocaSprite trocaSprite;
 
 	public GameObject dialogBox;
 	public GameObject choiceBox;
 	public GameObject luzes;
-	public bool olhoVermelhoP;
+	[HideInInspector] public bool olhoVermelhoP;
 	public GameObject[] npc;
 
 	public Image imgDialog;
@@ -43,7 +43,6 @@ public class DialogManager : MonoBehaviour
 	void Awake()
 	{
 		dialogManager = this;
-		trocaSprite = TrocaSprite.trocaSprite;
 	}
 
 	// Use this for initialization
@@ -200,6 +199,7 @@ public class DialogManager : MonoBehaviour
 		} else if (linha.Contains (":")) {
 			dialogManager.isSpeakingp = false;
 			dialogManager.isSpeakingn = false;
+
 			dialogManager.isSpeakingn = true;
 			imgDialog.sprite = janelaNPC;
 		}
