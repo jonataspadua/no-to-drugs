@@ -12,26 +12,24 @@ public class EscolhasManager : MonoBehaviour
 	public Text txtRecusa;
 
 	public GameObject dialogo;
+	public GameObject controlAlcool;
 
-	public GameObject controlAceitaAlcool;
-	public Animator AnimAceitaAlcool;
+	public Animator AnimAlcool;
 	public AnimationClip animClipAceitaAlcool;
+	public AnimationClip animClipRecusaAlcool;
+
 	public Animator AnimConsAlcool;
 	public AnimationClip animClipConsAlcool;
 
-	public GameObject controlAceitaCigarro;
-	public Animator AnimAceitaCigarro;
+	public GameObject controlCigarro;
+
+	public Animator AnimCigarro;
 	public AnimationClip animAceitaClipCigarro;
+	public AnimationClip animRecusaClipCigarro;
+
 	public Animator AnimConsCigarro;
 	public AnimationClip animClipConsCigarro;
 
-	public GameObject controlRecusaAlcool;
-	public Animator AnimRecusaAlcool;
-	public AnimationClip animClipRecusaAlcool;
-
-	public GameObject controlRecusaCigarro;
-	public Animator AnimRecusaCigarro;
-	public AnimationClip animRecusaClipCigarro;
 	// Use this for initialization
 	void Start ()
 	{
@@ -50,33 +48,12 @@ public class EscolhasManager : MonoBehaviour
 	public void TrocaDialogo (bool escolha)
 	{
 		if (escolha) {
-			/*
-			switch(dialogManager.arqDialogo.name){
-			case "dialogo_" + dialogManager.Fase + "a":
-				{
-					dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_" + dialogManager.Fase + "b")); //recarrega o script com o dialogo de aceitar
-					CarregaBotao ("b"); //carrega os botões desse dialogo 
-					dialogManager.choiceBox.SetActive (dialogManager.ativaEscolha); //ativa a caixa de escolha 
-					break;
-				}
-			case "dialogo_" + dialogManager.Fase + "b":
-				{
-					dialogManager.Fase += 1;
-					Debug.Log ("ab");
-					//dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_" + dialogManager.Fase + "a")); //Aqui já carregamos o dialogo da próxima fase
-					SceneManager.LoadScene (dialogManager.Fase);
-					break;
-				}
-			}
-
-			*/
-
 			if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "a") { //Se o dialogo atual for o primeiro da fase
 				AceitaAlcool(true);
 				Invoke ("CarregaAnimAlcool", animClipAceitaAlcool.length);
-				AnimAceitaAlcool.SetBool ("start",true);
+				AnimAlcool.SetBool ("aceita",true);
+				AnimAlcool.SetBool ("start",true);
 				Invoke ("CarregaDialogoB", animClipConsAlcool.length + animClipAceitaAlcool.length);
-				//CarregaDialogoB ();
 			} else if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "b") { //se o dialogo atual for o de aceitar, vamos procurar o texto e a cena correspondentes ao próximo
 				//AceitaCigarro(true);
 				//Invoke ("CarregaAnimCigarro", animClipAceitaAlcool.length);
@@ -91,10 +68,9 @@ public class EscolhasManager : MonoBehaviour
 		} else {
 			if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "a") {
 				dialogo.SetActive(false);
-				controlRecusaAlcool.SetActive (true);
+				controlAlcool.SetActive (true);
 				Invoke ("CarregaDialogoC", animClipAceitaAlcool.length);
-				AnimAceitaAlcool.SetBool ("start",true);
-				//CarregaDialogoC ();
+				AnimAlcool.SetBool ("start",true);
 			} else if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "b") {
 				//RecusaCigarro(true);
 				//Invoke ("CarregaAnimCigarro", animClipAceitaAlcool.length);
@@ -126,7 +102,7 @@ public class EscolhasManager : MonoBehaviour
 	}
 
 	void CarregaDialogoB(){
-		//AceitaAlcool (false);
+		AceitaAlcool (false);
 		dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_" + dialogManager.Fase + "b")); //recarrega o script com o dialogo de aceitar
 		CarregaBotao ("b"); //carrega os botões desse dialogo 
 		dialogManager.olhoVermelhoP = true;
@@ -136,25 +112,25 @@ public class EscolhasManager : MonoBehaviour
 	void RecusaCigarro(bool recusa){
 		if (recusa) {
 			dialogo.SetActive (false);
-			controlRecusaCigarro.SetActive (true);
+			controlCigarro.SetActive (true);
 		} else {
 			dialogo.SetActive(true);
-			controlRecusaCigarro.SetActive (false);
+			controlCigarro.SetActive (false);
 		}
 	}
 
 	void RecusaAlcool(bool recusa){
 		if (recusa) {
 			dialogo.SetActive (false);
-			controlRecusaAlcool.SetActive (true);
+			controlAlcool.SetActive (true);
 		} else {
 			dialogo.SetActive(true);
-			controlRecusaAlcool.SetActive (false);
+			controlAlcool.SetActive (false);
 		}
 	}
 
 	void CarregaDialogoC(){
-		//AceitaCigarro(false);
+		AceitaCigarro(false);
 		dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_" + dialogManager.Fase + "c"));
 		CarregaBotao ("c");
 		dialogManager.choiceBox.SetActive (false);
@@ -163,20 +139,20 @@ public class EscolhasManager : MonoBehaviour
 	void AceitaAlcool(bool aceita){
 		if (aceita) {
 			dialogo.SetActive (false);
-			controlAceitaAlcool.SetActive (true);
+			controlAlcool.SetActive (true);
 		} else {
 			dialogo.SetActive(true);
-			controlAceitaAlcool.SetActive (false);
+			controlAlcool.SetActive (false);
 		}
 	}
 
 	void AceitaCigarro(bool aceita){
 		if (aceita) {
 			dialogo.SetActive (false);
-			controlAceitaCigarro.SetActive (true);
+			controlCigarro.SetActive (true);
 		} else {
 			dialogo.SetActive(true);
-			controlAceitaCigarro.SetActive (false);
+			controlCigarro.SetActive (false);
 		}
 	}
 }

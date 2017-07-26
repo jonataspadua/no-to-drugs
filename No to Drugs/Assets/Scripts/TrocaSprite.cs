@@ -1,7 +1,6 @@
 // new stuff
 using System.Linq;
 using System;
-using UnityEditor;
 
 // standard
 using UnityEngine;
@@ -23,11 +22,9 @@ public class TrocaSprite : MonoBehaviour
 		SpriteRenderer[] loadedRenderers = GetComponentsInChildren <SpriteRenderer> (true);
  
 		// sprites we want
-		Sprite[] sprites = AssetDatabase.LoadAllAssetRepresentationsAtPath ("Assets/Sprites/" + skins [index].name + ".png").OfType<Sprite> ().ToArray ();
+		Sprite sprites = Resources.Load<Sprite>(skins [index].name);
  
-		for (int i = 0; i < sprites.Length; i++) {
-			replaceMatchingSprite (loadedRenderers, sprites [i]);
-		}
+		replaceMatchingSprite (loadedRenderers, sprites);
 	}
 
 	public void Trocar ()
@@ -35,11 +32,9 @@ public class TrocaSprite : MonoBehaviour
 		
 		SpriteRenderer[] loadedRenderers = GetComponentsInChildren <SpriteRenderer> (true);
 		// sprites we want
-		Sprite[] sprites = AssetDatabase.LoadAllAssetRepresentationsAtPath ("Assets/Sprites/" + skins [index].name + ".png").OfType<Sprite> ().ToArray ();
-		Debug.Log ("Passou pela troca de slides");
-		for (int i = 0; i < sprites.Length; i++) {
-			replaceMatchingSprite (loadedRenderers, sprites [i]);
-		}
+		Sprite sprites = Resources.Load<Sprite>(skins[index].name);
+
+		replaceMatchingSprite (loadedRenderers, sprites);
 	}
 
 	public void TrocarOlho (int ind)
@@ -47,10 +42,10 @@ public class TrocaSprite : MonoBehaviour
 
 		SpriteRenderer[] loadedRenderers = GetComponentsInChildren <SpriteRenderer> (true);
 		// sprites we want
-		Sprite[] sprites = AssetDatabase.LoadAllAssetRepresentationsAtPath ("Assets/Sprites/Personagem/" + skins [ind].name + ".png").OfType<Sprite> ().ToArray ();
-		for (int i = 0; i < sprites.Length; i++) {
-			replaceMatchingSprite (loadedRenderers, sprites [i]);
-		}
+		Sprite sprites = Resources.Load<Sprite>(skins [ind].name);
+
+		replaceMatchingSprite (loadedRenderers, sprites);
+
 	}
 
 	void replaceMatchingSprite (SpriteRenderer[] loaded, Sprite newSprite)
