@@ -162,13 +162,14 @@ GameObject:
   - component: {fileID: 4936138411169108}
   - component: {fileID: 95870469528125370}
   - component: {fileID: 114815261406841148}
+  - component: {fileID: 114287507606079034}
   m_Layer: 0
   m_Name: NPC3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1643745554477838
 GameObject:
   m_ObjectHideFlags: 1
@@ -1234,6 +1235,18 @@ MonoBehaviour:
   m_SortingOrder: 0
   m_Bones: []
   m_BoneTransforms: []
+--- !u!114 &114287507606079034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1610973513420840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5361956508f7248bc5f09fcc72132b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 0}
 --- !u!114 &114405373945380852
 MonoBehaviour:
   m_ObjectHideFlags: 1

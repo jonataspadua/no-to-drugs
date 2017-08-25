@@ -55,3 +55,6 @@ C:\Users\jonat\Dropbox\TCC\Todos Arquivos\Projeto\No to Drugs\Temp\bin\Debug\Uni
 C:\Users\jonat\Dropbox\TCC\Todos Arquivos\Projeto\No to Drugs\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
 C:\Users\jonat\Dropbox\TCC\Todos Arquivos\Projeto\No to Drugs\obj\Debug\Assembly-CSharp-Editor.dll
 C:\Users\jonat\Dropbox\TCC\Todos Arquivos\Projeto\No to Drugs\obj\Debug\Assembly-CSharp-Editor.pdb
+D:\ProjetoTcc\no-to-drugs\No to Drugs\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
+D:\ProjetoTcc\no-to-drugs\No to Drugs\obj\Debug\Assembly-CSharp-Editor.dll
+D:\ProjetoTcc\no-to-drugs\No to Drugs\obj\Debug\Assembly-CSharp-Editor.pdb

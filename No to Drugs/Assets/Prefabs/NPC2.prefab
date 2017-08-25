@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 4972489151068218}
   - component: {fileID: 95337565669308286}
   - component: {fileID: 114300841849459176}
+  - component: {fileID: 114509095426182290}
   m_Layer: 0
   m_Name: NPC2
   m_TagString: Untagged
@@ -345,7 +346,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1384975192436642}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.64000106, y: 2.3400002, z: 6.3199997}
+  m_LocalPosition: {x: -0.64000106, y: 2.3400002, z: 1.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4446325060378586}
@@ -397,7 +398,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1087775048741736}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.41, y: 1.24, z: -0.43}
+  m_LocalPosition: {x: -0.41, y: 1.24, z: -5}
   m_LocalScale: {x: 0.8525149, y: 0.87500006, z: 1}
   m_Children: []
   m_Father: {fileID: 4819582815441274}
@@ -441,7 +442,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1545976954422182}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.41, y: 1.24, z: -0.43}
+  m_LocalPosition: {x: -0.41, y: 1.24, z: -5}
   m_LocalScale: {x: 0.8525149, y: 0.87500006, z: 1}
   m_Children: []
   m_Father: {fileID: 4819582815441274}
@@ -569,7 +570,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1730390826344828}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.84, y: 2.49, z: 0}
+  m_LocalPosition: {x: 13.36, y: 3.2, z: -2.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4446325060378586}
@@ -1303,6 +1304,18 @@ MonoBehaviour:
   m_SortingOrder: 0
   m_Bones: []
   m_BoneTransforms: []
+--- !u!114 &114509095426182290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730390826344828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5361956508f7248bc5f09fcc72132b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 0}
 --- !u!114 &114689968658494488
 MonoBehaviour:
   m_ObjectHideFlags: 1

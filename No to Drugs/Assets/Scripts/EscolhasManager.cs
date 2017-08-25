@@ -101,112 +101,287 @@ public class EscolhasManager : MonoBehaviour
 
 	public void TrocaDialogo (bool escolha)
 	{
-		if (escolha) {
-			if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "a") { //Se o dialogo atual for o primeiro da fase
-				dialogManager.olhoVermelhoP = true;
-				dialogManager.choiceBox.SetActive (false);
-				AceitaAlcool(true);
-				Invoke ("CarregaAnimAlcool", animClipAceitaAlcool.length);
-				AnimAlcool.SetBool ("aceita",true);
-				AnimAlcool.SetBool ("start",true);
-				Invoke ("CarregaDialogoB", animClipConsAlcool.length + animClipAceitaAlcool.length);
-			} else if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "b") { //se o dialogo atual for o de aceitar, vamos procurar o texto e a cena correspondentes ao próximo
-				//AceitaCigarro(true);
-				//Invoke ("CarregaAnimCigarro", animClipAceitaAlcool.length);
-				//AnimAceitaCigarro.SetBool ("start",true);
-			} else if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "c") {
-				//AceitaCigarro(true);
-				//Invoke ("CarregaAnimCigarro", animClipAceitaAlcool.length);
-				//AnimAceitaCigarro.SetBool ("start",true);
-			} else {
-				dialogManager.DisableDialogBox ();
+		switch (dialogManager.Fase) {
+		case 1:
+			{
+				switch (dialogManager.arqDialogo.name) {
+				case "dialogo_1a"://caso seja a primeira fase e o primeiro dialogo faz as seguintes ações - ALCOOL
+					{
+						if (escolha) {
+							dialogManager.olhoVermelhoP = true; //muda os olhos para vermelho
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaAlcool (true);//habilita o controle do alcool e desativa o dialogo
+							Invoke ("CarregaConsAlcool", animClipAceitaAlcool.length);//Prepara a consequencia para aparecer após a animação do alcool
+							AnimAlcool.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+							AnimAlcool.SetBool ("start", true);//define que vai começar a animação
+							Invoke ("CarregaDialogoB", animClipConsAlcool.length + animClipAceitaAlcool.length);//Prepara a função que carrega o dialogo B após as duas animações ocorrem
+						} else {
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaCigarro (true);//habilita o controle do alcool e desativa o dialogo
+							Invoke ("CarregaDialogoC", animClipRecusaAlcool.length);//Prepara a função que carrega o dialogo C após a animação rodar
+							AnimAlcool.SetBool ("aceita", false);//define que ele nao aceitou o alcool na animação
+							AnimAlcool.SetBool ("start", true);//define que vai começar a animação
+						}
+						break;
+					}
+				case "dialogo_1b"://caso seja a primeira fase e o dialogo seja depois de aceitar a bebida faz as seguintes ações - CIGARRO
+					{
+						if (escolha) {//se ele aceitou fumar cigarro entra aqui
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaCigarro (true);//habilita o controle do cigarro
+							Invoke ("CarregaAnimCigarro", animAceitaClipCigarro.length);//Prepara a consequencia para aparecer após a animação do cigarro
+							AnimCigarro.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
+							Invoke ("CarregaFase2", animClipConsCigarro.length + animAceitaClipCigarro.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
+						} else {
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaCigarro (true);//habilita o controle do cigarro e desativa o dialogo
+							Invoke ("CarregaFase2", animRecusaClipCigarro.length);//Prepara a função que carrega a próxima fase após a animação rodar
+							AnimCigarro.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
+						}
+						break;
+					}
+				case "dialogo_1c"://caso seja a primeira fase e o dialogo seja depois de recusar a bebida faz as seguintes ações - CIGARRO
+					{
+						if (escolha) {//se ele aceitou fumar cigarro entra aqui
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaCigarro (true);//habilita o controle do cigarro
+							Invoke ("CarregaAnimCigarro", animAceitaClipCigarro.length);//Prepara a consequencia para aparecer após a animação do cigarro
+							AnimCigarro.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
+							Invoke ("CarregaFase2", animClipConsCigarro.length + animAceitaClipCigarro.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
+						} else {
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaCigarro (true);//habilita o controle do cigarro e desativa o dialogo
+							Invoke ("CarregaFase2", animRecusaClipCigarro.length);//Prepara a função que carrega a próxima fase após a animação rodar
+							AnimCigarro.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
+						}
+						break;
+					}
+				default:
+					{
+						dialogManager.DisableDialogBox ();
+						break;
+					}
+				}
+				break;
 			}
-		} else {
-			if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "a") {
-				dialogo.SetActive(false);
-				controlAlcool.SetActive (true);
-				Invoke ("CarregaDialogoC", animClipAceitaAlcool.length);
-				AnimAlcool.SetBool ("start",true);
-			} else if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "b") {
-				//RecusaCigarro(true);
-				//Invoke ("CarregaAnimCigarro", animClipAceitaAlcool.length);
-				//AnimAceitaCigarro.SetBool ("start",true);
-			} else if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "c") {
-				//dialogManager.Fase += 2;
-				//Debug.Log ("rc");
-				//dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_" + dialogManager.Fase + "a"));
-				//SceneManager.LoadScene (dialogManager.Fase);
-			} else {
-				dialogManager.DisableDialogBox ();
-			}
-
+		/*case 2:
+			{
+				switch (dialogManager.arqDialogo.name) {
+				case "dialogo_2a"://caso seja a segunda fase e o primeiro dialogo faz as seguintes ações - MACONHA
+					{
+						if (escolha) {//se aceitou
+							dialogManager.olhoVermelhoP = true; //muda os olhos para vermelho 
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaMaconha (true);//habilita o controle da maconha e desativa o dialogo
+							Invoke ("CarregaConsMaconha", animAceitaClipMaconha.length);//Prepara a consequencia para aparecer após a animação da maconha
+							AnimMaconha.SetBool ("aceita", true);//define que ele aceitou maconha na animação
+							AnimMaconha.SetBool ("start", true);//define que vai começar a animação
+							Invoke ("CarregaDialogoB", animClipConsMaconha.length + animAceitaClipMaconha.length);//Prepara a função que carrega o dialogo B após as duas animações ocorrem
+						} else {
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaCigarro (true);//habilita o controle da maconha e desativa o dialogo
+							Invoke ("CarregaDialogoC", animRecusaClipMaconha.length);//Prepara a função que carrega o dialogo C após a animação rodar
+							AnimMaconha.SetBool ("aceita", false);//define que ele nao aceitou a maconha na animação
+							AnimMaconha.SetBool ("start", true);//define que vai começar a animação
+						}
+						break;
+					}
+				case "dialogo_2b"://caso seja a segunda fase e o dialogo seja depois de aceitar a bebida faz as seguintes ações
+					{
+						if (escolha) {//se ele aceitou fumar cigarro entra aqui
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaCigarro (true);//habilita o controle do cigarro
+							Invoke ("CarregaAnimCigarro", animAceitaClipCigarro.length);//Prepara a consequencia para aparecer após a animação do cigarro
+							AnimCigarro.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
+							Invoke ("CarregaFase2", animClipConsCigarro.length + animAceitaClipCigarro.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
+						} else {
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaCigarro (true);//habilita o controle do cigarro e desativa o dialogo
+							Invoke ("CarregaFase2", animRecusaClipCigarro.length);//Prepara a função que carrega a próxima fase após a animação rodar
+							AnimCigarro.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
+						}
+						break;
+					}
+				case "dialogo_2c":
+					{
+						if (escolha) {//se ele aceitou fumar cigarro entra aqui
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaCigarro (true);//habilita o controle do cigarro
+							Invoke ("CarregaAnimCigarro", animAceitaClipCigarro.length);//Prepara a consequencia para aparecer após a animação do cigarro
+							AnimCigarro.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
+							Invoke ("CarregaFase2", animClipConsCigarro.length + animAceitaClipCigarro.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
+						} else {
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaCigarro (true);//habilita o controle do cigarro e desativa o dialogo
+							Invoke ("CarregaFase2", animRecusaClipCigarro.length);//Prepara a função que carrega a próxima fase após a animação rodar
+							AnimCigarro.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
+						}
+						break;
+					}
+				default:
+					{
+						dialogManager.DisableDialogBox ();
+						break;
+					}
+				}
+				break;
+			}*/
 		}
+
+
+
 	}
 
-	void CarregaAnimAlcool(){
-		AnimConsAlcool.SetBool ("start",true);
-		AnimConsAlcool.SetBool ("aceita",true);
+	void CarregaConsAlcool ()
+	{
+		AnimConsAlcool.SetBool ("start", true);
+		AnimConsAlcool.SetBool ("aceita", true);
 	}
 
-	void DescarregaAnimAlcool(){
-		AnimConsAlcool.SetBool ("start",false);
-		AnimConsAlcool.SetBool ("aceita",false);
+	void DescarregaConsAlcool ()
+	{
+		AnimConsAlcool.SetBool ("start", false);
+		AnimConsAlcool.SetBool ("aceita", false);
 	}
 
-	void CarregaAnimCigarro(){
-		AnimConsCigarro.SetBool ("start",true);
+	void CarregaAnimCigarro ()
+	{
+		AnimConsCigarro.SetBool ("start", true);
 	}
 
-	void CarregaDialogoB(){
-		AceitaAlcool (false);
+	void CarregaDialogoB ()
+	{
+		DesabilitaControlAnimacoes ();
 		dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_" + dialogManager.Fase + "b")); //recarrega o script com o dialogo de aceitar
 		CarregaBotao ("b"); //carrega os botões desse dialogo 
 	}
 
-	void RecusaCigarro(bool recusa){
-		if (recusa) {
-			dialogo.SetActive (false);
-			controlCigarro.SetActive (true);
-		} else {
-			dialogo.SetActive(true);
-			controlCigarro.SetActive (false);
-		}
+	void CarregaDialogoA ()
+	{
+		DesabilitaControlAnimacoes ();
+		dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_" + dialogManager.Fase + "a")); //recarrega o script com o dialogo de aceitar
+		CarregaBotao ("a"); //carrega os botões desse dialogo 
 	}
 
-	void RecusaAlcool(bool recusa){
-		if (recusa) {
-			dialogo.SetActive (false);
-			controlAlcool.SetActive (true);
-		} else {
-			dialogo.SetActive(true);
-			controlAlcool.SetActive (false);
-		}
+	void CarregaFase2 ()
+	{
+		dialogManager.Fase = 2;
+		CarregaDialogoA ();
 	}
 
-	void CarregaDialogoC(){
-		AceitaCigarro(false);
+	void CarregaDialogoC ()
+	{
+		DesabilitaControlAnimacoes ();
 		dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_" + dialogManager.Fase + "c"));
 		CarregaBotao ("c");
 		dialogManager.choiceBox.SetActive (false);
 	}
 
-	void AceitaAlcool(bool aceita){
+	void AceitaAlcool (bool aceita)
+	{
 		if (aceita) {
 			dialogo.SetActive (false);
 			controlAlcool.SetActive (true);
 		} else {
-			dialogo.SetActive(true);
+			dialogo.SetActive (true);
 			controlAlcool.SetActive (false);
 		}
 	}
 
-	void AceitaCigarro(bool aceita){
+	void AceitaCigarro (bool aceita)
+	{
 		if (aceita) {
 			dialogo.SetActive (false);
 			controlCigarro.SetActive (true);
 		} else {
-			dialogo.SetActive(true);
+			dialogo.SetActive (true);
 			controlCigarro.SetActive (false);
 		}
+	}
+
+	void AceitaCocaina (bool aceita)
+	{
+		if (aceita) {
+			dialogo.SetActive (false);
+			controlCocaina.SetActive (true);
+		} else {
+			dialogo.SetActive (true);
+			controlCocaina.SetActive (false);
+		}
+	}
+
+	void AceitaCrack (bool aceita)
+	{
+		if (aceita) {
+			dialogo.SetActive (false);
+			controlCrack.SetActive (true);
+		} else {
+			dialogo.SetActive (true);
+			controlCrack.SetActive (false);
+		}
+	}
+
+	void AceitaAlucinogeno (bool aceita)
+	{
+		if (aceita) {
+			dialogo.SetActive (false);
+			controlAlucinogeno.SetActive (true);
+		} else {
+			dialogo.SetActive (true);
+			controlAlucinogeno.SetActive (false);
+		}
+	}
+
+	void AceitaEcstasy (bool aceita)
+	{
+		if (aceita) {
+			dialogo.SetActive (false);
+			controlEcstasy.SetActive (true);
+		} else {
+			dialogo.SetActive (true);
+			controlEcstasy.SetActive (false);
+		}
+	}
+
+	void AceitaInalante (bool aceita)
+	{
+		if (aceita) {
+			dialogo.SetActive (false);
+			controlInalante.SetActive (true);
+		} else {
+			dialogo.SetActive (true);
+			controlInalante.SetActive (false);
+		}
+	}
+
+	void AceitaMaconha (bool aceita)
+	{
+		if (aceita) {
+			dialogo.SetActive (false);
+			controlMaconha.SetActive (true);
+		} else {
+			dialogo.SetActive (true);
+			controlMaconha.SetActive (false);
+		}
+	}
+
+	void DesabilitaControlAnimacoes ()
+	{
+		AceitaAlcool (false);
+		AceitaAlucinogeno (false);
+		AceitaCigarro (false);
+		AceitaCocaina (false);
+		AceitaCrack (false);
+		AceitaEcstasy (false);
+		AceitaInalante (false);
+		AceitaMaconha (false);
 	}
 }

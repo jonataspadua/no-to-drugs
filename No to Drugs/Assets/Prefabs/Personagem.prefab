@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114274321848703056}
   - component: {fileID: 33867661057762974}
   - component: {fileID: 23509017380833258}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Olho_dir_vermelho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,8 +163,7 @@ GameObject:
   - component: {fileID: 114241420524119790}
   - component: {fileID: 33134265129582526}
   - component: {fileID: 23141494226710278}
-  - component: {fileID: 114853586796750016}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Olho_esq_aberto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +253,7 @@ GameObject:
   - component: {fileID: 114907003623891228}
   - component: {fileID: 33318542418255298}
   - component: {fileID: 23678715622729988}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Olho_esq_vermelho 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,8 +271,7 @@ GameObject:
   - component: {fileID: 114634937591860696}
   - component: {fileID: 33662874113143406}
   - component: {fileID: 23620248260855914}
-  - component: {fileID: 114502562428856362}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Olho_dir_aberto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1196,21 +1194,6 @@ MonoBehaviour:
   m_SortingOrder: 0
   m_Bones: []
   m_BoneTransforms: []
---- !u!114 &114502562428856362
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1829082846747616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7f8a6d49f27dd409d6f370e2892c41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skins:
-  - {fileID: 2800000, guid: 4762b2f4ec238ab4ab751f4a5ea9159d, type: 3}
-  - {fileID: 2800000, guid: c20d9ded39d6d974383e064a2cd06ff4, type: 3}
-  index: 0
 --- !u!114 &114544439898965916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1375,21 +1358,6 @@ MonoBehaviour:
   m_SortingOrder: 0
   m_Bones: []
   m_BoneTransforms: []
---- !u!114 &114853586796750016
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1562121267861624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7f8a6d49f27dd409d6f370e2892c41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skins:
-  - {fileID: 2800000, guid: 24e0eceaacb3f3a47a5486682622dcae, type: 3}
-  - {fileID: 2800000, guid: 16610d383f17cfc419c0ded7d264c2ac, type: 3}
-  index: 0
 --- !u!114 &114907003623891228
 MonoBehaviour:
   m_ObjectHideFlags: 1
