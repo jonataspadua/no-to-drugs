@@ -35,7 +35,7 @@ public class ControleAnimacao : MonoBehaviour {
 	}
 
 	public void TrocaOlho(bool OlhoV){
-		/*if (OlhoV) {
+		if (OlhoV) {
 			if (dialogManager.olhoVermelhoP) {	
 				olhoDNormal.SetActive (false);
 				olhoDVermelho.SetActive (true);
@@ -47,6 +47,6 @@ public class ControleAnimacao : MonoBehaviour {
 			olhoDVermelho.SetActive (false);
 			olhoENormal.SetActive(true);
 			olhoEVermelho.SetActive (false);
-		}*/
+		}
 	}
 }

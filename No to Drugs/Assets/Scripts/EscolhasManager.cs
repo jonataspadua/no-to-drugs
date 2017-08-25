@@ -30,6 +30,60 @@ public class EscolhasManager : MonoBehaviour
 	public Animator AnimConsCigarro;
 	public AnimationClip animClipConsCigarro;
 
+	public GameObject controlMaconha;
+
+	public Animator AnimMaconha;
+	public AnimationClip animAceitaClipMaconha;
+	public AnimationClip animRecusaClipMaconha;
+
+	public Animator AnimConsMaconha;
+	public AnimationClip animClipConsMaconha;
+
+	public GameObject controlAlucinogeno;
+
+	public Animator AnimAlucinogeno;
+	public AnimationClip animAceitaClipAlucinogeno;
+	public AnimationClip animRecusaClipAlucinogeno;
+
+	public Animator AnimConsAlucinogeno;
+	public AnimationClip animClipAlucinogeno;
+
+	public GameObject controlCocaina;
+
+	public Animator AnimCocaina;
+	public AnimationClip animAceitaClipCocaina;
+	public AnimationClip animRecusaClipCocaina;
+
+	public Animator AnimConsCocaina;
+	public AnimationClip animClipConsCocaina;
+
+	public GameObject controlCrack;
+
+	public Animator AnimCrack;
+	public AnimationClip animAceitaClipCrack;
+	public AnimationClip animRecusaClipCrack;
+
+	public Animator AnimConsCrack;
+	public AnimationClip animClipConsCrack;
+
+	public GameObject controlEcstasy;
+
+	public Animator AnimEcstasy;
+	public AnimationClip animAceitaClipEcstasy;
+	public AnimationClip animRecusaClipEcstasy;
+
+	public Animator AnimConsEcstasy;
+	public AnimationClip animClipConsEcstasy;
+
+	public GameObject controlInalante;
+
+	public Animator AnimInalante;
+	public AnimationClip animAceitaClipInalante;
+	public AnimationClip animRecusaClipInalante;
+
+	public Animator AnimConsInalante;
+	public AnimationClip animClipConsInalante;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -49,6 +103,8 @@ public class EscolhasManager : MonoBehaviour
 	{
 		if (escolha) {
 			if (dialogManager.arqDialogo.name == "dialogo_" + dialogManager.Fase + "a") { //Se o dialogo atual for o primeiro da fase
+				dialogManager.olhoVermelhoP = true;
+				dialogManager.choiceBox.SetActive (false);
 				AceitaAlcool(true);
 				Invoke ("CarregaAnimAlcool", animClipAceitaAlcool.length);
 				AnimAlcool.SetBool ("aceita",true);
@@ -105,8 +161,6 @@ public class EscolhasManager : MonoBehaviour
 		AceitaAlcool (false);
 		dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_" + dialogManager.Fase + "b")); //recarrega o script com o dialogo de aceitar
 		CarregaBotao ("b"); //carrega os botões desse dialogo 
-		dialogManager.olhoVermelhoP = true;
-		dialogManager.choiceBox.SetActive (false);
 	}
 
 	void RecusaCigarro(bool recusa){

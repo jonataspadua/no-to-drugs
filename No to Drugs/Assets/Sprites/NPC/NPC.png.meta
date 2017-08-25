@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 70546253afe22404e84c81464a6a5495
-timeCreated: 1496874121
+timeCreated: 1502568703
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -72,6 +72,14 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -79,12 +87,12 @@ TextureImporter:
       name: NPC_0
       rect:
         serializedVersion: 2
-        x: 133
-        y: 686
-        width: 250
-        height: 353
+        x: 128
+        y: 681
+        width: 260
+        height: 358
       alignment: 9
-      pivot: {x: 0.53503615, y: 0.023586543}
+      pivot: {x: 0.5, y: 0.5069832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -93,11 +101,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 355
-        width: 144
-        height: 285
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 348
+        width: 150.5
+        height: 299
+      alignment: 9
+      pivot: {x: 0.4784053, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -105,12 +113,12 @@ TextureImporter:
       name: NPC_2
       rect:
         serializedVersion: 2
-        x: 192
-        y: 329
-        width: 150
-        height: 329
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 185
+        y: 322
+        width: 164
+        height: 343
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -118,12 +126,12 @@ TextureImporter:
       name: NPC_3
       rect:
         serializedVersion: 2
-        x: 403
-        y: 348
-        width: 134
-        height: 288
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 396
+        y: 343
+        width: 141
+        height: 302
+      alignment: 9
+      pivot: {x: 0.52482265, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -131,12 +139,12 @@ TextureImporter:
       name: NPC_4
       rect:
         serializedVersion: 2
-        x: 18
-        y: 26
-        width: 168
-        height: 312
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 10.999992
+        y: 19
+        width: 182
+        height: 326
+      alignment: 9
+      pivot: {x: 0.50000006, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -144,17 +152,17 @@ TextureImporter:
       name: NPC_5
       rect:
         serializedVersion: 2
-        x: 311
+        x: 304
         y: 0
-        width: 161
-        height: 320
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 175
+        height: 327
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48929664}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     outline: []
-  spritePackingTag: 
-  userData: 
+  spritePackingTag: Npc_beb
+  userData: 98472342220957
   assetBundleName: 
   assetBundleVariant: 
