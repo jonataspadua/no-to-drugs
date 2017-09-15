@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class DialogManager : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class DialogManager : MonoBehaviour
 	public Text titulo;
 	public Text texto;
 	public int Fase;
+	public int Estilo;
 
 	public TextAsset arqDialogo;
 	private string[] linhasDialogo;
@@ -166,20 +168,20 @@ public class DialogManager : MonoBehaviour
 	}
 
 	public void EnableDialogBox(){
-		dialogBox.SetActive(true);
-		isActive = true;
-		ativaEscolha = false;
-		TrocaDialog(linhasDialogo [currentLine]);
-		StartCoroutine (TextScroll (linhasDialogo [currentLine]));
+		dialogBox.SetActive(true);//Ativa a caixa de dialogo
+		isActive = true; //indica que esta ativo o dialogo
+		ativaEscolha = false; //Desativa a caixa de escolha
+		TrocaDialog(linhasDialogo [currentLine]); //Troca a linha de dialogo atual
+		StartCoroutine (TextScroll (linhasDialogo [currentLine])); //começa a escrever na caixa de dialogo
 	}
 
 	public void DisableDialogBox(){
-		dialogBox.SetActive(false);
-		isActive = false;
+		dialogBox.SetActive(false);//desativa a caixa de dialogo
+		isActive = false; //informa que está desativada
 	}
 
 	public void ReloadScript(TextAsset novoTexto){
-		if (novoTexto != null && currentLine>=endAtLine) {
+		if (novoTexto != null && currentLine>=endAtLine) {//Se não estiver vazio o novo texto e não estiver acima da ultima linha
 			arqDialogo = novoTexto; //troca o arquivo carregado
 			linhasDialogo = new string[1]; //zera as linhas de dialogo
 			linhasDialogo = (novoTexto.text.Split ('\n')); //carrega o novo dialogo
@@ -191,7 +193,7 @@ public class DialogManager : MonoBehaviour
 
 
 	void TrocaDialog(string linha){
-		if (linha.Contains ("Cleison:")) {
+		if (linha.Contains ("Cleison:")) {//Se for o personagem principal falando, muda a caixa de dialogo para azul e informa que é a vez dele falar
 			dialogManager.isSpeakingp = true;
 			dialogManager.isSpeakingn = false;
 			imgDialog.sprite = janelaPlayer;
@@ -205,17 +207,17 @@ public class DialogManager : MonoBehaviour
 	}
 
 	public void ProximaLinha(){
-		if (!isTyping) {
-			currentLine += 1;
-			if (currentLine > endAtLine) {
-				ativaEscolha = true;
+		if (!isTyping) {//se não estiver no meio de escrever o texto na tela
+			currentLine += 1;//avança uma linha 
+			if (currentLine > endAtLine) { //verifica se não era a ultima linha
+				ativaEscolha = true;//se for a ultima linha
 				choiceBox.SetActive(ativaEscolha); //ativa a caixa de escolha 
-				DisableDialogBox ();
+				DisableDialogBox ();//Desativa a caixa de dialogo para ficar só a escolha na tela.
 			} else {
-				StartCoroutine (TextScroll(linhasDialogo[currentLine]));
+				StartCoroutine (TextScroll(linhasDialogo[currentLine])); //se não for a ultima linha, continua a escrever na tela
 			}
-		} else if (isTyping && !cancelTyping) {
-			cancelTyping = true;
+		} else if (isTyping && !cancelTyping) {//se estiver escrevendo e não for definido para cancelar
+			cancelTyping = true;//cancela a escrita do texto 
 		}
 	}
 
@@ -236,4 +238,37 @@ public class DialogManager : MonoBehaviour
 		}
 	}
 
+	public void Salvar(){
+		BinaryFormatter bf = new  BinaryFormatter();
+		FileStream file = File.Create(Application.persistentDataPath+"/playerInfo.dat");
+
+		//Preenche um objeto serializado que é só criar um classe para armazenar os valores e declarar [Serializable] antes dela
+		ConfigJogo data = new ConfigJogo();
+		data.Fase = this.Fase;
+		data.Estilo = this.Estilo;
+		//usa o BinaryFormatter para gravar os dados no arquivo
+		bf.Serialize(file, data);
+		file.Close();
+	}
+
+	public void Carregar(){
+		if(File.Exists( Application.persistentDataPath+"/playerInfo.dat"))
+		{
+			BinaryFormatter bf = new  BinaryFormatter();
+			FileStream file = File.Open(Application.persistentDataPath+"/playerInfo.dat" , FileMode.Open );
+			//Usa a função bf.Deserialize para pegar os dados de volta e usa um cast antes do bf para o formato do objeto
+			ConfigJogo data = (ConfigJogo) bf.Deserialize(file);
+			file.Close();
+
+			this.Fase = data.Fase;
+			this.Estilo = data.Estilo;
+		}
+	}
+}
+
+[Serializable]
+class ConfigJogo
+{
+	public int Fase; //1 - drogas iniciais: alcool e cigarro / 2 - drogas intermediárias: maconha, cocaina, ecstasy, inalantes e alucinógenos / 3 - Droga final: crack
+	public int Estilo; //estilos divididos em: 1 - Funk / 2 - Rock / 3 - Reggae / 4 - Eletronica
 }

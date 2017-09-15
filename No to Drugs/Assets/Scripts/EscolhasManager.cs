@@ -46,7 +46,7 @@ public class EscolhasManager : MonoBehaviour
 	public AnimationClip animRecusaClipAlucinogeno;
 
 	public Animator AnimConsAlucinogeno;
-	public AnimationClip animClipAlucinogeno;
+	public AnimationClip animClipConsAlucinogeno;
 
 	public GameObject controlCocaina;
 
@@ -168,7 +168,7 @@ public class EscolhasManager : MonoBehaviour
 				}
 				break;
 			}
-		/*case 2:
+		case 2:
 			{
 				switch (dialogManager.arqDialogo.name) {
 				case "dialogo_2a"://caso seja a segunda fase e o primeiro dialogo faz as seguintes ações - MACONHA
@@ -183,14 +183,201 @@ public class EscolhasManager : MonoBehaviour
 							Invoke ("CarregaDialogoB", animClipConsMaconha.length + animAceitaClipMaconha.length);//Prepara a função que carrega o dialogo B após as duas animações ocorrem
 						} else {
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
-							AceitaCigarro (true);//habilita o controle da maconha e desativa o dialogo
+							AceitaMaconha (true);//habilita o controle da maconha e desativa o dialogo
 							Invoke ("CarregaDialogoC", animRecusaClipMaconha.length);//Prepara a função que carrega o dialogo C após a animação rodar
 							AnimMaconha.SetBool ("aceita", false);//define que ele nao aceitou a maconha na animação
 							AnimMaconha.SetBool ("start", true);//define que vai começar a animação
 						}
 						break;
 					}
-				case "dialogo_2b"://caso seja a segunda fase e o dialogo seja depois de aceitar a bebida faz as seguintes ações
+				case "dialogo_2b"://caso seja a segunda fase e o dialogo seja depois de aceitar a maconha faz as seguintes ações
+					{
+						switch (dialogManager.Estilo) {//dependendo dos estilos terá acesso a tipos diferentes de drogas
+						case 1: //Funk - Inalantes
+							{
+								if (escolha) {//se ele aceitou inalantes entra aqui
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaInalante (true);//habilita o controle dos inalantes
+									Invoke ("CarregaAnimInalante", animAceitaClipInalante.length);//Prepara a consequencia para aparecer após a animação dos inalantes
+									AnimInalante.SetBool ("aceita", true);//define que ele aceitou inalantes na animação
+									AnimInalante.SetBool ("start", true);//define que vai começar a animação
+									Invoke ("CarregaFase3", animClipConsInalante.length + animAceitaClipInalante.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
+								} else {
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaInalante (true);//habilita o controle dos inalantes e desativa o dialogo
+									Invoke ("CarregaFase3", animRecusaClipInalante.length);//Prepara a função que carrega a próxima fase após a animação rodar
+									AnimInalante.SetBool ("aceita", false);//define que ele nao aceitou os inalantes na animação
+									AnimInalante.SetBool ("start", true);//define que vai começar a animação
+								}
+								break;
+							}
+						case 2: //Rock
+							{
+								if (escolha) {//se ele aceitou fumar cigarro entra aqui
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaCocaina (true);//habilita o controle do cigarro
+									Invoke ("CarregaAnimCocaina", animAceitaClipCocaina.length);//Prepara a consequencia para aparecer após a animação do cigarro
+									AnimCocaina.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+									AnimCocaina.SetBool ("start", true);//define que vai começar a animação
+									Invoke ("CarregaFase3", animClipConsCocaina.length + animAceitaClipCocaina.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
+								} else {
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaCocaina (true);//habilita o controle do cigarro e desativa o dialogo
+									Invoke ("CarregaFase3", animRecusaClipCocaina.length);//Prepara a função que carrega a próxima fase após a animação rodar
+									AnimCocaina.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+									AnimCocaina.SetBool ("start", true);//define que vai começar a animação
+								}
+								break;
+							}
+						case 3: //Reggae
+							{
+								if (escolha) {//se ele aceitou fumar cigarro entra aqui
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaAlucinogeno (true);//habilita o controle do cigarro
+									Invoke ("CarregaAnimAlucinogeno", animAceitaClipAlucinogeno.length);//Prepara a consequencia para aparecer após a animação do cigarro
+									AnimAlucinogeno.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+									AnimAlucinogeno.SetBool ("start", true);//define que vai começar a animação
+									Invoke ("CarregaFase3", animClipConsAlucinogeno.length + animAceitaClipAlucinogeno.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
+								} else {
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaAlucinogeno (true);//habilita o controle do cigarro e desativa o dialogo
+									Invoke ("CarregaFase3", animRecusaClipAlucinogeno.length);//Prepara a função que carrega a próxima fase após a animação rodar
+									AnimAlucinogeno.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+									AnimAlucinogeno.SetBool ("start", true);//define que vai começar a animação
+								}
+								break;
+							}
+						case 4: //Eletronica
+							{
+								if (escolha) {//se ele aceitou fumar cigarro entra aqui
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaEcstasy (true);//habilita o controle do cigarro
+									Invoke ("CarregaAnimEcstasy", animAceitaClipEcstasy.length);//Prepara a consequencia para aparecer após a animação do cigarro
+									AnimEcstasy.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+									AnimEcstasy.SetBool ("start", true);//define que vai começar a animação
+									Invoke ("CarregaFase3", animClipConsEcstasy.length + animAceitaClipEcstasy.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
+								} else {
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaEcstasy (true);//habilita o controle do cigarro e desativa o dialogo
+									Invoke ("CarregaFase3", animRecusaClipEcstasy.length);//Prepara a função que carrega a próxima fase após a animação rodar
+									AnimEcstasy.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+									AnimEcstasy.SetBool ("start", true);//define que vai começar a animação
+								}
+								break;
+							}
+						}
+						break;
+					}
+				case "dialogo_2c":
+					{
+						switch (dialogManager.Estilo) {
+						case 1: //Funk
+							{
+								if (escolha) {//se ele aceitou fumar cigarro entra aqui
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaInalante (true);//habilita o controle do cigarro
+									Invoke ("CarregaAnimInalante", animAceitaClipInalante.length);//Prepara a consequencia para aparecer após a animação do cigarro
+									AnimInalante.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+									AnimInalante.SetBool ("start", true);//define que vai começar a animação
+									Invoke ("CarregaFase3", animClipConsInalante.length + animAceitaClipInalante.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
+								} else {
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaInalante (true);//habilita o controle do cigarro e desativa o dialogo
+									Invoke ("CarregaFase3", animRecusaClipInalante.length);//Prepara a função que carrega a próxima fase após a animação rodar
+									AnimInalante.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+									AnimInalante.SetBool ("start", true);//define que vai começar a animação
+								}
+								break;
+							}
+						case 2: //Rock
+							{
+								if (escolha) {//se ele aceitou fumar Cocaina entra aqui
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaCocaina (true);//habilita o controle do Cocaina
+									Invoke ("CarregaAnimCocaina", animAceitaClipCocaina.length);//Prepara a consequencia para aparecer após a animação do Cocaina
+									AnimCocaina.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+									AnimCocaina.SetBool ("start", true);//define que vai começar a animação
+									Invoke ("CarregaFase3", animClipConsCocaina.length + animAceitaClipCocaina.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
+								} else {
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaCocaina (true);//habilita o controle do Cocaina e desativa o dialogo
+									Invoke ("CarregaFase3", animRecusaClipCocaina.length);//Prepara a função que carrega a próxima fase após a animação rodar
+									AnimCocaina.SetBool ("aceita", false);//define que ele nao aceitou o Cocaina na animação
+									AnimCocaina.SetBool ("start", true);//define que vai começar a animação
+								}
+								break;
+							}
+						case 3: //Reggae
+							{
+								if (escolha) {//se ele aceitou fumar Alucinogeno entra aqui
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaAlucinogeno (true);//habilita o controle do Alucinogeno
+									Invoke ("CarregaAnimAlucinogeno", animAceitaClipAlucinogeno.length);//Prepara a consequencia para aparecer após a animação do Alucinogeno
+									AnimAlucinogeno.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+									AnimAlucinogeno.SetBool ("start", true);//define que vai começar a animação
+									Invoke ("CarregaFase3", animClipConsAlucinogeno.length + animAceitaClipAlucinogeno.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
+								} else {
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaAlucinogeno (true);//habilita o controle do Alucinogeno e desativa o dialogo
+									Invoke ("CarregaFase3", animRecusaClipAlucinogeno.length);//Prepara a função que carrega a próxima fase após a animação rodar
+									AnimAlucinogeno.SetBool ("aceita", false);//define que ele nao aceitou o Alucinogeno na animação
+									AnimAlucinogeno.SetBool ("start", true);//define que vai começar a animação
+								}
+								break;
+							}
+						case 4: //Eletronica
+							{
+								if (escolha) {//se ele aceitou fumar Ecstasy entra aqui
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaEcstasy (true);//habilita o controle do Ecstasy
+									Invoke ("CarregaAnimEcstasy", animAceitaClipEcstasy.length);//Prepara a consequencia para aparecer após a animação do Ecstasy
+									AnimEcstasy.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+									AnimEcstasy.SetBool ("start", true);//define que vai começar a animação
+									Invoke ("CarregaFase3", animClipConsEcstasy.length + animAceitaClipEcstasy.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
+								} else {
+									dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+									AceitaEcstasy (true);//habilita o controle do Ecstasy e desativa o dialogo
+									Invoke ("CarregaFase3", animRecusaClipEcstasy.length);//Prepara a função que carrega a próxima fase após a animação rodar
+									AnimEcstasy.SetBool ("aceita", false);//define que ele nao aceitou o Ecstasy na animação
+									AnimEcstasy.SetBool ("start", true);//define que vai começar a animação
+								}
+								break;
+							}
+						}
+						break;
+					}
+				default:
+					{
+						dialogManager.DisableDialogBox ();
+						break;
+					}
+				}
+
+				break;
+			}
+		case 3:
+			{
+				switch (dialogManager.arqDialogo.name) {
+				case "dialogo_3a"://caso seja a primeira fase e o primeiro dialogo faz as seguintes ações - ALCOOL
+					{
+						if (escolha) {
+							dialogManager.olhoVermelhoP = true; //muda os olhos para vermelho
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaAlcool (true);//habilita o controle do alcool e desativa o dialogo
+							Invoke ("CarregaConsAlcool", animClipAceitaAlcool.length);//Prepara a consequencia para aparecer após a animação do alcool
+							AnimAlcool.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+							AnimAlcool.SetBool ("start", true);//define que vai começar a animação
+							Invoke ("CarregaDialogoB", animClipConsAlcool.length + animClipAceitaAlcool.length);//Prepara a função que carrega o dialogo B após as duas animações ocorrem
+						} else {
+							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
+							AceitaCigarro (true);//habilita o controle do alcool e desativa o dialogo
+							Invoke ("CarregaDialogoC", animClipRecusaAlcool.length);//Prepara a função que carrega o dialogo C após a animação rodar
+							AnimAlcool.SetBool ("aceita", false);//define que ele nao aceitou o alcool na animação
+							AnimAlcool.SetBool ("start", true);//define que vai começar a animação
+						}
+						break;
+					}
+				case "dialogo_3b"://caso seja a primeira fase e o dialogo seja depois de aceitar a bebida faz as seguintes ações - CIGARRO
 					{
 						if (escolha) {//se ele aceitou fumar cigarro entra aqui
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
@@ -208,7 +395,7 @@ public class EscolhasManager : MonoBehaviour
 						}
 						break;
 					}
-				case "dialogo_2c":
+				case "dialogo_3c"://caso seja a primeira fase e o dialogo seja depois de recusar a bebida faz as seguintes ações - CIGARRO
 					{
 						if (escolha) {//se ele aceitou fumar cigarro entra aqui
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
@@ -233,7 +420,12 @@ public class EscolhasManager : MonoBehaviour
 					}
 				}
 				break;
-			}*/
+			}
+		default:
+			{
+				dialogManager.DisableDialogBox ();
+				break;
+			}
 		}
 
 
