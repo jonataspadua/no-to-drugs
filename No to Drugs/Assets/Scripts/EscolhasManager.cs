@@ -108,6 +108,7 @@ public class EscolhasManager : MonoBehaviour
 				case "dialogo_1a"://caso seja a primeira fase e o primeiro dialogo faz as seguintes ações - ALCOOL
 					{
 						if (escolha) {
+							dialogManager.Alcool = 1;
 							dialogManager.olhoVermelhoP = true; //muda os olhos para vermelho
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaAlcool (true);//habilita o controle do alcool e desativa o dialogo
@@ -116,6 +117,7 @@ public class EscolhasManager : MonoBehaviour
 							AnimAlcool.SetBool ("start", true);//define que vai começar a animação
 							Invoke ("CarregaDialogoB", animClipConsAlcool.length + animClipAceitaAlcool.length);//Prepara a função que carrega o dialogo B após as duas animações ocorrem
 						} else {
+							dialogManager.Alcool = 0;
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaCigarro (true);//habilita o controle do alcool e desativa o dialogo
 							Invoke ("CarregaDialogoC", animClipRecusaAlcool.length);//Prepara a função que carrega o dialogo C após a animação rodar
@@ -127,6 +129,7 @@ public class EscolhasManager : MonoBehaviour
 				case "dialogo_1b"://caso seja a primeira fase e o dialogo seja depois de aceitar a bebida faz as seguintes ações - CIGARRO
 					{
 						if (escolha) {//se ele aceitou fumar cigarro entra aqui
+							dialogManager.Cigarro = 1;
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaCigarro (true);//habilita o controle do cigarro
 							Invoke ("CarregaAnimCigarro", animAceitaClipCigarro.length);//Prepara a consequencia para aparecer após a animação do cigarro
@@ -134,6 +137,7 @@ public class EscolhasManager : MonoBehaviour
 							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
 							Invoke ("CarregaFase2", animClipConsCigarro.length + animAceitaClipCigarro.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 						} else {
+							dialogManager.Cigarro = 0;
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaCigarro (true);//habilita o controle do cigarro e desativa o dialogo
 							Invoke ("CarregaFase2", animRecusaClipCigarro.length);//Prepara a função que carrega a próxima fase após a animação rodar
@@ -145,6 +149,7 @@ public class EscolhasManager : MonoBehaviour
 				case "dialogo_1c"://caso seja a primeira fase e o dialogo seja depois de recusar a bebida faz as seguintes ações - CIGARRO
 					{
 						if (escolha) {//se ele aceitou fumar cigarro entra aqui
+							dialogManager.Cigarro = 1;
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaCigarro (true);//habilita o controle do cigarro
 							Invoke ("CarregaAnimCigarro", animAceitaClipCigarro.length);//Prepara a consequencia para aparecer após a animação do cigarro
@@ -152,6 +157,7 @@ public class EscolhasManager : MonoBehaviour
 							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
 							Invoke ("CarregaFase2", animClipConsCigarro.length + animAceitaClipCigarro.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 						} else {
+							dialogManager.Cigarro = 0;
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaCigarro (true);//habilita o controle do cigarro e desativa o dialogo
 							Invoke ("CarregaFase2", animRecusaClipCigarro.length);//Prepara a função que carrega a próxima fase após a animação rodar
@@ -357,7 +363,7 @@ public class EscolhasManager : MonoBehaviour
 			}
 		case 3:
 			{
-				switch (dialogManager.arqDialogo.name) {
+				/*switch (dialogManager.arqDialogo.name) {
 				case "dialogo_3a"://caso seja a primeira fase e o primeiro dialogo faz as seguintes ações - ALCOOL
 					{
 						if (escolha) {
@@ -418,7 +424,7 @@ public class EscolhasManager : MonoBehaviour
 						dialogManager.DisableDialogBox ();
 						break;
 					}
-				}
+				}*/
 				break;
 			}
 		default:
@@ -465,8 +471,36 @@ public class EscolhasManager : MonoBehaviour
 
 	void CarregaFase2 ()
 	{
-		dialogManager.Fase = 2;
-		CarregaDialogoA ();
+		if ((dialogManager.Alcool == 1) && (dialogManager.Cigarro == 1)) {//se as duas drogas foram aceitas, carrega a fase 2A
+			dialogManager.Fase = 2;
+			CarregaDialogoA ();
+		} else if ((dialogManager.Alcool == 1) && (dialogManager.Cigarro == 0)) {//se as duas drogas foram aceitas, carrega a fase 2B
+			dialogManager.Fase = 2;
+			CarregaDialogoA ();
+		} else if ((dialogManager.Alcool == 0) && (dialogManager.Cigarro == 1)) {//se as duas drogas foram aceitas, carrega a fase 2B
+			dialogManager.Fase = 2;
+			CarregaDialogoA ();
+		} else if ((dialogManager.Alcool == 0) && (dialogManager.Cigarro == 0)) {//se as duas drogas foram aceitas, carrega a fase 2B
+			dialogManager.Fase = 2;
+			CarregaDialogoA ();
+		}
+	}
+
+	void CarregaFase3 ()
+	{
+		if ((dialogManager.Maconha == 1) && (dialogManager.Cocaina == 1 || dialogManager.Alucinogeno == 1 || dialogManager.Ecstasy == 1 || dialogManager.Inalantes == 1)) {//se as duas drogas foram aceitas, carrega a fase 2A
+			dialogManager.Fase = 3;
+			CarregaDialogoA ();
+		} else if ((dialogManager.Maconha == 1) && (dialogManager.Cocaina == 0 || dialogManager.Alucinogeno == 0 || dialogManager.Ecstasy == 0 || dialogManager.Inalantes == 0)) {//se as duas drogas foram aceitas, carrega a fase 2B
+			dialogManager.Fase = 3;
+			CarregaDialogoA ();
+		} else if ((dialogManager.Maconha == 0) && (dialogManager.Cocaina == 1 || dialogManager.Alucinogeno == 1 || dialogManager.Ecstasy == 1 || dialogManager.Inalantes == 1)) {//se as duas drogas foram aceitas, carrega a fase 2B
+			dialogManager.Fase = 3;
+			CarregaDialogoA ();
+		} else if ((dialogManager.Maconha == 0) && (dialogManager.Cocaina == 0 || dialogManager.Alucinogeno == 0 || dialogManager.Ecstasy == 0 || dialogManager.Inalantes == 0)) {//se as duas drogas foram aceitas, carrega a fase 2B
+			dialogManager.Fase = 3;
+			CarregaDialogoA ();
+		}
 	}
 
 	void CarregaDialogoC ()

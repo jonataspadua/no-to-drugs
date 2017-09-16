@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 70546253afe22404e84c81464a6a5495
-timeCreated: 1502568703
+timeCreated: 1505578255
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -92,7 +92,7 @@ TextureImporter:
         width: 260
         height: 358
       alignment: 9
-      pivot: {x: 0.5, y: 0.5069832}
+      pivot: {x: 0.56906927, y: 0.08418845}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -105,7 +105,7 @@ TextureImporter:
         width: 150.5
         height: 299
       alignment: 9
-      pivot: {x: 0.4784053, y: 0.5}
+      pivot: {x: 0.85341907, y: 0.8946819}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -144,7 +144,7 @@ TextureImporter:
         width: 182
         height: 326
       alignment: 9
-      pivot: {x: 0.50000006, y: 0.5}
+      pivot: {x: 0.9228734, y: 0.8777322}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -157,12 +157,12 @@ TextureImporter:
         width: 175
         height: 327
       alignment: 9
-      pivot: {x: 0.5, y: 0.48929664}
+      pivot: {x: 0.38272303, y: 0.84233785}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     outline: []
   spritePackingTag: Npc_beb
-  userData: 98472342220957
+  userData: 98669576132029
   assetBundleName: 
   assetBundleVariant: 

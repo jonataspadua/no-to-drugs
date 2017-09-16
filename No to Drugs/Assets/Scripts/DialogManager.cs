@@ -24,8 +24,17 @@ public class DialogManager : MonoBehaviour
 	public Renderer background;
 	public Text titulo;
 	public Text texto;
+	//variaveis de controle do jogo
 	public int Fase;
 	public int Estilo;
+	public int Alcool=0;
+	public int Cigarro=0;
+	public int Maconha=0;
+	public int Cocaina=0;
+	public int Inalantes=0;
+	public int Alucinogeno=0;
+	public int Ecstasy=0;
+	public int Crack=0;
 
 	public TextAsset arqDialogo;
 	private string[] linhasDialogo;
@@ -244,8 +253,16 @@ public class DialogManager : MonoBehaviour
 
 		//Preenche um objeto serializado que é só criar um classe para armazenar os valores e declarar [Serializable] antes dela
 		ConfigJogo data = new ConfigJogo();
-		data.Fase = this.Fase;
-		data.Estilo = this.Estilo;
+		data.Fase 			= this.Fase;
+		data.Estilo 		= this.Estilo;
+		data.Alcool 		= this.Alcool;
+		data.Cigarro 		= this.Cigarro;
+		data.Maconha 		= this.Maconha;
+		data.Cocaina 		= this.Cocaina;
+		data.Inalantes 		= this.Inalantes;
+		data.Alucinogeno 	= this.Alucinogeno;
+		data.Ecstasy 		= this.Ecstasy;
+		data.Crack 			= this.Crack;
 		//usa o BinaryFormatter para gravar os dados no arquivo
 		bf.Serialize(file, data);
 		file.Close();
@@ -260,8 +277,16 @@ public class DialogManager : MonoBehaviour
 			ConfigJogo data = (ConfigJogo) bf.Deserialize(file);
 			file.Close();
 
-			this.Fase = data.Fase;
-			this.Estilo = data.Estilo;
+			this.Fase 			= data.Fase;
+			this.Estilo 		= data.Estilo;
+			this.Alcool 		= data.Alcool;
+			this.Cigarro 		= data.Cigarro;
+			this.Maconha 		= data.Maconha;
+			this.Cocaina 		= data.Cocaina;
+			this.Inalantes 		= data.Inalantes;
+			this.Alucinogeno 	= data.Alucinogeno;
+			this.Ecstasy 		= data.Ecstasy;
+			this.Crack 			= data.Crack;
 		}
 	}
 }
@@ -271,4 +296,12 @@ class ConfigJogo
 {
 	public int Fase; //1 - drogas iniciais: alcool e cigarro / 2 - drogas intermediárias: maconha, cocaina, ecstasy, inalantes e alucinógenos / 3 - Droga final: crack
 	public int Estilo; //estilos divididos em: 1 - Funk / 2 - Rock / 3 - Reggae / 4 - Eletronica
+	public int Alcool;
+	public int Cigarro;
+	public int Maconha;
+	public int Cocaina;
+	public int Inalantes;
+	public int Alucinogeno;
+	public int Ecstasy;
+	public int Crack;
 }
