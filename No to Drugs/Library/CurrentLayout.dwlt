@@ -14,13 +14,13 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 43
+    y: 42
     width: 1366
-    height: 685
+    height: 686
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 492}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,8 +42,8 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1366
-    height: 685
-  m_MinSize: {x: 950, y: 492}
+    height: 686
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -87,11 +87,11 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1366
-    height: 635
-  m_MinSize: {x: 917, y: 442}
+    height: 636
+  m_MinSize: {x: 917, y: 342}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 23
+  controlID: 126
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 665
+    y: 666
     width: 1366
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -131,11 +131,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 651
-    height: 635
-  m_MinSize: {x: 202, y: 442}
+    height: 636
+  m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 24
+  controlID: 58
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,7 +153,7 @@ MonoBehaviour:
     x: 651
     y: 0
     width: 204
-    height: 635
+    height: 636
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 16}
@@ -178,7 +178,7 @@ MonoBehaviour:
     x: 855
     y: 0
     width: 234
-    height: 635
+    height: 636
   m_MinSize: {x: 234, y: 271}
   m_MaxSize: {x: 10004, y: 10021}
   m_ActualView: {fileID: 18}
@@ -203,7 +203,7 @@ MonoBehaviour:
     x: 1089
     y: 0
     width: 277
-    height: 635
+    height: 636
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
@@ -228,7 +228,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 651
-    height: 351
+    height: 352
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
@@ -254,17 +254,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 351
+    y: 352
     width: 651
     height: 284
-  m_MinSize: {x: 202, y: 221}
+  m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 19}
   - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -459,14 +459,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 653
-    y: 92
+    y: 91
     width: 200
-    height: 614
+    height: 615
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 782f0000
-    m_LastClickedID: 12152
-    m_ExpandedIDs: a0f9ffffa8f9ffffb4f9ffffc2f9ffff08faffff42faffff4afaffffa6faffffd6faffffd8faffffe0faffffecfaffff6cfbffff74fbffff7cfbffff8afbffffe4fbffff00000000a62d0000d02e00008c300000
+    m_SelectedIDs: 68f9ffff
+    m_LastClickedID: -1688
+    m_ExpandedIDs: e2fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -512,9 +512,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1091
-    y: 92
+    y: 91
     width: 275
-    height: 614
+    height: 615
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
@@ -545,9 +545,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 857
-    y: 92
+    y: 91
     width: 230
-    height: 614
+    height: 615
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -558,19 +558,20 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders: []
+    m_Folders:
+    - Assets/Prefabs
   m_ViewMode: 0
   m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Animations
+  m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\ProjetoTcc\no-to-drugs\No to Drugs
+  m_LastProjectPath: "C:\\Users\\willian.will-pc\\OneDrive\\Documentos\\Engenharia\\9\xBA
+    SEMESTRE\\tcc\\no-to-drugs\\No to Drugs"
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 5c2b0000
     m_LastClickedID: 11100
-    m_ExpandedIDs: 000000001e27000074270000ea270000a4290000be290000f6290000e22a00004a2b00005c2b0000602b0000b02b0000da2b00007a2c0000962c00003435000036350000383500003a3500003c3500003e35000040350000423500004435000046350000483500004a3500004c3500004e350000503500005235000054350000
+    m_ExpandedIDs: 00000000062700005c270000b2270000b8270000d02700004a2800008a290000a4290000dc290000422b0000962b0000be2b0000682c0000842c00006e37000070370000723700007437000076370000783700007a3700007c3700007e37000080370000823700008437000086370000883700008a3700008c3700008e370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -595,10 +596,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 1240}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001e27000074270000d0270000ea27000064280000a4290000be290000f62900005c2b0000b02b0000da2b00007a2c0000962c00003435000036350000383500003a3500003c3500003e35000040350000423500004435000046350000483500004a3500004c3500004e350000503500005235000054350000
+    m_ExpandedIDs: 00000000062700005c270000b2270000b8270000d02700004a2800008a290000a4290000dc2900008e2b0000962b0000be2b0000682c0000842c00006e37000070370000723700007437000076370000783700007a3700007c3700007e37000080370000823700008437000086370000883700008a3700008c3700008e370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -687,10 +688,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -512
-    m_HBaseRangeMax: 512
-    m_VBaseRangeMin: -300
-    m_VBaseRangeMax: 300
+    m_HBaseRangeMin: -324.5
+    m_HBaseRangeMax: 324.5
+    m_VBaseRangeMin: -123
+    m_VBaseRangeMax: 123
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -709,7 +710,7 @@ MonoBehaviour:
       y: 17
       width: 649
       height: 246
-    m_Scale: {x: 0.41, y: 0.41}
+    m_Scale: {x: 1, y: 1}
     m_Translation: {x: 324.5, y: 123}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -717,12 +718,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -791.46344
-      y: -300
-      width: 1582.9269
-      height: 600
+      x: -324.5
+      y: -123
+      width: 649
+      height: 246
     m_MinimalGUI: 1
-  m_defaultScale: 0.41
+  m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 649, y: 263}
@@ -752,18 +753,18 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 92
+    y: 91
     width: 649
-    height: 330
+    height: 331
   m_SceneLighting: 1
-  lastFramingTime: 1502.353393777778
+  lastFramingTime: 474.3571485750717
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.8264415, y: 0.26323462, z: -10}
+    m_Target: {x: 324.5, y: 123, z: 0}
     speed: 2
-    m_Value: {x: 1.8264415, y: 0.26323462, z: -10}
+    m_Value: {x: 324.5, y: 123, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -790,9 +791,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 22.235178
+    m_Target: 331.1822
     speed: 2
-    m_Value: 22.235178
+    m_Value: 331.1822
   m_Ortho:
     m_Target: 1
     speed: 2
