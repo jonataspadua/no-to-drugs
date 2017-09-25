@@ -440,12 +440,14 @@ public class EscolhasManager : MonoBehaviour
 
 	void CarregaConsAlcool ()
 	{
+		AnimConsAlcool.gameObject.SetActive (true);
 		AnimConsAlcool.SetBool ("start", true);
 		AnimConsAlcool.SetBool ("aceita", true);
 	}
 
 	void DescarregaConsAlcool ()
 	{
+		AnimConsAlcool.gameObject.SetActive (false);
 		AnimConsAlcool.SetBool ("start", false);
 		AnimConsAlcool.SetBool ("aceita", false);
 	}
@@ -458,6 +460,7 @@ public class EscolhasManager : MonoBehaviour
 	void CarregaDialogoB ()
 	{
 		DesabilitaControlAnimacoes ();
+
 		dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_" + dialogManager.Fase + "b")); //recarrega o script com o dialogo de aceitar
 		CarregaBotao ("b"); //carrega os botões desse dialogo 
 	}
@@ -516,7 +519,9 @@ public class EscolhasManager : MonoBehaviour
 		if (aceita) {
 			dialogo.SetActive (false);
 			controlAlcool.SetActive (true);
+
 		} else {
+			AnimConsAlcool.gameObject.SetActive (false);
 			dialogo.SetActive (true);
 			controlAlcool.SetActive (false);
 		}

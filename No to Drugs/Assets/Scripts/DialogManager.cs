@@ -27,14 +27,14 @@ public class DialogManager : MonoBehaviour
 	//variaveis de controle do jogo
 	public int Fase;
 	public int Estilo;
-	public int Alcool=0;
-	public int Cigarro=0;
-	public int Maconha=0;
-	public int Cocaina=0;
-	public int Inalantes=0;
-	public int Alucinogeno=0;
-	public int Ecstasy=0;
-	public int Crack=0;
+	[HideInInspector] public int Alcool=0;
+	[HideInInspector] public int Cigarro=0;
+	[HideInInspector] public int Maconha=0;
+	[HideInInspector] public int Cocaina=0;
+	[HideInInspector] public int Inalantes=0;
+	[HideInInspector] public int Alucinogeno=0;
+	[HideInInspector] public int Ecstasy=0;
+	[HideInInspector] public int Crack=0;
 
 	public TextAsset arqDialogo;
 	private string[] linhasDialogo;
