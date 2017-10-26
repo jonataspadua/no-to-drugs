@@ -45,6 +45,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1030762605857854
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224166897930198468}
+  - component: {fileID: 222007311872017840}
+  - component: {fileID: 114896961867988832}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1035912108527842
 GameObject:
   m_ObjectHideFlags: 1
@@ -179,6 +196,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1136613672930900
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224531315852924834}
+  - component: {fileID: 222569344281149426}
+  - component: {fileID: 114213304079712374}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1142646361275304
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,6 +224,7 @@ GameObject:
   - component: {fileID: 222598907456116466}
   - component: {fileID: 114957589356350562}
   - component: {fileID: 95615591880706524}
+  - component: {fileID: 114071297590766128}
   m_Layer: 5
   m_Name: Crack
   m_TagString: Untagged
@@ -259,13 +294,14 @@ GameObject:
   - component: {fileID: 222726975661791838}
   - component: {fileID: 114485636286296648}
   - component: {fileID: 95030158472793850}
+  - component: {fileID: 114788876854107648}
   m_Layer: 5
   m_Name: Cocaina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1199460489459398
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,6 +313,8 @@ GameObject:
   - component: {fileID: 222920388104277532}
   - component: {fileID: 114436558297014844}
   - component: {fileID: 95814654375566866}
+  - component: {fileID: 114655404632487986}
+  - component: {fileID: 114245685088443760}
   m_Layer: 5
   m_Name: Cigarro
   m_TagString: Untagged
@@ -296,6 +334,23 @@ GameObject:
   - component: {fileID: 114269435818202248}
   m_Layer: 5
   m_Name: Educacao
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1211255449902400
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224280435349178292}
+  - component: {fileID: 222430113718024878}
+  - component: {fileID: 114866404871790006}
+  m_Layer: 5
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -346,6 +401,7 @@ GameObject:
   - component: {fileID: 222235349536918274}
   - component: {fileID: 114226928643920162}
   - component: {fileID: 95587716822872570}
+  - component: {fileID: 114257124409756228}
   m_Layer: 5
   m_Name: Ecstasy
   m_TagString: Untagged
@@ -353,6 +409,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1268594339687214
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224119931571108004}
+  - component: {fileID: 222571682588627072}
+  - component: {fileID: 114128057725113552}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1274464911386986
 GameObject:
   m_ObjectHideFlags: 1
@@ -398,6 +471,7 @@ GameObject:
   - component: {fileID: 222905164691822602}
   - component: {fileID: 114734782153199066}
   - component: {fileID: 95759126704738054}
+  - component: {fileID: 114263764929990616}
   m_Layer: 5
   m_Name: Maconha
   m_TagString: Untagged
@@ -417,6 +491,23 @@ GameObject:
   - component: {fileID: 114294220610733968}
   m_Layer: 5
   m_Name: TextoFamilia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1370271924540276
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224324641383049860}
+  - component: {fileID: 222680663412553640}
+  - component: {fileID: 114237322417182052}
+  m_Layer: 5
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -535,13 +626,15 @@ GameObject:
   - component: {fileID: 222589555609374462}
   - component: {fileID: 114130921408540650}
   - component: {fileID: 95352423854849912}
+  - component: {fileID: 114231403847991064}
+  - component: {fileID: 114577013659714618}
   m_Layer: 5
   m_Name: Alcool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1472092873955288
 GameObject:
   m_ObjectHideFlags: 1
@@ -621,6 +714,7 @@ GameObject:
   - component: {fileID: 222460082288263178}
   - component: {fileID: 114510266796436722}
   - component: {fileID: 95254802162765366}
+  - component: {fileID: 114029474587412838}
   m_Layer: 5
   m_Name: Inalantes
   m_TagString: Untagged
@@ -656,6 +750,7 @@ GameObject:
   - component: {fileID: 222704441725359864}
   - component: {fileID: 114512367096317554}
   - component: {fileID: 95524044486585656}
+  - component: {fileID: 114165561180674234}
   m_Layer: 5
   m_Name: Alucinogeno
   m_TagString: Untagged
@@ -675,6 +770,23 @@ GameObject:
   - component: {fileID: 114399586058962918}
   m_Layer: 5
   m_Name: Familia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1617824629423946
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224333868257051196}
+  - component: {fileID: 222640609045310168}
+  - component: {fileID: 114322655777479288}
+  m_Layer: 5
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -760,6 +872,23 @@ GameObject:
   - component: {fileID: 114147287465667728}
   m_Layer: 5
   m_Name: TextoSaude
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1694215161827524
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224903141331978894}
+  - component: {fileID: 222605705555866992}
+  - component: {fileID: 114546829832471130}
+  m_Layer: 5
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -896,6 +1025,23 @@ GameObject:
   - component: {fileID: 114706544110791590}
   m_Layer: 5
   m_Name: Saude
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1935788024379776
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224790311982693866}
+  - component: {fileID: 222149414196051432}
+  - component: {fileID: 114175424097547206}
+  m_Layer: 5
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1134,7 +1280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1153,7 +1299,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.3
   m_Text: "Em um dia ele e seus amigos estavam usando e um de seus amigos desmaiou
     e caiu com o saco pl\xE1stico cobrindo seu nariz e boca. Como todos estavam sob
     efeito n\xE3o deram aten\xE7\xE3o. E quando o efeito passou perceberam que esse
@@ -1171,7 +1317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1190,12 +1336,24 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "J\xE1 estava sozinho na rua havia acabado de usar a \xFAltima que ele tinha,
-    e estava desesperado para usar mais e mais. E furtou a bolsa de uma senhora. Com
-    o dinheiro ele foi buscar mais droga depois de usar a vontade de usar mais veio
-    mais forte. A senhora que ele avia furtado chamou a pol\xEDcia e ele foi parar
-    na delegacia."
+    m_LineSpacing: 1.3
+  m_Text: "Como ele n\xE3o tinha mais os recusos da familia para usar, ele come\xE7ou
+    a roubar para sustentar o vicio. Ele est\xE1 magro com muita tosse sente dores
+    no peito e est\xE1 em depress\xE3. A \xFAnica hora que se sente aliviado \xE9
+    quando esta usando."
+--- !u!114 &114029474587412838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1549359185962374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a932d5a937b4c40997426be7b36a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimConsInalantes: {fileID: 0}
+  esco: {fileID: 0}
 --- !u!114 &114043280643398750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1208,7 +1366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1235,7 +1393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1250,6 +1408,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114071297590766128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142646361275304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb2aeccbbee35d542b0136b63ea9dd84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimConsCrack: {fileID: 0}
+  esco: {fileID: 0}
 --- !u!114 &114074578659694140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1262,7 +1433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1277,6 +1448,39 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114128057725113552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1268594339687214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Toque na tela para continuar
 --- !u!114 &114130921408540650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1316,7 +1520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1335,7 +1539,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.3
   m_Text: "Com o uso abusivo e constante ele sofre um princ\xEDpio de overdose e acaba
     no hospital, seus pais foram chamados e agora eles sabem que ele est\xE1 usando
     drogas. Por causa do abuso ele tamb\xE9m est\xE1 sofrendo de depress\xE3o e ansiedade
@@ -1352,7 +1556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1371,11 +1575,57 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.3
   m_Text: "Com o uso abusivo e constante ele come\xE7ou a sofrer de perca de mem\xF3ria,
     seus pais perceberam que ele est\xE1 falando sozinho e sempre acha que existe
     algum perseguindo ele. Por causa do abuso ele tamb\xE9m est\xE1 sofrendo de depress\xE3o
     e j\xE1 n\xE3o queria mais sair do seu quarto s\xF3 saia para buscar drogas.   "
+--- !u!114 &114165561180674234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561200987866082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a0afe83a4d72e441b09999f96e4161f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimConsAlucinogeno: {fileID: 95524044486585656}
+  esco: {fileID: 0}
+--- !u!114 &114175424097547206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1935788024379776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Toque na tela para continuar
 --- !u!114 &114200750607919100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1388,7 +1638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1407,7 +1657,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.3
   m_Text: "Todo final de semana ele estava indo em festas de m\xFAsica eletr\xF4nica
     que duravam de dois a tr\xEAs dias. Numa dessas festas ele tomou uma dose excessiva
     e al\xE9m da euforia e das alucina\xE7\xF5es ele come\xE7ou a sentir dores de
@@ -1425,7 +1675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1452,43 +1702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
-    m_FontSize: 20
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
-    m_Alignment: 5
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Em casa os familiares tamb\xE9m perceberam uma mudan\xE7a grande no comportamento
-    dele. Desde que ele come\xE7ou a sair com seus amigos mudou o seu relacionamento
-    em casa. Seus familiares imaginam que ele possa estar envolvido com drogas, mas
-    at\xE9 agora n\xE3o t\xEAm nenhuma confirma\xE7\xE3o. "
---- !u!114 &114212951268373188
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1647460764759922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1508,10 +1722,80 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.3
+  m_Text: "Como o abuso j\xE1 estava imposs\xEDvel de esconder. Desde que ele come\xE7ou
+    a sair com seus amigos mudou o seu relacionamento em casa. Seus familiares imaginam
+    que ele possa estar envolvido com drogas, mas at\xE9 agora n\xE3o t\xEAm nenhuma
+    confirma\xE7\xE3o. Como os conflitos estavam frequentes e ele n\xE3o queria parar
+    de usar, eles decidiram que se ele n\xE3o parasse teriam que expulsar ele de casa."
+--- !u!114 &114212951268373188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1647460764759922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 5
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
   m_Text: "Sua fam\xEDlia j\xE1 havia percebido que ele estava agindo diferente, mas
     quando come\xE7ou a sumir dinheiro e a escola entrar em contato tiveram que conversar
     melhor. Nessa conversa descobriram que ele estava bebendo e houve uma grande briga.
     O clima dentro de casa j\xE1 n\xE3o \xE9 o mesmo."
+--- !u!114 &114213304079712374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1136613672930900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Toque na tela para continuar
 --- !u!114 &114214391853430262
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1524,7 +1808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1566,6 +1850,156 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114231403847991064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1429664305277258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.528}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 114130921408540650}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114577013659714618}
+        m_MethodName: FinalAnimacao
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114237322417182052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1370271924540276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Toque na tela para continuar
+--- !u!114 &114245685088443760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1199460489459398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 114436558297014844}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114655404632487986}
+        m_MethodName: FinalAnimacao
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114257124409756228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1266159539851064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dfcf80e175a70747944ee88c967f7f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimConsEcstasy: {fileID: 95587716822872570}
+  esco: {fileID: 0}
 --- !u!114 &114260837488158500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1578,7 +2012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1593,6 +2027,24 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114263764929990616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1329892539201064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4864995d16d75d647b5cb591b77914aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  esco: {fileID: 0}
+  Controle: {fileID: 1329892539201064}
+  cocaina: {fileID: 114788876854107648}
+  aluc: {fileID: 114165561180674234}
+  inala: {fileID: 114029474587412838}
+  ecstasy: {fileID: 114257124409756228}
+  AnimConsMaconha: {fileID: 95759126704738054}
 --- !u!114 &114269435818202248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1605,7 +2057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1632,7 +2084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1651,7 +2103,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.3
   m_Text: "Na escola ele sai durante a aula e usa no banheiro. Durante a aula passa
     a maior parte do tempo euf\xF3rico, com tanta energia ele n\xE3o consegue se concentrar
     nas suas atividades. Com este comportamento os professores suspeitam que ele est\xE1
@@ -1668,7 +2120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1687,7 +2139,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.3
   m_Text: "A rela\xE7\xE3o com os familiares ficou complicada, ele come\xE7ou a voltar
     embora com os olhos vermelhos e sempre que questionado sobre isso agia com agressividade.
     Isso preocupa a todos e n\xE3o sabem como ajudar. "
@@ -1703,7 +2155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1718,6 +2170,39 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114322655777479288
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1617824629423946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Toque na tela para continuar
 --- !u!114 &114329938653898460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1730,7 +2215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1749,7 +2234,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.3
   m_Text: "Os professores notaram que ele estava estranho com movimentos sem coordena\xE7\xE3o
     motora, dificuldade para falar e caminhar e logo perceberam que ele estava sob
     efeito de algum tipo de subst\xE2ncia e pediram para ele se retirar da sala. E
@@ -1766,7 +2251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1793,7 +2278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1820,7 +2305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1847,7 +2332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1874,7 +2359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1928,7 +2413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1947,12 +2432,11 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Como o abuso j\xE1 estava imposs\xEDvel de se esconder e as coisas de casa
-    tinham que ficar escondidas ou trancadas para n\xE3o serem roubadas por ele a
-    fam\xEDlia decidiu que iriam interna-lo em uma cl\xEDnica de reabilita\xE7\xE3o.
-    Mas ele fez um escandalo e amea\xE7ou a todos dizendo que n\xE3o precisava e que
-    parava quando quisesse, que tudo isso era apena uma fase."
+    m_LineSpacing: 1.3
+  m_Text: "Como ele estava morando nas ruas por causa do seu uso, tinha pouco contato
+    com sua familia, mas eles sempre o procuravam para oferecer ajuda, mas ele nunca
+    aceitava. Ele at\xE9 pediu para que sua familia n\xE3o procurasse por ele mais
+    e que deixassem ele em paz. A unica coisa que ele queria era usar em paz.  "
 --- !u!114 &114485636286296648
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2046,7 +2530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2061,6 +2545,39 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114546829832471130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1694215161827524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Toque na tela para continuar
 --- !u!114 &114564280044361824
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2073,7 +2590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2092,11 +2609,27 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Em casa os familiares tamb\xE9m perceberam uma mudan\xE7a grande no comportamento
-    dele. Desde que ele come\xE7ou a sair com seus amigos mudou o seu relacionamento
-    em casa. Seus familiares imaginam que ele possa estar envolvido com drogas, mas
-    at\xE9 agora n\xE3o t\xEAm nenhuma confirma\xE7\xE3o."
+    m_LineSpacing: 1.3
+  m_Text: "Como o abuso j\xE1 estava imposs\xEDvel de esconder. Desde que ele come\xE7ou
+    a sair com seus amigos mudou o seu relacionamento em casa. Seus familiares imaginam
+    que ele possa estar envolvido com drogas, mas at\xE9 agora n\xE3o t\xEAm nenhuma
+    confirma\xE7\xE3o. Como os conflitos estavam frequentes e ele n\xE3o queria parar
+    de usar, eles decidiram que se ele n\xE3o parasse teriam que expulsar ele de casa."
+--- !u!114 &114577013659714618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1429664305277258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e82c5ee4973744da312137f262709e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Controle: {fileID: 1429664305277258}
+  cig: {fileID: 114655404632487986}
+  esco: {fileID: 0}
+  AnimConsAlcool: {fileID: 95352423854849912}
 --- !u!114 &114617922810536352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2109,7 +2642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2128,7 +2661,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.3
   m_Text: "Na escola, a confus\xE3o causada pelo abuso dessa droga come\xE7ou a atrapalhar
     em seu desempenho nas aulas, ele j\xE1 n\xE3o tinha mais no\xE7\xE3o de tempos
     e espa\xE7o e muita dificuldade de concentra\xE7\xE3o. Os professores, percebendo
@@ -2146,7 +2679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2165,11 +2698,24 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.3
+    m_LineSpacing: 1
   m_Text: "O cigarro fez com que ele se achasse superior aos amigos que n\xE3o fumavam,
     como se ele fosse mais velho. Na hora do intervalo ele vai nos fundos da escola
     para fumar escondido. As meninas n\xE3o conseguem ficar perto pois ele fica com
     mau h\xE1lito. E como as vezes ele matava aula para fumar suas notas ca\xEDram."
+--- !u!114 &114655404632487986
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1199460489459398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7994b7aebf6d4145b29e0cc010228a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimConsCigarro: {fileID: 95814654375566866}
+  esco: {fileID: 0}
 --- !u!114 &114661258127310030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2182,79 +2728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
-    m_FontSize: 20
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
-    m_Alignment: 5
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Em casa os familiares tamb\xE9m perceberam uma mudan\xE7a no comportamento
-    dele. Desde que ele come\xE7ou a usar essa droga ele passou a n\xE3o dormir direito
-    a noite e est\xE1 sem vontade de ir para a escola. Est\xE1 muito desorientado
-    e angustiado."
---- !u!114 &114663366517616000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1725033716621540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
-    m_FontSize: 20
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
-    m_Alignment: 5
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Em casa os familiares tamb\xE9m perceberam uma mudan\xE7a no comportamento
-    dele. Desde que ele come\xE7ou a sair quase todas as noites com seus amigos e
-    come\xE7ou a chegar tarde em casa. Alguns objetos de casa est\xE3o sumindo e o
-    dinheiro que fica no cofre da fam\xEDlia come\xE7ou a diminuir."
---- !u!114 &114673209217994684
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1698863685748778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2274,6 +2748,81 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.3
+  m_Text: "Como o abuso j\xE1 estava imposs\xEDvel de esconder. Desde que ele come\xE7ou
+    a usar essa droga ele passou a n\xE3o dormir direito a noite e est\xE1 sem vontade
+    de ir para a escola. Est\xE1 muito desorientado e angustiado. Como os conflitos
+    estavam frequentes e ele n\xE3o queria parar de usar, eles decidiram que se ele
+    n\xE3o parasse teriam que expulsar ele de casa."
+--- !u!114 &114663366517616000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1725033716621540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 5
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.3
+  m_Text: "Como o abuso j\xE1 estava imposs\xEDvel de esconder. Desde que ele come\xE7ou
+    a sair quase todas as noites com seus amigos e come\xE7ou a chegar tarde em casa.
+    Alguns objetos de casa est\xE3o sumindo e o dinheiro que fica no cofre da fam\xEDlia
+    come\xE7ou a diminuir. Como os conflitos estavam frequentes e ele n\xE3o queria
+    parar de usar, eles decidiram que se ele n\xE3o parasse teriam que expulsar ele
+    de casa."
+--- !u!114 &114673209217994684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1698863685748778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 5
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
   m_Text: "Como ele n\xE3o trabalha ele pegava o dinheiro que seus pais davam e tamb\xE9m
     roubava sempre que deixavam dinheiro exposto. Isso faz com que desentendimentos
     aconte\xE7am entre eles diariamente. Seus pais est\xE3o preocupados com esses
@@ -2290,7 +2839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2317,7 +2866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2336,7 +2885,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.3
+    m_LineSpacing: 1
   m_Text: "Devido ao uso frequente de bebidas, ele n\xE3o consegue mais se concentrar
     nas aulas. Come\xE7ou a beber escondido antes das aulas e aumentou o n\xFAmero
     de faltas. Devido a esse comportamento suas notas ca\xEDram e a escola contatou
@@ -2353,7 +2902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2380,7 +2929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2407,7 +2956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2434,7 +2983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2453,7 +3002,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.3
   m_Text: "Al\xE9m dos pulm\xF5es que ser\xE3o prejudicados caso continuar a fumar
     por muito tempo \xE9 poss\xEDvel que sua capacidade de aprendizagem e memoriza\xE7\xE3o
     seja reduzida, podendo at\xE9 desenvolver problemas mentais, como esquizofrenia
@@ -2497,7 +3046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2524,7 +3073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2543,11 +3092,24 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.3
   m_Text: "Devido ao uso frequente de maconha, ele n\xE3o consegue mais se concentrar
     nas aulas. Ele come\xE7ou a matar aula e as vezes durante o intervalo fuma nos
     fundos da escola. Devido a esse comportamento suas notas ca\xEDram e a coordenadora
     da escola teve que contar para seus pais."
+--- !u!114 &114788876854107648
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1193867019899492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5200499813cb95546a082e595752e770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimConsCocaina: {fileID: 95030158472793850}
+  esco: {fileID: 0}
 --- !u!114 &114793561908179644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2560,7 +3122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2579,7 +3141,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.3
   m_Text: "O uso frequente da droga causou danos na parte do c\xE9rebro respons\xE1vel
     pela aprendizagem e da mem\xF3ria, o que dificultou o desempenho dele na escola.
     Ele se sente depressivo e muitas vezes ansioso. Estes sintomas j\xE1 se estendem
@@ -2597,7 +3159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2624,7 +3186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2643,11 +3205,11 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.3
   m_Text: "Ele j\xE1 n\xE3o estava mais indo para a escola a algum tempo, inclusive
-    havia repetido de ano. S\xF3 encontrar maneira e meios de conseguir mais drogas.
-    N\xE3o pensava mais em seu sonho de ser engenheiro e seus professores estavam
-    tristes por n\xE3o ver mais ele na escola."
+    havia repetido de ano. S\xF3 pesava em encontrar maneiras e meios de conseguir
+    mais drogas. N\xE3o pensava mais em seu sonho de ser engenheiro e seus professores
+    estavam tristes por n\xE3o ver mais ele na escola. "
 --- !u!114 &114854250975787498
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2660,7 +3222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2687,7 +3249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2702,6 +3264,39 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114866404871790006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1211255449902400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Toque na tela para continuar
 --- !u!114 &114875405518762510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2714,7 +3309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2733,12 +3328,45 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.3
+    m_LineSpacing: 1
   m_Text: "Al\xE9m do mau h\xE1lito e amarelamento dos seus dentes, sem contar escarro,
     tosse e respira\xE7\xE3o ofegante ele come\xE7ou a sentir dores no estomago no
     in\xEDcio n\xE3o eram t\xE3o fortes, mas como tempo foi piorando e seus pais decidiram
     levar ele no m\xE9dico. Depois de alguns exames ele foi diagnosticado com \xFAlcera
     no estomago."
+--- !u!114 &114896961867988832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1030762605857854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Toque na tela para continuar
 --- !u!114 &114902009988956086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2751,7 +3379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2770,7 +3398,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.3
+    m_LineSpacing: 1
   m_Text: "Al\xE9m do alcoolismo que \xE9 a depend\xEAncia do \xE1lcool, se continuar
     a beber por muitos anos \xE9 poss\xEDvel ter doen\xE7as relacionadas ao f\xEDgado
     (hepatite alco\xF3lica e cirrose), aparelho digestivo (gastrite e pancreatite)
@@ -2787,7 +3415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2841,7 +3469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2856,6 +3484,12 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!222 &222007311872017840
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1030762605857854}
 --- !u!222 &222014631768460148
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -2910,6 +3544,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1274464911386986}
+--- !u!222 &222149414196051432
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1935788024379776}
 --- !u!222 &222208300898647474
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -2982,6 +3622,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1265953772194324}
+--- !u!222 &222430113718024878
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1211255449902400}
 --- !u!222 &222430163427818138
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -3036,6 +3682,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1743300286871904}
+--- !u!222 &222569344281149426
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1136613672930900}
+--- !u!222 &222571682588627072
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1268594339687214}
 --- !u!222 &222589555609374462
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -3054,6 +3712,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368665017039286}
+--- !u!222 &222605705555866992
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1694215161827524}
 --- !u!222 &222628378295212566
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -3066,6 +3730,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1472092873955288}
+--- !u!222 &222640609045310168
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1617824629423946}
 --- !u!222 &222655960027428882
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -3084,6 +3754,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1647460764759922}
+--- !u!222 &222680663412553640
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1370271924540276}
 --- !u!222 &222704441725359864
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -3207,8 +3883,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -4.545}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: -57, y: 7.7329}
+  m_SizeDelta: {x: 116.359985, y: 116}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &224090736293402170
 RectTransform:
@@ -3244,6 +3920,7 @@ RectTransform:
   - {fileID: 224636827072055354}
   - {fileID: 224929068471293340}
   - {fileID: 224190498299400294}
+  - {fileID: 224119931571108004}
   m_Father: {fileID: 224509177053013692}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3252,6 +3929,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224119931571108004
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1268594339687214}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224104883167144566}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.80069, y: -4.800476}
+  m_SizeDelta: {x: 327.3, y: 30}
+  m_Pivot: {x: 0, y: 1}
 --- !u!224 &224122765642552472
 RectTransform:
   m_ObjectHideFlags: 1
@@ -3281,7 +3976,7 @@ RectTransform:
   m_LocalScale: {x: 1.0000014, y: 1.0000014, z: 1.0000014}
   m_Children: []
   m_Father: {fileID: 224978151429143208}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2400183, y: 0.6590106}
   m_AnchorMax: {x: 0.96727026, y: 0.9356138}
@@ -3303,8 +3998,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 53, y: 41.670013}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 69, y: 18.718}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 0}
 --- !u!224 &224134767859267908
 RectTransform:
@@ -3375,9 +4070,27 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -4.545}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: -57, y: 7.7329}
+  m_SizeDelta: {x: 116.359985, y: 116}
   m_Pivot: {x: 1, y: 0.5}
+--- !u!224 &224166897930198468
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1030762605857854}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224772328822524586}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.80069, y: -4.800476}
+  m_SizeDelta: {x: 327.3, y: 30}
+  m_Pivot: {x: 0, y: 1}
 --- !u!224 &224171443829810002
 RectTransform:
   m_ObjectHideFlags: 1
@@ -3425,7 +4138,7 @@ RectTransform:
   m_LocalScale: {x: 1.0000014, y: 1.0000014, z: 1.0000014}
   m_Children: []
   m_Father: {fileID: 224978151429143208}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2400183, y: 0.02651183}
   m_AnchorMax: {x: 0.96727026, y: 0.3446549}
@@ -3448,6 +4161,7 @@ RectTransform:
   - {fileID: 224147521234291376}
   - {fileID: 224898326872635398}
   - {fileID: 224198531025654288}
+  - {fileID: 224324641383049860}
   m_Father: {fileID: 224509177053013692}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3489,8 +4203,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 53, y: -45.113}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 76, y: -32.693}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224215168203658704
 RectTransform:
@@ -3508,6 +4222,7 @@ RectTransform:
   - {fileID: 224301558386705458}
   - {fileID: 224626212003016350}
   - {fileID: 224817924898079416}
+  - {fileID: 224280435349178292}
   m_Father: {fileID: 224509177053013692}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3516,6 +4231,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224280435349178292
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1211255449902400}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224215168203658704}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.80069, y: -4.800476}
+  m_SizeDelta: {x: 327.3, y: 30}
+  m_Pivot: {x: 0, y: 1}
 --- !u!224 &224301558386705458
 RectTransform:
   m_ObjectHideFlags: 1
@@ -3534,6 +4267,42 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224324641383049860
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1370271924540276}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224195251653026562}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.80069, y: -4.800354}
+  m_SizeDelta: {x: 327.3, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!224 &224333868257051196
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1617824629423946}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224507726943763678}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.80069, y: -4.800354}
+  m_SizeDelta: {x: 327.3, y: 30}
+  m_Pivot: {x: 0, y: 1}
 --- !u!224 &224336620057883682
 RectTransform:
   m_ObjectHideFlags: 1
@@ -3567,8 +4336,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.027274802, y: 0.3446549}
   m_AnchorMax: {x: 0.78180164, y: 0.6401951}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 17, y: -3.5786}
+  m_SizeDelta: {x: 35, y: 34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224342755601843142
 RectTransform:
@@ -3604,6 +4373,7 @@ RectTransform:
   - {fileID: 224342755601843142}
   - {fileID: 224130896527640016}
   - {fileID: 224090736293402170}
+  - {fileID: 224531315852924834}
   m_Father: {fileID: 224509177053013692}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3627,8 +4397,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 53, y: -45.113}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 76, y: -32.693}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224437300350871222
 RectTransform:
@@ -3645,8 +4415,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -4.545}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: -57, y: 7.7329}
+  m_SizeDelta: {x: 116.359985, y: 116}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &224464685277180454
 RectTransform:
@@ -3663,8 +4433,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 53, y: 41.670013}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 69, y: 18.718}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 0}
 --- !u!224 &224473318802098598
 RectTransform:
@@ -3681,8 +4451,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2400183, y: 0.6590106}
   m_AnchorMax: {x: 0.96727026, y: 0.9356138}
-  m_AnchoredPosition: {x: -0.000030517578, y: 0}
-  m_SizeDelta: {x: 0.000030517578, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -15, y: 0}
+  m_SizeDelta: {x: 29, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224481322140838312
 RectTransform:
@@ -3692,15 +4462,15 @@ RectTransform:
   m_GameObject: {fileID: 1429076870126244}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0000014, y: 1.0000014, z: 1.0000014}
   m_Children: []
   m_Father: {fileID: 224978151429143208}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 53, y: 41.670013}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 69, y: 18.718}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 0}
 --- !u!224 &224482002713910054
 RectTransform:
@@ -3717,8 +4487,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -4.545}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: -57, y: 7.7329}
+  m_SizeDelta: {x: 116.359985, y: 116}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &224487508199392582
 RectTransform:
@@ -3767,7 +4537,7 @@ RectTransform:
   m_LocalScale: {x: 1.0000014, y: 1.0000014, z: 1.0000014}
   m_Children: []
   m_Father: {fileID: 224978151429143208}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.027274802, y: 0.3446549}
   m_AnchorMax: {x: 0.78180164, y: 0.6401951}
@@ -3790,6 +4560,7 @@ RectTransform:
   - {fileID: 224487508199392582}
   - {fileID: 224748142303123810}
   - {fileID: 224669986432447908}
+  - {fileID: 224333868257051196}
   m_Father: {fileID: 224509177053013692}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3813,9 +4584,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2400183, y: 0.02651183}
   m_AnchorMax: {x: 0.96727026, y: 0.3446549}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.000061035156, y: -0.000015258789}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -14.75, y: 0.000061035156}
+  m_SizeDelta: {x: 29.5, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5769006}
 --- !u!224 &224509177053013692
 RectTransform:
   m_ObjectHideFlags: 1
@@ -3842,6 +4613,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224531315852924834
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1136613672930900}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224370814355502448}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.80069, y: -4.800476}
+  m_SizeDelta: {x: 327.3, y: 30}
+  m_Pivot: {x: 0, y: 1}
 --- !u!224 &224566305621798256
 RectTransform:
   m_ObjectHideFlags: 1
@@ -3857,8 +4646,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -4.545}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: -57, y: 7.7329}
+  m_SizeDelta: {x: 116.359985, y: 116}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &224626212003016350
 RectTransform:
@@ -3875,8 +4664,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 53, y: 41.670013}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 69, y: 18.718}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 0}
 --- !u!224 &224631228109642262
 RectTransform:
@@ -3893,8 +4682,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 53, y: -45.113}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 76, y: -32.693}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224636827072055354
 RectTransform:
@@ -3948,6 +4737,7 @@ RectTransform:
   - {fileID: 224834399288680334}
   - {fileID: 224464685277180454}
   - {fileID: 224171443829810002}
+  - {fileID: 224903141331978894}
   m_Father: {fileID: 224509177053013692}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3964,15 +4754,15 @@ RectTransform:
   m_GameObject: {fileID: 1312630267773568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0000014, y: 1.0000014, z: 1.0000014}
   m_Children: []
   m_Father: {fileID: 224978151429143208}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -4.545}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: -57, y: 7.7329}
+  m_SizeDelta: {x: 116.359985, y: 116}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &224748142303123810
 RectTransform:
@@ -3989,8 +4779,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 53, y: 41.670013}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 69, y: 18.718}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 0}
 --- !u!224 &224772328822524586
 RectTransform:
@@ -4008,6 +4798,7 @@ RectTransform:
   - {fileID: 224342149820966204}
   - {fileID: 224903352069684338}
   - {fileID: 224507814921815192}
+  - {fileID: 224166897930198468}
   m_Father: {fileID: 224509177053013692}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4022,6 +4813,24 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1373900569212768}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224978151429143208}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 76, y: -32.693}
+  m_SizeDelta: {x: 116.36, y: 116}
+  m_Pivot: {x: 0, y: 1}
+--- !u!224 &224790311982693866
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1935788024379776}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -4031,8 +4840,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 53, y: -45.113}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 16.799988, y: -4.7999268}
+  m_SizeDelta: {x: 327.3, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224809356450400360
 RectTransform:
@@ -4049,8 +4858,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 53, y: -45.113}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 76, y: -32.693}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224817924898079416
 RectTransform:
@@ -4085,8 +4894,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 53, y: -45.113}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 76, y: -32.693}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224834399288680334
 RectTransform:
@@ -4121,8 +4930,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -4.545}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: -57, y: 7.7329}
+  m_SizeDelta: {x: 116.359985, y: 116}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &224869525090624930
 RectTransform:
@@ -4139,8 +4948,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -4.545}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: -57, y: 7.7329}
+  m_SizeDelta: {x: 116.359985, y: 116}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &224878254312909390
 RectTransform:
@@ -4157,8 +4966,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 53, y: -45.113}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 76, y: -32.693}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224895432922022770
 RectTransform:
@@ -4193,9 +5002,27 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 53, y: 41.670013}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 69, y: 18.718}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 0}
+--- !u!224 &224903141331978894
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1694215161827524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224701494994835084}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.799988, y: -4.799988}
+  m_SizeDelta: {x: 327.3, y: 30}
+  m_Pivot: {x: 0, y: 1}
 --- !u!224 &224903352069684338
 RectTransform:
   m_ObjectHideFlags: 1
@@ -4211,8 +5038,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 53, y: 41.670013}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 69, y: 18.718}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 0}
 --- !u!224 &224929068471293340
 RectTransform:
@@ -4229,8 +5056,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 53, y: 41.670013}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 69, y: 18.718}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 0}
 --- !u!224 &224965072052369442
 RectTransform:
@@ -4247,8 +5074,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 53, y: -45.113}
-  m_SizeDelta: {x: 147, y: 147}
+  m_AnchoredPosition: {x: 76, y: -32.693}
+  m_SizeDelta: {x: 116.36, y: 116}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224978151429143208
 RectTransform:
@@ -4260,6 +5087,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 224790311982693866}
   - {fileID: 224772862713049876}
   - {fileID: 224127683600379262}
   - {fileID: 224729113957491572}

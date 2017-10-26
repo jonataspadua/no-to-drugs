@@ -654,7 +654,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 21309223968200232, guid: 5ae1b47a3f2eb2d4389a12b22ab3baa8, type: 2}
+  - {fileID: 21810639591128630, guid: fe953dbed1fb3724788cd62fe50d6e0b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1045,7 +1045,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1598316388625574}
-  m_Mesh: {fileID: 43665959554963266, guid: 5ae1b47a3f2eb2d4389a12b22ab3baa8, type: 2}
+  m_Mesh: {fileID: 43282413144734918, guid: fe953dbed1fb3724788cd62fe50d6e0b, type: 2}
 --- !u!33 &33130193865487342
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -1151,11 +1151,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119f8349def0f014a88fe682daf0d14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animPersonagem: {fileID: 95020639601806294}
-  olhoDNormal: {fileID: 1829082846747616}
-  olhoDVermelho: {fileID: 1043476267949720}
-  olhoENormal: {fileID: 1562121267861624}
-  olhoEVermelho: {fileID: 1695991892779434}
+  animPersonagem: {fileID: 0}
+  olhoDNormal: {fileID: 0}
+  olhoDVermelho: {fileID: 0}
+  olhoENormal: {fileID: 0}
+  olhoEVermelho: {fileID: 0}
 --- !u!114 &114241420524119790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1331,7 +1331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ec17ceaa560940e9bf0dbeafc3a1971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SpriteMesh: {fileID: 11400000, guid: 5ae1b47a3f2eb2d4389a12b22ab3baa8, type: 2}
+  m_SpriteMesh: {fileID: 11400000, guid: fe953dbed1fb3724788cd62fe50d6e0b, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}

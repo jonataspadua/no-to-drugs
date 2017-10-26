@@ -27,6 +27,10 @@ public class DialogManager : MonoBehaviour
 	//variaveis de controle do jogo
 	public int Fase;
 	public int Estilo;
+	[HideInInspector] public int Rock=0;
+	[HideInInspector] public int Funk=0;
+	[HideInInspector] public int Reggae=0;
+	[HideInInspector] public int Eletronica=0;
 	[HideInInspector] public int Alcool=0;
 	[HideInInspector] public int Cigarro=0;
 	[HideInInspector] public int Maconha=0;
@@ -247,6 +251,39 @@ public class DialogManager : MonoBehaviour
 		}
 	}
 
+	public void EscolherEstilo(int est){
+		switch(est){
+		case 1:
+			{
+				this.Funk = 1;
+				this.Estilo = 1;
+				break;
+			}
+		case 2:
+			{
+				this.Rock = 1;
+				this.Estilo = 2;
+				break;
+			}
+		case 3:
+			{
+				this.Reggae = 1;
+				this.Estilo = 3;
+				break;
+			}
+		case 4:
+			{
+				this.Eletronica = 1;
+				this.Estilo = 4;
+				break;
+			}
+		default:
+			{
+				break;
+			}
+		}
+	}
+
 	public void Salvar(){
 		BinaryFormatter bf = new  BinaryFormatter();
 		FileStream file = File.Create(Application.persistentDataPath+"/playerInfo.dat");
@@ -255,6 +292,10 @@ public class DialogManager : MonoBehaviour
 		ConfigJogo data = new ConfigJogo();
 		data.Fase 			= this.Fase;
 		data.Estilo 		= this.Estilo;
+		data.Rock 			= this.Rock;
+		data.Funk 			= this.Funk;
+		data.Reggae 		= this.Reggae;
+		data.Eletronica 	= this.Eletronica;
 		data.Alcool 		= this.Alcool;
 		data.Cigarro 		= this.Cigarro;
 		data.Maconha 		= this.Maconha;
@@ -279,6 +320,10 @@ public class DialogManager : MonoBehaviour
 
 			this.Fase 			= data.Fase;
 			this.Estilo 		= data.Estilo;
+			this.Rock 			= data.Rock;
+			this.Funk 			= data.Funk;
+			this.Reggae 		= data.Reggae;
+			this.Eletronica 	= data.Eletronica;
 			this.Alcool 		= data.Alcool;
 			this.Cigarro 		= data.Cigarro;
 			this.Maconha 		= data.Maconha;
@@ -296,6 +341,10 @@ class ConfigJogo
 {
 	public int Fase; //1 - drogas iniciais: alcool e cigarro / 2 - drogas intermediárias: maconha, cocaina, ecstasy, inalantes e alucinógenos / 3 - Droga final: crack
 	public int Estilo; //estilos divididos em: 1 - Funk / 2 - Rock / 3 - Reggae / 4 - Eletronica
+	public int Rock;
+	public int Funk;
+	public int Reggae;
+	public int Eletronica;
 	public int Alcool;
 	public int Cigarro;
 	public int Maconha;
