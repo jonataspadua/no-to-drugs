@@ -1,3 +1,4 @@
+﻿[cena1]
 [iniciotitulo]
 Dentro da balada
 
@@ -8,7 +9,6 @@ Cleison: Nossa! Vocês estão diferentes hoje, não tinha visto vocês tão louc
 Borracha: Eu falei pra você que era da boa cara, mas você não quis. Vamos fumar mais um pouco lá fora Pafuncio.
 Pafuncio: Bora lá.
 Cleison: Vou acompanhar vocês.
-
 [iniciotitulo]
 Na porta da balada parte 2 
 
@@ -21,3 +21,4 @@ Cleison: Acho que estou de boa, e  você Pafuncio topa?
 Pafuncio: Topo por que não? Ai Cleison! Vamos usar essa, a outra você já não usou...
 Cleison Pensa: Se eu ficar recusando o que eles vão pensar de mim? E (droga) é muito forte.
 Borracha: Cleison usa com a gente...
+[cena2]

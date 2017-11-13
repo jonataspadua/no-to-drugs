@@ -16,6 +16,8 @@ public class ControleConsCigarro : MonoBehaviour {
 	public void FinalAnimacao(){
 		if (AnimConsCigarro.GetBool ("final")) {
 			esco.CarregaFase2 ();
+			AnimConsCigarro.SetBool ("start", false);
+			AnimConsCigarro.SetBool ("aceita", false);
 			gameObject.SetActive (false);
 		} else {
 			AnimConsCigarro.SetBool ("final", true);

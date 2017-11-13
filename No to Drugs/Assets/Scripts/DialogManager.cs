@@ -15,6 +15,9 @@ public class DialogManager : MonoBehaviour
 	public GameObject dialogBox;
 	public GameObject choiceBox;
 	public GameObject luzes;
+	private GameObject luz;
+	public GameObject ControleEstilo;
+	public ControleTrocaFases CtrlTrocaFase;
 	[HideInInspector] public bool olhoVermelhoP;
 	public GameObject[] npc;
 
@@ -62,12 +65,15 @@ public class DialogManager : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-//		player = FindObjectOfType<PlayerController> ();
+		//		player = FindObjectOfType<PlayerController> ();
 
 		//Vai carregar o texto conforme a cena informada no campo codCena
 		choiceBox.SetActive(false);
 		olhoVermelhoP = false;
 		RenderSettings.ambientLight = Color.white;
+		CtrlTrocaFase.IniciaAnimacao(1);
+		EscolherEstiloMusical();
+
 		if (arqDialogo != null) {
 			linhasDialogo = (arqDialogo.text.Split ('\n'));
 		}
@@ -81,6 +87,10 @@ public class DialogManager : MonoBehaviour
 		} else {
 			DisableDialogBox ();
 		}
+	}
+
+	public void EscolherEstiloMusical(){
+		ControleEstilo.SetActive (true);
 	}
 
 	void Update ()
@@ -144,7 +154,6 @@ public class DialogManager : MonoBehaviour
 			yield break;
 		}
 
-
 		if (lineOfText.Contains ("[entranpc3]")) {
 			npc [0].SetActive (false);
 			npc [1].SetActive (false);
@@ -161,7 +170,57 @@ public class DialogManager : MonoBehaviour
 			trocaSprite.index = 1;
 			trocaSprite.Trocar();
 			RenderSettings.ambientLight = Color.black;
-			luzes.SetActive (true);
+			if (luz==null)
+				luz = Instantiate (luzes);
+			luz.SetActive (true);
+
+			isTyping = false;
+			cancelTyping = false;
+
+			ProximaLinha();
+			yield break;
+		}
+
+		if (lineOfText.Contains ("[cena2]")) {
+			trocaSprite.index = 2;
+			trocaSprite.Trocar();
+			RenderSettings.ambientLight = Color.black;
+			if (luz != null) {
+				luz.SetActive (false);
+				Destroy (luz);
+			}
+
+			isTyping = false;
+			cancelTyping = false;
+
+			ProximaLinha();
+			yield break;
+		}
+
+		if (lineOfText.Contains ("[cena0]")) {
+			trocaSprite.index = 0;
+			trocaSprite.Trocar();
+			RenderSettings.ambientLight = Color.white;
+			if (luz != null) {
+				luz.SetActive (false);
+				Destroy (luz);
+			}
+
+			isTyping = false;
+			cancelTyping = false;
+
+			ProximaLinha();
+			yield break;
+		}
+
+		if (lineOfText.Contains ("[cena3]")) {
+			trocaSprite.index = 0;
+			trocaSprite.Trocar();
+			RenderSettings.ambientLight = Color.black;
+			if (luz != null) {
+				luz.SetActive (false);
+				Destroy (luz);
+			}
 
 			isTyping = false;
 			cancelTyping = false;
@@ -282,6 +341,7 @@ public class DialogManager : MonoBehaviour
 				break;
 			}
 		}
+		ControleEstilo.SetActive (false);
 	}
 
 	public void Salvar(){

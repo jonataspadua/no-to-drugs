@@ -1,0 +1,23 @@
+﻿[cena1]
+[iniciotitulo]
+Dentro da balada
+
+[entranpc3]
+Cleison: E ai moça, vamos nos conhecer? Chega ai.
+Garota desconhecida: Olá, vamos sim.
+Todos dançando...
+Cleison: Nossa, que sensação é essa cara, nunca senti nada assim!
+[entranpc1]
+Zé: Ai Gustavo, ei Cleison vamos ali fora fumar mais um pouco.
+Cleison: Opa, bora lá.
+Gustavo: Demorooooooooou, isso aí.
+[iniciotitulo]
+Na porta da balada parte 2 
+
+Zé: Cola aí, vamos comprar com ele alí.
+Traficante: Aí se liga vocês vão usar esse negócio fraco ai? Tem uma melhor, usem essa parada aqui...
+Cleison: E o que é isso?
+Traficante: É (droga) e essa é da melhor qualidade, você usa uma só e não vai mais precisar usar a noite toda, só custa 10 reais.
+Zé: Mas é boa mesmo? Por mim, estou dentro.
+Gustavo: Eu também e você Cleison topa?
+[cena2]

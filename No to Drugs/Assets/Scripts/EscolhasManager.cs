@@ -14,6 +14,8 @@ public class EscolhasManager : MonoBehaviour
 
 	public GameObject dialogo;
 	public GameObject controlAlcool;
+	private GameObject ctrlAl;
+
 
 	public Animator AnimAlcool;
 	public AnimationClip animClipAceitaAlcool;
@@ -22,12 +24,14 @@ public class EscolhasManager : MonoBehaviour
 	public ControleConsAlcool al;
 
 	public GameObject controlCigarro;
+	private GameObject ctrlCig;
 
 	public Animator AnimCigarro;
 	public AnimationClip animAceitaClipCigarro;
 	public AnimationClip animRecusaClipCigarro;
 
 	public GameObject controlMaconha;
+	private GameObject ctrlMac;
 
 	public Animator AnimMaconha;
 	public AnimationClip animAceitaClipMaconha;
@@ -35,18 +39,21 @@ public class EscolhasManager : MonoBehaviour
 	public ControleConsMaconha mac;
 
 	public GameObject controlAlucinogeno;
+	private GameObject ctrlAluc;
 
 	public Animator AnimAlucinogeno;
 	public AnimationClip animAceitaClipAlucinogeno;
 	public AnimationClip animRecusaClipAlucinogeno;
 
 	public GameObject controlCocaina;
+	private GameObject ctrlCoc;
 
 	public Animator AnimCocaina;
 	public AnimationClip animAceitaClipCocaina;
 	public AnimationClip animRecusaClipCocaina;
 
 	public GameObject controlCrack;
+	private GameObject ctrlCra;
 
 	public Animator AnimCrack;
 	public AnimationClip animAceitaClipCrack;
@@ -54,12 +61,14 @@ public class EscolhasManager : MonoBehaviour
 	public ControleConsCrack crack;
 
 	public GameObject controlEcstasy;
+	private GameObject ctrlEcs;
 
 	public Animator AnimEcstasy;
 	public AnimationClip animAceitaClipEcstasy;
 	public AnimationClip animRecusaClipEcstasy;
 
 	public GameObject controlInalante;
+	private GameObject ctrlIna;
 
 	public Animator AnimInalante;
 	public AnimationClip animAceitaClipInalante;
@@ -68,6 +77,14 @@ public class EscolhasManager : MonoBehaviour
 	void Awake()
 	{
 		escolhasManager = this;
+		/*ctrlAl 		= controlAlcool;
+		ctrlAluc 	= controlAlucinogeno;
+		ctrlCig = controlCigarro;
+		ctrlCoc = controlCocaina;
+		ctrlCra = controlCrack;
+		ctrlEcs = controlEcstasy;
+		ctrlIna = controlInalante;
+		ctrlMac = controlMaconha;*/
 	}
 
 	void Start ()
@@ -90,9 +107,11 @@ public class EscolhasManager : MonoBehaviour
 			dialogManager.olhoVermelhoP = true; //muda os olhos para vermelho 
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaMaconha (true);//habilita o controle da maconha e desativa o dialogo
+			AnimMaconha = ctrlMac.GetComponentInChildren<Animator> ();
+			AnimMaconha.Play("AceitaMaconha");
 			//Invoke ("CarregaConsMaconha", animAceitaClipMaconha.length);//Prepara a consequencia para aparecer após a animação da maconha
-			AnimMaconha.SetBool ("aceita", true);//define que ele aceitou maconha na animação
-			AnimMaconha.SetBool ("start", true);//define que vai começar a animação
+			//AnimMaconha.SetBool ("aceita", true);//define que ele aceitou maconha na animação
+			//AnimMaconha.SetBool ("start", true);//define que vai começar a animação
 			switch (tipoDialogo)
 			{
 			case "A":
@@ -120,8 +139,10 @@ public class EscolhasManager : MonoBehaviour
 			dialogManager.Maconha = 0;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaMaconha (true);//habilita o controle da maconha e desativa o dialogo
-			AnimMaconha.SetBool ("aceita", false);//define que ele não aceitou maconha na animação
-			AnimMaconha.SetBool ("start", true);//define que vai começar a animação
+			AnimMaconha = ctrlMac.GetComponentInChildren<Animator> ();
+			AnimMaconha.Play("RecusaMaconha");
+			//AnimMaconha.SetBool ("aceita", false);//define que ele não aceitou maconha na animação
+			//AnimMaconha.SetBool ("start", true);//define que vai começar a animação
 			switch (tipoDialogo)
 			{
 			case "A":
@@ -154,16 +175,20 @@ public class EscolhasManager : MonoBehaviour
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaInalante (true);//habilita o controle dos inalantes
 			Invoke ("CarregaConsMaconha", animAceitaClipInalante.length);//Prepara a consequencia para aparecer após a animação dos inalantes
-			AnimInalante.SetBool ("aceita", true);//define que ele aceitou inalantes na animação
-			AnimInalante.SetBool ("start", true);//define que vai começar a animação
+			AnimInalante = ctrlIna.GetComponentInChildren<Animator> ();
+			AnimInalante.Play("AceitaInalante");
+			//AnimInalante.SetBool ("aceita", true);//define que ele aceitou inalantes na animação
+			//AnimInalante.SetBool ("start", true);//define que vai começar a animação
 			//Invoke ("CarregaFase3", animClipConsInalante.length + animAceitaClipInalante.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 		} else {
 			dialogManager.Inalantes = 0;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaInalante (true);//habilita o controle dos inalantes e desativa o dialogo
 			Invoke ("CarregaConsMaconha", animRecusaClipInalante.length);//Prepara a consequencia para aparecer após a animação dos inalantes
-			AnimInalante.SetBool ("aceita", false);//define que ele nao aceitou os inalantes na animação
-			AnimInalante.SetBool ("start", true);//define que vai começar a animação
+			AnimInalante = ctrlIna.GetComponentInChildren<Animator> ();
+			AnimInalante.Play("RecusaInalante");
+			//AnimInalante.SetBool ("aceita", false);//define que ele nao aceitou os inalantes na animação
+			//AnimInalante.SetBool ("start", true);//define que vai começar a animação
 		}
 	}
 
@@ -173,16 +198,20 @@ public class EscolhasManager : MonoBehaviour
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaCocaina (true);//habilita o controle do cigarro
 			Invoke ("CarregaConsMaconha", animAceitaClipCocaina.length);//Prepara a consequencia para aparecer após a animação do cigarro
-			AnimCocaina.SetBool ("aceita", true);//define que ele aceitou alcool na animação
-			AnimCocaina.SetBool ("start", true);//define que vai começar a animação
+			AnimCocaina = ctrlCoc.GetComponentInChildren<Animator> ();
+			AnimCocaina.Play("AceitaCocaina");
+			//AnimCocaina.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+			//AnimCocaina.SetBool ("start", true);//define que vai começar a animação
 			//Invoke ("CarregaFase3", animClipConsCocaina.length + animAceitaClipCocaina.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 		} else {
 			dialogManager.Cocaina = 0;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaCocaina (true);//habilita o controle do cigarro e desativa o dialogo
 			Invoke ("CarregaConsMaconha", animRecusaClipCocaina.length);//Prepara a função que carrega a próxima fase após a animação rodar
-			AnimCocaina.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
-			AnimCocaina.SetBool ("start", true);//define que vai começar a animação
+			AnimCocaina = ctrlCoc.GetComponentInChildren<Animator> ();
+			AnimCocaina.Play("RecusaCocaina");
+			//AnimCocaina.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+			//AnimCocaina.SetBool ("start", true);//define que vai começar a animação
 		}
 	}
 
@@ -192,16 +221,20 @@ public class EscolhasManager : MonoBehaviour
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaAlucinogeno (true);//habilita o controle do cigarro
 			Invoke ("CarregaConsMaconha", animAceitaClipAlucinogeno.length);//Prepara a consequencia para aparecer após a animação do cigarro
-			AnimAlucinogeno.SetBool ("aceita", true);//define que ele aceitou alcool na animação
-			AnimAlucinogeno.SetBool ("start", true);//define que vai começar a animação
+			AnimAlucinogeno = ctrlAluc.GetComponentInChildren<Animator> ();
+			AnimAlucinogeno.Play("AceitaAlucinogeno");
+			//AnimAlucinogeno.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+			//AnimAlucinogeno.SetBool ("start", true);//define que vai começar a animação
 			//Invoke ("CarregaFase3", animClipConsAlucinogeno.length + animAceitaClipAlucinogeno.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 		} else {
 			dialogManager.Alucinogeno = 0;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaAlucinogeno (true);//habilita o controle do cigarro e desativa o dialogo
 			Invoke ("CarregaConsMaconha", animRecusaClipAlucinogeno.length);//Prepara a função que carrega a próxima fase após a animação rodar
-			AnimAlucinogeno.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
-			AnimAlucinogeno.SetBool ("start", true);//define que vai começar a animação
+			AnimAlucinogeno = ctrlAluc.GetComponentInChildren<Animator> ();
+			AnimAlucinogeno.Play("RecusaAlucinogeno");
+			//AnimAlucinogeno.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+			//AnimAlucinogeno.SetBool ("start", true);//define que vai começar a animação
 		}
 	}
 
@@ -211,16 +244,20 @@ public class EscolhasManager : MonoBehaviour
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaEcstasy (true);//habilita o controle do cigarro
 			Invoke ("CarregaConsMaconha", animAceitaClipEcstasy.length);//Prepara a consequencia para aparecer após a animação do cigarro
-			AnimEcstasy.SetBool ("aceita", true);//define que ele aceitou alcool na animação
-			AnimEcstasy.SetBool ("start", true);//define que vai começar a animação
+			AnimEcstasy = ctrlEcs.GetComponentInChildren<Animator> ();
+			AnimEcstasy.Play("AceitaEcstasy");
+			//AnimEcstasy.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+			//AnimEcstasy.SetBool ("start", true);//define que vai começar a animação
 			//Invoke ("CarregaFase3", animClipConsEcstasy.length + animAceitaClipEcstasy.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 		} else {
 			dialogManager.Ecstasy = 1;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaEcstasy (true);//habilita o controle do cigarro e desativa o dialogo
 			Invoke ("CarregaConsMaconha", animRecusaClipEcstasy.length);//Prepara a função que carrega a próxima fase após a animação rodar
-			AnimEcstasy.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
-			AnimEcstasy.SetBool ("start", true);//define que vai começar a animação
+			AnimEcstasy = ctrlEcs.GetComponentInChildren<Animator> ();
+			AnimEcstasy.Play("RecusaEcstasy");
+			//AnimEcstasy.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+			//AnimEcstasy.SetBool ("start", true);//define que vai começar a animação
 		}
 	}
 
@@ -230,16 +267,20 @@ public class EscolhasManager : MonoBehaviour
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaCrack (true);//habilita o controle do cigarro
 			Invoke ("CarregaConsCrack", animAceitaClipCrack.length);//Prepara a consequencia para aparecer após a animação do cigarro
-			AnimCrack.SetBool ("aceita", true);//define que ele aceitou alcool na animação
-			AnimCrack.SetBool ("start", true);//define que vai começar a animação
+			AnimCrack = ctrlCra.GetComponentInChildren<Animator> ();
+			AnimCrack.Play("AceitaCrack");
+			//AnimCrack.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+			//AnimCrack.SetBool ("start", true);//define que vai começar a animação
 			//Invoke ("CarregaFase3", animClipConsCrack.length + animAceitaClipCrack.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 		} else {
 			dialogManager.Crack = 1;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaCrack (true);//habilita o controle do cigarro e desativa o dialogo
 			Invoke ("CarregaConsCrack", animRecusaClipCrack.length);//Prepara a função que carrega a próxima fase após a animação rodar
-			AnimCrack.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
-			AnimCrack.SetBool ("start", true);//define que vai começar a animação
+			AnimCrack = ctrlCra.GetComponentInChildren<Animator> ();
+			AnimCrack.Play("RecusaCrack");
+			//AnimCrack.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+			//AnimCrack.SetBool ("start", true);//define que vai começar a animação
 		}
 	}
 
@@ -257,16 +298,20 @@ public class EscolhasManager : MonoBehaviour
 							dialogManager.olhoVermelhoP = true; //muda os olhos para vermelho
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaAlcool (true);//habilita o controle do alcool e desativa o dialogo
-							AnimAlcool.SetBool ("aceita", true);//define que ele aceitou alcool na animação
-							AnimAlcool.SetBool ("start", true);//define que vai começar a animação
+							AnimAlcool = ctrlAl.GetComponentInChildren<Animator> ();
+							AnimAlcool.Play ("AceitaAlcool");
+							//AnimAlcool.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+							//AnimAlcool.SetBool ("start", true);//define que vai começar a animação
 							Invoke ("CarregaDialogoB", animClipAceitaAlcool.length);//Prepara a função que carrega o dialogo B após as duas animações ocorrem
 						} else {
 							dialogManager.Alcool = 0;
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaAlcool (true);//habilita o controle do alcool e desativa o dialogo
 							Invoke ("CarregaDialogoC", animClipRecusaAlcool.length);//Prepara a função que carrega o dialogo C após a animação rodar
-							AnimAlcool.SetBool ("aceita", false);//define que ele nao aceitou o alcool na animação
-							AnimAlcool.SetBool ("start", true);//define que vai começar a animação
+							AnimAlcool = ctrlAl.GetComponentInChildren<Animator> ();
+							AnimAlcool.Play ("RecusaAlcool");
+							//AnimAlcool.SetBool ("aceita", false);//define que ele nao aceitou o alcool na animação
+							//AnimAlcool.SetBool ("start", true);//define que vai começar a animação
 						}
 						break;
 					}
@@ -277,17 +322,21 @@ public class EscolhasManager : MonoBehaviour
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaCigarro (true);//habilita o controle do cigarro
 							Invoke ("CarregaConsAlcool", animAceitaClipCigarro.length);//Prepara a consequencia para aparecer após a animação do cigarro
+							AnimCigarro = ctrlCig.GetComponentInChildren<Animator> ();
+							AnimCigarro.Play("AceitaCigarro");
 							//Invoke ("CarregaConsCigarro", animClipConsAlcool.length + animAceitaClipCigarro.length);//Prepara a consequencia para aparecer após a animação da consequencia do alcool
-							AnimCigarro.SetBool ("aceita", true);//define que ele aceitou alcool na animação
-							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
+							//AnimCigarro.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+							//AnimCigarro.SetBool ("start", true);//define que vai começar a animação
 							//Invoke ("CarregaFase2", animClipConsCigarro.length + animAceitaClipCigarro.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 						} else {
 							dialogManager.Cigarro = 0;
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaCigarro (true);//habilita o controle do cigarro e desativa o dialogo
 							Invoke ("CarregaConsAlcool", animRecusaClipCigarro.length);//Prepara a consequencia para aparecer após a animação do cigarro
-							AnimCigarro.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
-							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
+							AnimCigarro = ctrlCig.GetComponentInChildren<Animator> ();
+							AnimCigarro.Play("RecusaCigarro");
+							//AnimCigarro.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+							//AnimCigarro.SetBool ("start", true);//define que vai começar a animação
 						}
 						break;
 					}
@@ -298,17 +347,21 @@ public class EscolhasManager : MonoBehaviour
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaCigarro (true);//habilita o controle do cigarro
 							Invoke ("CarregaConsAlcool", animAceitaClipCigarro.length);//Prepara a consequencia para aparecer após a animação do cigarro
+							AnimCigarro = ctrlCig.GetComponentInChildren<Animator> ();
+							AnimCigarro.Play("AceitaCigarro");
 							//Invoke ("CarregaConsCigarro", animAceitaClipCigarro.length);//Prepara a consequencia para aparecer após a animação do cigarro
-							AnimCigarro.SetBool ("aceita", true);//define que ele aceitou alcool na animação
-							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
+							//AnimCigarro.SetBool ("aceita", true);//define que ele aceitou alcool na animação
+							//AnimCigarro.SetBool ("start", true);//define que vai começar a animação
 							//Invoke ("CarregaFase2", animClipConsCigarro.length + animAceitaClipCigarro.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 						} else {
 							dialogManager.Cigarro = 0;
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaCigarro (true);//habilita o controle do cigarro e desativa o dialogo
 							Invoke ("CarregaConsAlcool", animRecusaClipCigarro.length);//Prepara a função que carrega a próxima fase após a animação rodar
-							AnimCigarro.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
-							AnimCigarro.SetBool ("start", true);//define que vai começar a animação
+							AnimCigarro = ctrlCig.GetComponentInChildren<Animator> ();
+							AnimCigarro.Play("RecusaCigarro");
+							//AnimCigarro.SetBool ("aceita", false);//define que ele nao aceitou o cigarro na animação
+							//AnimCigarro.SetBool ("start", true);//define que vai começar a animação
 						}
 						break;
 					}
@@ -607,6 +660,8 @@ public class EscolhasManager : MonoBehaviour
 
 	IEnumerator CarregaDialogo3 (char letra, int parte, float delayTime)
 	{
+		dialogManager.olhoVermelhoP = false; //muda os olhos para vermelho
+		dialogManager.CtrlTrocaFase.IniciaAnimacao(3);
 		yield return new WaitForSeconds(delayTime);//aguarda o tempo da animação anterior para começar essa
 		DesabilitaControlAnimacoes (); 
 		dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_3"+letra + parte)); //recarrega o script com o dialogo de aceitar
@@ -615,6 +670,8 @@ public class EscolhasManager : MonoBehaviour
 
 	IEnumerator CarregaDialogo2 (char letra, int parte, float delayTime)
 	{
+		dialogManager.olhoVermelhoP = false; //muda os olhos para vermelho
+		dialogManager.CtrlTrocaFase.IniciaAnimacao(2);
 		yield return new WaitForSeconds(delayTime);//aguarda o tempo da animação anterior para começar essa
 		DesabilitaControlAnimacoes (); 
 		dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_2"+letra + parte)); //recarrega o script com o dialogo de aceitar
@@ -623,7 +680,7 @@ public class EscolhasManager : MonoBehaviour
 
 	public void CarregaFase2 ()
 	{
-		Debug.Log ("CarregaFase2");
+		
 		if ((dialogManager.Alcool == 1) && (dialogManager.Cigarro == 1)) {//se as duas drogas foram aceitas, carrega a fase 2A
 			dialogManager.Fase = 2;
 			StartCoroutine(CarregaDialogo2 ('A',1,0f));
@@ -705,11 +762,14 @@ public class EscolhasManager : MonoBehaviour
 		
 		if (aceita) {
 			dialogo.SetActive (false);
-			controlAlcool.SetActive (true);
-
+			ctrlAl = Instantiate (controlAlcool,new Vector3(0,0,-10),Quaternion.identity);
+			ctrlAl.SetActive (true);
 		} else {
 			dialogo.SetActive (true);
-			controlAlcool.SetActive (false);
+			if (ctrlAl != null) {
+				ctrlAl.SetActive (false);
+				Destroy (ctrlAl);
+			}
 		}
 	}
 
@@ -717,10 +777,14 @@ public class EscolhasManager : MonoBehaviour
 	{
 		if (aceita) {
 			dialogo.SetActive (false);
-			controlCigarro.SetActive (true);
+			ctrlCig = Instantiate (controlCigarro,new Vector3(0,0,0),Quaternion.identity);
+			ctrlCig.SetActive (true);
 		} else {
 			dialogo.SetActive (true);
-			controlCigarro.SetActive (false);
+			if (ctrlCig != null) {
+				ctrlCig.SetActive (false);
+				Destroy (ctrlCig);
+			}
 		}
 	}
 
@@ -728,10 +792,14 @@ public class EscolhasManager : MonoBehaviour
 	{
 		if (aceita) {
 			dialogo.SetActive (false);
-			controlCocaina.SetActive (true);
+			ctrlCoc = Instantiate (controlCocaina,new Vector3(0,0,-10),Quaternion.identity);
+			ctrlCoc.SetActive (true);
 		} else {
 			dialogo.SetActive (true);
-			controlCocaina.SetActive (false);
+			if (ctrlCoc != null) {
+				ctrlCoc.SetActive (false);
+				Destroy (ctrlCoc);
+			}
 		}
 	}
 
@@ -739,10 +807,14 @@ public class EscolhasManager : MonoBehaviour
 	{
 		if (aceita) {
 			dialogo.SetActive (false);
-			controlCrack.SetActive (true);
+			ctrlCra = Instantiate (controlCrack,new Vector3(0,0,-10),Quaternion.identity);
+			ctrlCra.SetActive (true);
 		} else {
 			dialogo.SetActive (true);
-			controlCrack.SetActive (false);
+			if (ctrlCra != null) {
+				ctrlCra.SetActive (false);
+				Destroy (ctrlCra);
+			}
 		}
 	}
 
@@ -750,10 +822,14 @@ public class EscolhasManager : MonoBehaviour
 	{
 		if (aceita) {
 			dialogo.SetActive (false);
-			controlAlucinogeno.SetActive (true);
+			ctrlAluc = Instantiate (controlAlucinogeno,new Vector3(0,0,-10),Quaternion.identity);
+			ctrlAluc.SetActive (true);
 		} else {
 			dialogo.SetActive (true);
-			controlAlucinogeno.SetActive (false);
+			if (ctrlAluc != null) {
+				ctrlAluc.SetActive (false);
+				Destroy (ctrlAluc);
+			}
 		}
 	}
 
@@ -761,10 +837,14 @@ public class EscolhasManager : MonoBehaviour
 	{
 		if (aceita) {
 			dialogo.SetActive (false);
-			controlEcstasy.SetActive (true);
+			ctrlEcs = Instantiate (controlEcstasy,new Vector3(0,0,-10),Quaternion.identity);
+			ctrlEcs.SetActive (true);
 		} else {
 			dialogo.SetActive (true);
-			controlEcstasy.SetActive (false);
+			if (ctrlEcs != null) {
+				ctrlEcs.SetActive (false);
+				Destroy (ctrlEcs);
+			}
 		}
 	}
 
@@ -772,10 +852,14 @@ public class EscolhasManager : MonoBehaviour
 	{
 		if (aceita) {
 			dialogo.SetActive (false);
-			controlInalante.SetActive (true);
+			ctrlIna = Instantiate (controlInalante,new Vector3(0,0,-10),Quaternion.identity);
+			ctrlIna.SetActive (true);
 		} else {
 			dialogo.SetActive (true);
-			controlInalante.SetActive (false);
+			if (ctrlIna != null) {
+				ctrlIna.SetActive (false);
+				Destroy (ctrlIna);
+			}
 		}
 	}
 
@@ -783,10 +867,14 @@ public class EscolhasManager : MonoBehaviour
 	{
 		if (aceita) {
 			dialogo.SetActive (false);
-			controlMaconha.SetActive (true);
+			ctrlMac = Instantiate (controlMaconha,new Vector3(0,0,-10),Quaternion.identity);
+			ctrlMac.SetActive (true);
 		} else {
 			dialogo.SetActive (true);
-			controlMaconha.SetActive (false);
+			if (ctrlMac != null) {
+				ctrlMac.SetActive (false);
+				Destroy (ctrlMac);
+			}
 		}
 	}
 

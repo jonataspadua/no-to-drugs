@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1969616405637432}
+  m_IsPrefabParent: 1
+--- !u!1 &1969616405637432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4219786921591862}
+  - component: {fileID: 114508497151865168}
+  m_Layer: 0
+  m_Name: Gerente de Escolhas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4219786921591862
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1969616405637432}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 329.05963, y: 134.34631, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114508497151865168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1969616405637432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c1be00150cc474690e5f79bfdd1b12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtAceita: {fileID: 0}
+  txtRecusa: {fileID: 0}
+  dialogo: {fileID: 0}
+  controlAlcool: {fileID: 0}
+  AnimAlcool: {fileID: 0}
+  animClipAceitaAlcool: {fileID: 7400000, guid: c70c65af787e6914c9e6901e1484d6ff,
+    type: 2}
+  animClipRecusaAlcool: {fileID: 7400000, guid: b498b6a46cfb24e44ae85bf73d81564c,
+    type: 2}
+  al: {fileID: 0}
+  controlCigarro: {fileID: 0}
+  AnimCigarro: {fileID: 0}
+  animAceitaClipCigarro: {fileID: 7400000, guid: f014932b906d2b04b8a8fc4503764406,
+    type: 2}
+  animRecusaClipCigarro: {fileID: 7400000, guid: c692389c03a4bde4fa90d3d01cfb8398,
+    type: 2}
+  controlMaconha: {fileID: 0}
+  AnimMaconha: {fileID: 0}
+  animAceitaClipMaconha: {fileID: 7400000, guid: abd8935a939737d4f9b9139a485f1fd5,
+    type: 2}
+  animRecusaClipMaconha: {fileID: 7400000, guid: fc18c143904ddda44a426c8a29542473,
+    type: 2}
+  mac: {fileID: 0}
+  controlAlucinogeno: {fileID: 0}
+  AnimAlucinogeno: {fileID: 0}
+  animAceitaClipAlucinogeno: {fileID: 7400000, guid: 7f0a7b0be42c46e47bc117f96de74aaf,
+    type: 2}
+  animRecusaClipAlucinogeno: {fileID: 7400000, guid: 694fc9447fd133d479be92c95fd4dbfd,
+    type: 2}
+  controlCocaina: {fileID: 0}
+  AnimCocaina: {fileID: 0}
+  animAceitaClipCocaina: {fileID: 7400000, guid: 3ab3f0ac89809974d973465254ae4c5d,
+    type: 2}
+  animRecusaClipCocaina: {fileID: 7400000, guid: 1f12479c14d2a1e4aa2146d331f532a9,
+    type: 2}
+  controlCrack: {fileID: 0}
+  AnimCrack: {fileID: 0}
+  animAceitaClipCrack: {fileID: 7400000, guid: 9f1d98ca99b60ac49ab17aea7aa1d09d, type: 2}
+  animRecusaClipCrack: {fileID: 7400000, guid: e3d63790264618f459284f5bfe3599a5, type: 2}
+  crack: {fileID: 0}
+  controlEcstasy: {fileID: 0}
+  AnimEcstasy: {fileID: 0}
+  animAceitaClipEcstasy: {fileID: 7400000, guid: c2a98d2a59c4fa142a183854610fa3bd,
+    type: 2}
+  animRecusaClipEcstasy: {fileID: 7400000, guid: faf7b0f9e370e4443823c1c15f937061,
+    type: 2}
+  controlInalante: {fileID: 0}
+  AnimInalante: {fileID: 0}
+  animAceitaClipInalante: {fileID: 7400000, guid: c1b4874347cd53844b209358902550b7,
+    type: 2}
+  animRecusaClipInalante: {fileID: 7400000, guid: 12498e8d60e212b489302a47bacd902a,
+    type: 2}

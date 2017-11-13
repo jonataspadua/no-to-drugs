@@ -1,0 +1,15 @@
+[cena3]
+[entranpc2]
+[iniciotitulo]
+No bar para comprar cigarro.
+
+Cleison: E ai galera, vou comprar um cigarro para nós!
+Cabeça: Opa, beleza tava sem aqui.
+Cleison: Bora ali fora.
+Cabeça: Cara você já fumou crack? Cara é muito top, bem mais forte do que maconha é muito louco!!!
+Cleison: Está louco? Isso é coisa de Nóia, lembra-se do Borracha? 
+Cleison: Está muito Nóia, roubando as casas do bairro, a galera que vende drogas por aqui está até falando em dar umas pancadas nele.
+Cleison:  Porque toda vez que ele faz isso os vizinhos chamam a polícia e isso é ruim pra nós.
+Cabeça: que nada é só não se deixar levar, é só não viciar, eu mesmo fumo só quando eu quero uma vez por semana.
+Cleison: Não sei não cara.
+Cabeça: Cara é a melhor droga que existe, se quiser experimentar eu tenho um pouco aqui.

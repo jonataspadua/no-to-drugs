@@ -282,7 +282,6 @@ GameObject:
   - component: {fileID: 4732665070305868}
   - component: {fileID: 95691212749026068}
   - component: {fileID: 114014685401206906}
-  - component: {fileID: 114561487746106898}
   m_Layer: 0
   m_Name: NPC1
   m_TagString: Untagged
@@ -1247,18 +1246,6 @@ MonoBehaviour:
   m_SortingOrder: 0
   m_Bones: []
   m_BoneTransforms: []
---- !u!114 &114561487746106898
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1925453560248672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5361956508f7248bc5f09fcc72132b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grid: {fileID: 0}
 --- !u!114 &114567602319255626
 MonoBehaviour:
   m_ObjectHideFlags: 1

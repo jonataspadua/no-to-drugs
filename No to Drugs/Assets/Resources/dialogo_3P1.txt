@@ -1,0 +1,17 @@
+﻿[cena3]
+[entranpc2]
+[iniciotitulo]
+Na esquina de casa.
+
+Cleison: E ai galera, tudo bem com vocês?
+Velhos amigos: tudo sim.
+Cleison: Que bom quanto tempo, né?
+Velhos amigos 2: verdade mesmo muito tempo que não nos vemos.
+Cleison: o que vocês estão fazendo ai? 
+Velhos amigos 1: Estamos fumando crack, não está vendo? Se você tiver dez reais nós conseguimos uma pedra pra você também.
+Cleison: Está louco? Isso é coisa de Nóia, lembra-se do Borracha? 
+Cleison: Está muito Nóia, roubando as casas do bairro, a galera que vende drogas por aqui está até falando em dar umas pancadas nele.
+Cleison:  Porque toda vez que ele faz isso os vizinhos chamam a polícia e isso é ruim pra eles.
+Cabeça: que nada é só não se deixar levar, é só não viciar, eu mesmo fumo só quando eu quero uma vez por semana.
+Cleison: Não sei não cara.
+Cabeça: Cara é a melhor droga que existe, se quiser experimentar eu tenho um pouco aqui.

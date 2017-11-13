@@ -1,0 +1,22 @@
+﻿[cena0]
+[entranpc1]
+[iniciotitulo]
+Algum tempo depois
+
+Gustavo: Fala ai Cleison, beleza? bora pra balada?
+Cleison: Opa, mas primeiro vamos passar na casa do Zé.
+[iniciotitulo]
+Na casa do Zé
+
+Cleison: E ai Zé bora pra balada?
+Zé: Bora, só vou ali na esquina pegar uma parada antes
+Gustavo: Que parada?
+Zé: É maconha, vc vai gostar, já to usando a algum tempo e é muito louco!
+Cleison pensa: Putz acho que isso não vai dar certo já me afastei do Pafuncio e do Borracha por causa dessas coisas... 
+Gustavo: Verdade!!! Demorou então.
+Cleison: Vamos ver qual é desse bagulho ai.
+[iniciotitulo]
+Na porta da balada
+
+Cleison: Vou ali pegar algo pra fumar antes de entrar porque a fila esta muito grande e vai demorar.
+Zé: Vou preparar aqui para nós usarmos... ai Cleison sua vez.

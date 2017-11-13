@@ -1,0 +1,26 @@
+﻿[cena1]
+[iniciotitulo]
+Dentro da balada
+
+[entranpc3]
+Cleison: E ai moça, vamos nos conhecer? Chega ai. 
+Garota desconhecida: Olá, vamos sim. 
+Todos dançando...
+[entranpc1]
+Cleison: Nossa! Vocês estão diferentes hoje, não tinha visto vocês tão loucos assim!
+Borracha: Eu falei pra você que era da boa cara, mas você não quis. Vamos fumar mais um pouco lá fora Pafuncio.
+Pafuncio: Bora lá.
+Cleison: Vou acompanhar vocês.
+[iniciotitulo]
+Na porta da balada parte 2 
+
+Borracha: Cola aí, vamos comprar com ele ali.
+Traficante: Aí se liga vocês vão usar esse negócio fraco ai? Tem uma melhor, usem essa parada aqui...
+Cleison: E o que é isso?
+Traficante: É (droga) e essa é da melhor qualidade, você usa uma só e não vai mais precisar usar a noite toda, só custa 10 reais.
+Borracha: Mas é boa mesmo? Por mim, estou dentro.
+Cleison: Acho que estou de boa, e  você Pafuncio topa?
+Pafuncio: Topo por que não? Ai Cleison! Vamos usar essa, a outra você já não usou...
+Cleison Pensa: Se eu ficar recusando o que eles vão pensar de mim? E (droga) é muito forte.
+Borracha: Cleison usa com a gente...
+[cena2]

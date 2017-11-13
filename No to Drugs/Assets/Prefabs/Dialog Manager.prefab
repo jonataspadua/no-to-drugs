@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1117742490661142}
+  m_IsPrefabParent: 1
+--- !u!1 &1117742490661142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4628136522407770}
+  - component: {fileID: 114646926646108960}
+  m_Layer: 0
+  m_Name: Dialog Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4628136522407770
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1117742490661142}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114646926646108960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1117742490661142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 771eb28c9e2686749b5438d2e92a6512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trocaSprite: {fileID: 0}
+  dialogBox: {fileID: 0}
+  choiceBox: {fileID: 0}
+  luzes: {fileID: 0}
+  ControleEstilo: {fileID: 0}
+  olhoVermelhoP: 0
+  npc:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  imgDialog: {fileID: 0}
+  janelaPlayer: {fileID: 21300000, guid: 222ff1b954d79eb4cade90dc17b07408, type: 3}
+  janelaNPC: {fileID: 21300000, guid: 380b34f3998c06e41a957cfbbd1ae3f1, type: 3}
+  background: {fileID: 0}
+  titulo: {fileID: 0}
+  texto: {fileID: 0}
+  Fase: 1
+  Estilo: 4
+  Rock: 0
+  Funk: 0
+  Reggae: 0
+  Eletronica: 0
+  Alcool: 0
+  Cigarro: 0
+  Maconha: 0
+  Cocaina: 0
+  Inalantes: 0
+  Alucinogeno: 0
+  Ecstasy: 0
+  Crack: 0
+  arqDialogo: {fileID: 4900000, guid: c03c83608fbcc4c4bbfd4da80c4686ee, type: 3}
+  currentLine: 0
+  endAtLine: 0
+  isActive: 1
+  ativaEscolha: 0
+  typeSpeed: 0.03
+  isSpeakingp: 0
+  isSpeakingn: 0

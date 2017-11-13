@@ -1,7 +1,8 @@
+﻿[cena0]
+[entranpc1]
 [iniciotitulo]
 Algum tempo depois
 
-[entranpc1]
 Pafuncio: Fala ai Cleison, beleza? bora pra balada?
 Cleison: Opa, mas primeiro vamos passar na casa do borracha.
 [iniciotitulo]
@@ -10,11 +11,11 @@ Na casa do borracha
 Cleison: E ai borracha bora pra balada?
 Borracha: Bora, só vou ali na esquina pegar uma parada antes
 Pafuncio: Que parada?
-Borracha: É (droga), vc vai gostar, já to usando a algum tempo e é muito louco!
+Borracha: É maconha, vc vai gostar, já to usando a algum tempo e é muito louco!
 Cleison pensa: Putz,  acho que isso não vai dar certo...  
 Pafuncio: Verdade!!! Demorou então.
-Cleison: Vamos ver qual é desse bagulho ai
+Cleison: Vamos ver qual é desse bagulho ai.
 [iniciotitulo]
 Na porta da balada
 
-Borracha: Vou preparar aqui para nós usarmos... ai Cleison sua vez
+Borracha: Vou preparar aqui para nós usarmos... ai Cleison sua vez.
