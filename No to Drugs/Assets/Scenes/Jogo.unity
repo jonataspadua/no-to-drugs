@@ -436,89 +436,106 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 251930255}
   m_Script: {fileID: 11500000, guid: 119f8349def0f014a88fe682daf0d14c, type: 3}
---- !u!1 &418590543
-GameObject:
+--- !u!1001 &382140976
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1028023938441434, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 418590544}
-  - component: {fileID: 418590546}
-  - component: {fileID: 418590545}
-  m_Layer: 5
-  m_Name: Texto1 (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &418590544
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224046562365337564, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 418590543}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1095532280}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.031437494, y: 0}
-  m_AnchorMax: {x: 0.98113763, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &418590545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114137561256311666, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 418590543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
-    m_FontSize: 30
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 50
-    m_Alignment: 3
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Mas ele n\xE3o queria parar de usar pois sentia que era parte do grupo
-    de amigos, sentia que era aceito. \nLogo conheceu uma droga mais forte a (4\xBA
-    droga), com efeito e sensa\xE7\xF5es mais forte que o \xE1lcool e a maconha. \nFoi
-    ent\xE3o que ele e seus amigos come\xE7aram a se afundar. \nEra imposs\xEDvel
-    de esconder seu uso, pois todo o dinheiro ia para usar drogas. \nA situa\xE7\xE3o
-    era insustent\xE1vel, Cleison saiu de casa."
---- !u!222 &418590546
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222634661267246290, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 418590543}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 218946133}
+    m_Modifications:
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224483558532850852, guid: 473ce228d7635e445a1c8b2562a8e867,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 473ce228d7635e445a1c8b2562a8e867, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &701941549
 Prefab:
   m_ObjectHideFlags: 0
@@ -561,171 +578,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0db2caf7ba161ca48a8b0046325c02b6, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &857706410
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1028023938441434, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 857706411}
-  - component: {fileID: 857706413}
-  - component: {fileID: 857706412}
-  m_Layer: 5
-  m_Name: Texto1 (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &857706411
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224046562365337564, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 857706410}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1095532280}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.031437494, y: 0}
-  m_AnchorMax: {x: 0.98113763, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &857706412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114137561256311666, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 857706410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
-    m_FontSize: 30
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 50
-    m_Alignment: 3
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Na rua e sem dinheiro Cleison passou a pedir dinheiro no farol e furtar
-    as pessoas nas ruas para poder usar drogas, foi quando um de seus amigos de rua
-    ofereceu crack. \nNo inicio ele ficou assustado com a sensa\xE7\xE3o, pois era
-    muito mais forte do que as drogas que ele j\xE1 tinha usado, em quest\xE3o de
-    alguns dias e ele j\xE1 estava vic\xEDado na sensa\xE7\xE3o do crack."
---- !u!222 &857706413
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222634661267246290, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 857706410}
---- !u!1 &888902646
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1028023938441434, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 888902647}
-  - component: {fileID: 888902649}
-  - component: {fileID: 888902648}
-  m_Layer: 5
-  m_Name: Texto1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &888902647
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224046562365337564, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 888902646}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1095532280}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.031437494, y: 0}
-  m_AnchorMax: {x: 0.98113763, y: 1}
-  m_AnchoredPosition: {x: -0.0000076293945, y: -0.000015258789}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &888902648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114137561256311666, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 888902646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
-    m_FontSize: 30
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 50
-    m_Alignment: 3
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Quando Cleison come\xE7ou a beber, teve alguns problemas na escola e com
-    sua fam\xEDlia pois estava bebendo todos os dias, inclusive antes das aulas. Passando
-    a n\xE3o se concentrar nas aulas e at\xE9 mesmo faltar, como consequ\xEAncia suas
-    notas ca\xEDram. \nA escola teve que entrar em contato com sua fam\xEDlia e eles
-    tiveram uma conversa s\xE9ria com ele e ele havia prometido que n\xE3o iria mais
-    beber, mas n\xE3o foi isso que ele fez, ele passou a beber mais escondido ainda."
---- !u!222 &888902649
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222634661267246290, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 888902646}
 --- !u!114 &1018769647 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114999214422596952, guid: 49cb009a4b0aa944b8429d4d021b223a,
@@ -738,251 +590,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 218946124}
   m_Script: {fileID: 11500000, guid: cb2aeccbbee35d542b0136b63ea9dd84, type: 3}
---- !u!1 &1095532279
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1095532280}
-  - component: {fileID: 1095532282}
-  - component: {fileID: 1095532281}
-  m_Layer: 5
-  m_Name: 3A1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1095532280
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1095532279}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 888902647}
-  - {fileID: 1199265429}
-  - {fileID: 1386178393}
-  - {fileID: 418590544}
-  - {fileID: 857706411}
-  - {fileID: 1991568224}
-  m_Father: {fileID: 218946133}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1095532281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1095532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1095532282
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1095532279}
---- !u!1 &1199265428
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1028023938441434, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1199265429}
-  - component: {fileID: 1199265431}
-  - component: {fileID: 1199265430}
-  m_Layer: 5
-  m_Name: Texto1 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1199265429
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224046562365337564, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1199265428}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1095532280}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.031437494, y: 0}
-  m_AnchorMax: {x: 0.98113763, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1199265430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114137561256311666, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1199265428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
-    m_FontSize: 30
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 50
-    m_Alignment: 3
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Como se n\xE3o bastasse Cleison tamb\xE9m fumava cigarro e isso tamb\xE9m
-    gerou conflitos com a fam\xEDlia, pois eles descobriram que ele fumava e isso
-    n\xE3o era para adolescentes, ele disse que ia parar, passou a fumar escondido
-    ou na escola quando ia, assim seus pais n\xE3o saberiam. \nComo Cleison n\xE3o
-    trabalhava ele pegava dinheiro que seus pais davam e as vezes furtava o dinheiro
-    que ficava exposto."
---- !u!222 &1199265431
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222634661267246290, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1199265428}
 --- !u!114 &1341650358 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114922585903682424, guid: 49cb009a4b0aa944b8429d4d021b223a,
     type: 2}
   m_PrefabInternal: {fileID: 218946124}
   m_Script: {fileID: 11500000, guid: 83e82c5ee4973744da312137f262709e, type: 3}
---- !u!1 &1386178392
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1028023938441434, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1386178393}
-  - component: {fileID: 1386178395}
-  - component: {fileID: 1386178394}
-  m_Layer: 5
-  m_Name: Texto1 (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1386178393
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224046562365337564, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1386178392}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1095532280}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.031437494, y: 0}
-  m_AnchorMax: {x: 0.98113763, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1386178394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114137561256311666, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1386178392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
-    m_FontSize: 30
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 50
-    m_Alignment: 3
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Com a maconha n\xE3o foi diferente, come\xE7ou a fumar todos os dias j\xE1
-    n\xE3o se concentrava nas aulas, matava aula, notas baixas e mais uma vez seus
-    pais foram chamados na escola. \nSua fam\xEDlia desconfiava que Cleison estava
-    fumando maconha pelo fato de ele chegar em casa com os olhos vermelhos, mas sempre
-    que era questionado sobre o assunto ele respondia com agressividade."
---- !u!222 &1386178395
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222634661267246290, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1386178392}
 --- !u!1 &1572320873 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1280292650218192, guid: 49cb009a4b0aa944b8429d4d021b223a,
@@ -1180,88 +793,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1748782547}
   m_Script: {fileID: 11500000, guid: 15c1be00150cc474690e5f79bfdd1b12, type: 3}
---- !u!1 &1991568223
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1028023938441434, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1991568224}
-  - component: {fileID: 1991568226}
-  - component: {fileID: 1991568225}
-  m_Layer: 5
-  m_Name: Texto1 (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1991568224
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224046562365337564, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1991568223}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1095532280}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.031437494, y: 0}
-  m_AnchorMax: {x: 0.98113763, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1991568225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114137561256311666, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1991568223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
-    m_FontSize: 30
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 50
-    m_Alignment: 3
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Um ano mais tarde totalmente debilitado por causa do efeito devastador
-    causado pelo crack ele j\xE1 n\xE3o tem mais esperan\xE7as, pois j\xE1 passou
-    por diversas institui\xE7\xF5es, incluindo uma pris\xE3o e mesmo assim n\xE3o
-    consegue parar, a mis\xE9ria e angustia era tanta que Cleison tentou se matar
-    diversas vezes, mas acabou se entregando de vez e foi morar na Cracol\xE2ndia."
---- !u!222 &1991568226
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222634661267246290, guid: 49cb009a4b0aa944b8429d4d021b223a,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1991568223}
 --- !u!1001 &2054256172
 Prefab:
   m_ObjectHideFlags: 0
