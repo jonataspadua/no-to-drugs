@@ -13,7 +13,7 @@ public class ControleConsMaconha : MonoBehaviour {
 	public Animator AnimConsMaconha;
 
 	public void IniciaAnimacao(){
-		if (DialogManager.dialogManager.Maconha == 1) {
+		/*if (DialogManager.dialogManager.Maconha == 1) {
 			Controle.SetActive (true);
 			AnimConsMaconha.SetBool ("start", true);
 			AnimConsMaconha.SetBool ("aceita", true);
@@ -32,11 +32,13 @@ public class ControleConsMaconha : MonoBehaviour {
 		} else {
 			esco.CarregaFase3 ();
 			gameObject.SetActive (false);
-		}
+		}*/
+		esco.CarregaFase3 ();
+		//gameObject.SetActive (false);
 	}
 
 	public void FinalAnimacao(){
-		if (AnimConsMaconha.GetBool ("final")) {
+		/*if (AnimConsMaconha.GetBool ("final")) {
 			if (DialogManager.dialogManager.Cocaina == 1) {
 				cocaina.IniciaAnimacao ();
 				gameObject.SetActive (false);
@@ -55,7 +57,7 @@ public class ControleConsMaconha : MonoBehaviour {
 			}
 		} else {
 			AnimConsMaconha.SetBool ("final", true);
-		}
+		}*/
 	}
 	/*Criar um estado para final da animação em que apresentará todos os textos e a label informando clique para ir à próxima tela
 	 * Usar o click do botão para mudar o state da animação para a final, caso a variavel de controle final não seja true

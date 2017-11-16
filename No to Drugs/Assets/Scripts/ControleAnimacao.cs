@@ -17,35 +17,33 @@ public class ControleAnimacao : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (dialogManager.isSpeakingp) {
+		if (dialogManager.isSpeakingp) {			
+			if (dialogManager.olhoVermelhoP) {
+				animPersonagem.SetBool ("olhoV", true);
+			} else {
+				animPersonagem.SetBool ("olhoV", false);
+			}
 			animPersonagem.SetBool ("fala",true);
+		} else {			
 			if (dialogManager.olhoVermelhoP) {
 				animPersonagem.SetBool ("olhoV", true);
 			} else {
 				animPersonagem.SetBool ("olhoV", false);
 			}
-		} else {
 			animPersonagem.SetBool ("fala",false);
-			if (dialogManager.olhoVermelhoP) {
-				animPersonagem.SetBool ("olhoV", true);
-			} else {
-				animPersonagem.SetBool ("olhoV", false);
-			}
 		}
 	}
 
 	public void TrocaOlho(bool OlhoV){
-		if (OlhoV) {
-			if (dialogManager.olhoVermelhoP) {	
-				olhoDNormal.SetActive (false);
-				olhoDVermelho.SetActive (true);
-				olhoENormal.SetActive (false);
-				olhoEVermelho.SetActive (true);
-			}
+		if (dialogManager.olhoVermelhoP) {	
+			olhoDNormal.SetActive (false);
+			olhoDVermelho.SetActive (true);
+			olhoENormal.SetActive (false);
+			olhoEVermelho.SetActive (true);
 		} else {
-			olhoDNormal.SetActive(true);
+			olhoDNormal.SetActive (true);
 			olhoDVermelho.SetActive (false);
-			olhoENormal.SetActive(true);
+			olhoENormal.SetActive (true);
 			olhoEVermelho.SetActive (false);
 		}
 	}

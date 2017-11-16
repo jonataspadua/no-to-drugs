@@ -53,52 +53,69 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txtAceita: {fileID: 0}
   txtRecusa: {fileID: 0}
+  per: {fileID: 0}
+  Final: {fileID: 0}
   dialogo: {fileID: 0}
-  controlAlcool: {fileID: 0}
-  AnimAlcool: {fileID: 0}
+  controlAlcool: {fileID: 1565818193021570, guid: 351dcbb307dc4014b932f49796258d18,
+    type: 2}
+  AnimAlcool: {fileID: 95777867450525004, guid: 9aac895d0f891a142bb1b366274ab8c1,
+    type: 2}
   animClipAceitaAlcool: {fileID: 7400000, guid: c70c65af787e6914c9e6901e1484d6ff,
     type: 2}
   animClipRecusaAlcool: {fileID: 7400000, guid: b498b6a46cfb24e44ae85bf73d81564c,
     type: 2}
   al: {fileID: 0}
-  controlCigarro: {fileID: 0}
-  AnimCigarro: {fileID: 0}
+  controlCigarro: {fileID: 1441254010825908, guid: bbe18fc9a5c97de4e94d31a09aadcd82,
+    type: 2}
+  AnimCigarro: {fileID: 95406850447192042, guid: bbe18fc9a5c97de4e94d31a09aadcd82,
+    type: 2}
   animAceitaClipCigarro: {fileID: 7400000, guid: f014932b906d2b04b8a8fc4503764406,
     type: 2}
   animRecusaClipCigarro: {fileID: 7400000, guid: c692389c03a4bde4fa90d3d01cfb8398,
     type: 2}
-  controlMaconha: {fileID: 0}
-  AnimMaconha: {fileID: 0}
+  controlMaconha: {fileID: 1457651943264982, guid: 1ad3a2a9d998261408c9e0ff8eaae88e,
+    type: 2}
+  AnimMaconha: {fileID: 95306633786454880, guid: 1ad3a2a9d998261408c9e0ff8eaae88e,
+    type: 2}
   animAceitaClipMaconha: {fileID: 7400000, guid: abd8935a939737d4f9b9139a485f1fd5,
     type: 2}
   animRecusaClipMaconha: {fileID: 7400000, guid: fc18c143904ddda44a426c8a29542473,
     type: 2}
   mac: {fileID: 0}
-  controlAlucinogeno: {fileID: 0}
-  AnimAlucinogeno: {fileID: 0}
+  controlAlucinogeno: {fileID: 1773430805956676, guid: b6b8374835c91b6428fd6d86b119de0c,
+    type: 2}
+  AnimAlucinogeno: {fileID: 95174013873176902, guid: b6b8374835c91b6428fd6d86b119de0c,
+    type: 2}
   animAceitaClipAlucinogeno: {fileID: 7400000, guid: 7f0a7b0be42c46e47bc117f96de74aaf,
     type: 2}
   animRecusaClipAlucinogeno: {fileID: 7400000, guid: 694fc9447fd133d479be92c95fd4dbfd,
     type: 2}
-  controlCocaina: {fileID: 0}
-  AnimCocaina: {fileID: 0}
+  controlCocaina: {fileID: 1176067239513356, guid: 4ec5be97b2a40d44ea7f1727caffe1a4,
+    type: 2}
+  AnimCocaina: {fileID: 95868617889265234, guid: 4ec5be97b2a40d44ea7f1727caffe1a4,
+    type: 2}
   animAceitaClipCocaina: {fileID: 7400000, guid: 3ab3f0ac89809974d973465254ae4c5d,
     type: 2}
   animRecusaClipCocaina: {fileID: 7400000, guid: 1f12479c14d2a1e4aa2146d331f532a9,
     type: 2}
-  controlCrack: {fileID: 0}
-  AnimCrack: {fileID: 0}
+  controlCrack: {fileID: 1676909415034504, guid: 1ce85e9f69972be458cd8d6ce0155669,
+    type: 2}
+  AnimCrack: {fileID: 95715428817606118, guid: 1ce85e9f69972be458cd8d6ce0155669, type: 2}
   animAceitaClipCrack: {fileID: 7400000, guid: 9f1d98ca99b60ac49ab17aea7aa1d09d, type: 2}
   animRecusaClipCrack: {fileID: 7400000, guid: e3d63790264618f459284f5bfe3599a5, type: 2}
   crack: {fileID: 0}
-  controlEcstasy: {fileID: 0}
-  AnimEcstasy: {fileID: 0}
+  controlEcstasy: {fileID: 1830070644992202, guid: 0d64bae29ac9e59459553f59dcc1b33f,
+    type: 2}
+  AnimEcstasy: {fileID: 95424508768740512, guid: 0d64bae29ac9e59459553f59dcc1b33f,
+    type: 2}
   animAceitaClipEcstasy: {fileID: 7400000, guid: c2a98d2a59c4fa142a183854610fa3bd,
     type: 2}
   animRecusaClipEcstasy: {fileID: 7400000, guid: faf7b0f9e370e4443823c1c15f937061,
     type: 2}
-  controlInalante: {fileID: 0}
-  AnimInalante: {fileID: 0}
+  controlInalante: {fileID: 1089342109299316, guid: f000ad27801c03245af049386cc61b19,
+    type: 2}
+  AnimInalante: {fileID: 95116744380710422, guid: f000ad27801c03245af049386cc61b19,
+    type: 2}
   animAceitaClipInalante: {fileID: 7400000, guid: c1b4874347cd53844b209358902550b7,
     type: 2}
   animRecusaClipInalante: {fileID: 7400000, guid: 12498e8d60e212b489302a47bacd902a,

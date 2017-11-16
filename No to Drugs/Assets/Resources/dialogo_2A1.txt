@@ -1,5 +1,5 @@
 ﻿[cena0]
-[entranpc1]
+[entranpc2]
 [iniciotitulo]
 Algum tempo depois
 
@@ -9,6 +9,7 @@ Cleison: Opa, mas primeiro vamos passar na casa do borracha.
 Na casa do borracha
 
 Cleison: E ai borracha bora pra balada?
+[entranpc1]
 Borracha: Bora, só vou ali na esquina pegar uma parada antes
 Pafuncio: Que parada?
 Borracha: É maconha, vc vai gostar, já to usando a algum tempo e é muito louco!

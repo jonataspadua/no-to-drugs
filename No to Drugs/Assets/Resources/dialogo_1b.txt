@@ -24,6 +24,7 @@ Alecrina: Bebeu sim, nunca vi você tão falante assim.
 [som:soluco]
 Alecrina: Mudando de assunto, vamos ali fora comigo? Aqui dentro não pode fumar.
 Cleison: Bora.
+[cena2]
 Alecrina: Você já tinha vindo nessa festa? Eu sempre venho.
 [som:soluco]
 Cleison: Não, é minha primeira vez.

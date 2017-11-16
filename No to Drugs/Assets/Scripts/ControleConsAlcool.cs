@@ -9,31 +9,40 @@ public class ControleConsAlcool : MonoBehaviour {
 	public Animator AnimConsAlcool;
 
 	public void IniciaAnimacao(){
-		if (DialogManager.dialogManager.Alcool == 1) { // se aceitou o alcool começa a animação
-			Controle.SetActive (true);
-			AnimConsAlcool.SetBool ("start", true);
-			AnimConsAlcool.SetBool ("aceita", true);
-		} else if (DialogManager.dialogManager.Cigarro == 1) { //se não aceitou o alcool mas aceitou o cigarro, começa a do cigarro
-			cig.IniciaAnimacao ();
-			gameObject.SetActive (false);
-		} else { //se não aceitou nenhum só vai para a fase 2
+		//if (DialogManager.dialogManager.Alcool == 1) { // se aceitou o alcool começa a animação
+			//Controle.SetActive (true);
+			//AnimConsAlcool.SetBool ("start", true);
+			//AnimConsAlcool.SetBool ("aceita", true);
 			esco.CarregaFase2 ();
-			gameObject.SetActive (false);
-		}
+			//gameObject.SetActive (false);
+		//} else if (DialogManager.dialogManager.Cigarro == 1) { //se não aceitou o alcool mas aceitou o cigarro, começa a do cigarro
+			//cig.IniciaAnimacao ();
+			//gameObject.SetActive (false);
+		//	esco.CarregaFase2 ();
+		//	gameObject.SetActive (false);
+		//} else { //se não aceitou nenhum só vai para a fase 2
+		//	esco.CarregaFase2 ();
+		//	gameObject.SetActive (false);
+		//}
 	}
 
 	public void FinalAnimacao(){
-		if (AnimConsAlcool.GetBool ("final")) {
+		/*if (AnimConsAlcool.GetBool ("final")) {
 			if (DialogManager.dialogManager.Cigarro == 1) {
-				cig.IniciaAnimacao ();
+				//cig.IniciaAnimacao ();
+				esco.CarregaFase2 ();
 				gameObject.SetActive (false);
 			} else {
 				esco.CarregaFase2 ();
 				gameObject.SetActive (false);
 			}
 		} else {
-			AnimConsAlcool.SetBool ("final", true);
-		}
+			esco.CarregaFase2 ();
+			gameObject.SetActive (false);
+			//AnimConsAlcool.SetBool ("final", true);
+		}*/
+		//esco.CarregaFase2 ();
+		//gameObject.SetActive (false);
 	}
 	/*Criar um estado para final da animação em que apresentará todos os textos e a label informando clique para ir à próxima tela
 	 * Usar o click do botão para mudar o state da animação para a final, caso a variavel de controle final não seja true

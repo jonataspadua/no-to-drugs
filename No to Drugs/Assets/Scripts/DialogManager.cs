@@ -18,6 +18,8 @@ public class DialogManager : MonoBehaviour
 	private GameObject luz;
 	public GameObject ControleEstilo;
 	public ControleTrocaFases CtrlTrocaFase;
+	public PlayMusic ControleMusica;
+	public AudioClip[] musicas;
 	[HideInInspector] public bool olhoVermelhoP;
 	public GameObject[] npc;
 
@@ -154,6 +156,18 @@ public class DialogManager : MonoBehaviour
 			yield break;
 		}
 
+		if (lineOfText.Contains ("[entranpc2]")) {
+			npc [0].SetActive (true);
+			npc [1].SetActive (false);
+			npc [2].SetActive (false);
+
+			isTyping = false;
+			cancelTyping = false;
+
+			ProximaLinha();
+			yield break;
+		}
+
 		if (lineOfText.Contains ("[entranpc3]")) {
 			npc [0].SetActive (false);
 			npc [1].SetActive (false);
@@ -213,8 +227,17 @@ public class DialogManager : MonoBehaviour
 			yield break;
 		}
 
+		if (lineOfText.Contains ("[trocaestilo]")) {
+			EscolherEstiloMusical ();
+			isTyping = false;
+			cancelTyping = false;
+
+			ProximaLinha();
+			yield break;
+		}
+
 		if (lineOfText.Contains ("[cena3]")) {
-			trocaSprite.index = 0;
+			trocaSprite.index = 2;
 			trocaSprite.Trocar();
 			RenderSettings.ambientLight = Color.black;
 			if (luz != null) {
@@ -227,6 +250,30 @@ public class DialogManager : MonoBehaviour
 
 			ProximaLinha();
 			yield break;
+		}
+
+		if (lineOfText.Contains ("(droga)")) {
+			if (Fase >= 2) {
+				switch (Estilo) {
+				case 1:
+					lineOfText = lineOfText.Replace ("(droga)","inalante");
+					break;
+				case 2:
+					lineOfText = lineOfText.Replace ("(droga)","cocaína");
+					break;
+				case 3:
+					lineOfText = lineOfText.Replace ("(droga)","LSD");
+					break;
+				case 4:
+					lineOfText = lineOfText.Replace ("(droga)","ecstasy");
+					break;
+				}
+			}
+		}
+
+		if (lineOfText.Contains ("Pafuncio") || lineOfText.Contains ("pafuncio")) {
+			lineOfText = lineOfText.Replace ("Pafuncio","Alex");
+			lineOfText = lineOfText.Replace ("pafuncio","alex");
 		}
 
 		while(isTyping && !cancelTyping &&(letter<lineOfText.Length-1)){
@@ -316,24 +363,28 @@ public class DialogManager : MonoBehaviour
 			{
 				this.Funk = 1;
 				this.Estilo = 1;
+				ControleMusica.mainMusic = musicas [0];
 				break;
 			}
 		case 2:
 			{
 				this.Rock = 1;
 				this.Estilo = 2;
+				ControleMusica.mainMusic = musicas [1];
 				break;
 			}
 		case 3:
 			{
 				this.Reggae = 1;
 				this.Estilo = 3;
+				ControleMusica.mainMusic = musicas [2];
 				break;
 			}
 		case 4:
 			{
 				this.Eletronica = 1;
 				this.Estilo = 4;
+				ControleMusica.mainMusic = musicas [3];
 				break;
 			}
 		default:

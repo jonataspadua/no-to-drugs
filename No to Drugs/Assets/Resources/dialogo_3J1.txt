@@ -1,4 +1,4 @@
-[cena3]
+﻿[cena0]
 [entranpc2]
 [iniciotitulo]
 Na esquina do trafico.
@@ -10,6 +10,6 @@ Cabeça: Cara você já fumou crack? Cara é muito top, bem mais forte do que ma
 Cleison: Está louco? Isso é coisa de Nóia, lembra-se do Borracha? 
 Cleison: Está muito Nóia, roubando as casas do bairro, a galera que vende drogas por aqui está até falando em dar umas pancadas nele.
 Cleison:  Porque toda vez que ele faz isso os vizinhos chamam a polícia e isso é ruim pra nós.
-Cabeça: que nada é só não se deixar levar, é só não viciar, eu mesmo fumo só quando eu quero uma vez por semana.
+Cabeça: Que nada é só não se deixar levar, é só não viciar, eu mesmo fumo só quando eu quero uma vez por semana.
 Cleison: Não sei não cara.
 Cabeça: Cara é a melhor droga que existe, se quiser experimentar eu tenho um pouco aqui.

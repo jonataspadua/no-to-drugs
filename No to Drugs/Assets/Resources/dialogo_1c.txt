@@ -5,7 +5,8 @@ Cleison: Estou de boa, podem ir lá.
 Alecrina: Cleison é você? Nossa não sabia que vinha.
 Cleison: Oi Alecrina, tudo bem? Pois é, o Pafuncio me chamou.
 Alecrina: Tudo sim, que bom ver mais rostos conhecidos, não fique aí sozinho, vamos ali fora.
-Claison: Vamos.
+Cleison: Vamos.
+[cena2]
 Alecrina: Você está bem? Estava aí sozinho, brigou com seus amigos?
 Cleison: Na verdade, sim. Eles queriam que eu bebesse, mas eu não estava afim.
 Alecrina: Nossa e eles te largaram aqui por isso? Que mancada. 

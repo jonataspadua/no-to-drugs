@@ -1,5 +1,6 @@
 ﻿[cena0]
-[entranpc1]
+[trocaestilo]
+[entranpc2]
 [iniciotitulo]
 Algum tempo depois
 
@@ -9,6 +10,7 @@ Cleison: Opa, mas primeiro vamos passar na casa do Zé.
 Na casa do Zé
 
 Cleison: E ai Zé bora pra balada?
+[entranpc1]
 Zé: Bora, só vou ali na esquina pegar uma parada antes
 Gustavo: Que parada?
 Zé: É maconha, vc vai gostar, já to usando a algum tempo e é muito louco!

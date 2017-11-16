@@ -9,8 +9,11 @@ public class EscolhasManager : MonoBehaviour
 	public static EscolhasManager escolhasManager;
 
 	DialogManager dialogManager;
+
 	public Text txtAceita;
 	public Text txtRecusa;
+	public ControleAnimacao per;
+	public GameObject Final;
 
 	public GameObject dialogo;
 	public GameObject controlAlcool;
@@ -93,6 +96,10 @@ public class EscolhasManager : MonoBehaviour
 		CarregaBotao ("a");
 	}
 
+	public void FinalDoJogo(){
+		Final.SetActive (true);
+	}
+
 	private void CarregaBotao (string letra)
 	{
 		TextAsset aceita = (TextAsset)Resources.Load ("txtAceita_" + dialogManager.Fase + letra);
@@ -137,6 +144,7 @@ public class EscolhasManager : MonoBehaviour
 			}
 		} else {
 			dialogManager.Maconha = 0;
+			dialogManager.olhoVermelhoP = false;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaMaconha (true);//habilita o controle da maconha e desativa o dialogo
 			AnimMaconha = ctrlMac.GetComponentInChildren<Animator> ();
@@ -167,6 +175,7 @@ public class EscolhasManager : MonoBehaviour
 				}
 			}
 		}
+		per.TrocaOlho (false);
 	}
 
 	private void AtivaInalantes(bool escolha){
@@ -660,8 +669,7 @@ public class EscolhasManager : MonoBehaviour
 
 	IEnumerator CarregaDialogo3 (char letra, int parte, float delayTime)
 	{
-		dialogManager.olhoVermelhoP = false; //muda os olhos para vermelho
-		dialogManager.CtrlTrocaFase.IniciaAnimacao(3);
+		per.TrocaOlho(false);
 		yield return new WaitForSeconds(delayTime);//aguarda o tempo da animação anterior para começar essa
 		DesabilitaControlAnimacoes (); 
 		dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_3"+letra + parte)); //recarrega o script com o dialogo de aceitar
@@ -670,8 +678,7 @@ public class EscolhasManager : MonoBehaviour
 
 	IEnumerator CarregaDialogo2 (char letra, int parte, float delayTime)
 	{
-		dialogManager.olhoVermelhoP = false; //muda os olhos para vermelho
-		dialogManager.CtrlTrocaFase.IniciaAnimacao(2);
+		per.TrocaOlho(false);
 		yield return new WaitForSeconds(delayTime);//aguarda o tempo da animação anterior para começar essa
 		DesabilitaControlAnimacoes (); 
 		dialogManager.ReloadScript ((TextAsset)Resources.Load ("dialogo_2"+letra + parte)); //recarrega o script com o dialogo de aceitar
@@ -680,7 +687,10 @@ public class EscolhasManager : MonoBehaviour
 
 	public void CarregaFase2 ()
 	{
-		
+		dialogManager.olhoVermelhoP = false; //muda os olhos para vermelho
+		per.TrocaOlho (false);
+		dialogManager.CtrlTrocaFase.IniciaAnimacao (2);
+
 		if ((dialogManager.Alcool == 1) && (dialogManager.Cigarro == 1)) {//se as duas drogas foram aceitas, carrega a fase 2A
 			dialogManager.Fase = 2;
 			StartCoroutine(CarregaDialogo2 ('A',1,0f));
@@ -698,6 +708,10 @@ public class EscolhasManager : MonoBehaviour
 
 	public void CarregaFase3 ()
 	{
+		dialogManager.olhoVermelhoP = false; //muda os olhos para vermelho
+		per.TrocaOlho(false);
+		dialogManager.CtrlTrocaFase.IniciaAnimacao(3);
+
 		if ((dialogManager.Alcool == 1) && (dialogManager.Cigarro == 1) &&  (dialogManager.Maconha == 1) && (dialogManager.Cocaina == 1 || dialogManager.Alucinogeno == 1 || dialogManager.Ecstasy == 1 || dialogManager.Inalantes == 1)) {//se as duas drogas foram aceitas, carrega a fase 2A
 			dialogManager.Fase = 3;
 			StartCoroutine (CarregaDialogo3 ('A',1,0f));
@@ -792,7 +806,7 @@ public class EscolhasManager : MonoBehaviour
 	{
 		if (aceita) {
 			dialogo.SetActive (false);
-			ctrlCoc = Instantiate (controlCocaina,new Vector3(0,0,-10),Quaternion.identity);
+			ctrlCoc = Instantiate (controlCocaina,new Vector3((float) -6.36,(float) -1.5,-10),Quaternion.identity);
 			ctrlCoc.SetActive (true);
 		} else {
 			dialogo.SetActive (true);
