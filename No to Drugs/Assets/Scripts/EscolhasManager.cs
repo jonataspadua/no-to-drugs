@@ -282,7 +282,7 @@ public class EscolhasManager : MonoBehaviour
 			//AnimCrack.SetBool ("start", true);//define que vai começar a animação
 			//Invoke ("CarregaFase3", animClipConsCrack.length + animAceitaClipCrack.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 		} else {
-			dialogManager.Crack = 1;
+			dialogManager.Crack = 0;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaCrack (true);//habilita o controle do cigarro e desativa o dialogo
 			Invoke ("CarregaConsCrack", animRecusaClipCrack.length);//Prepara a função que carrega a próxima fase após a animação rodar
