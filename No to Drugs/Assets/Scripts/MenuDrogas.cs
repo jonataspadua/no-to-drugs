@@ -409,13 +409,13 @@ public class MenuDrogas : MonoBehaviour
 	public void Iniciar ()
 	{
 		if (isActive) {
-			menu.SetActive (false);
-			isActive = false;
 			Time.timeScale = 1;
+			isActive = false;
+			menu.SetActive (false);
 		} else {
-			menu.SetActive (true);
 			isActive = true;
 			Time.timeScale = 0;
+			menu.SetActive (true);
 		}
 	}
 

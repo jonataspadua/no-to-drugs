@@ -11,6 +11,10 @@ public class QuitApplication : MonoBehaviour {
 		Application.Quit();
 	#endif
 
+		#if UNITY_ANDROID
+			Application.Quit();
+		#endif
+
 		//If we are running in the editor
 	#if UNITY_EDITOR
 		//Stop playing the scene

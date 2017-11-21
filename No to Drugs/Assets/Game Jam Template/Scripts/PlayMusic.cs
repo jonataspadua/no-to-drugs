@@ -4,7 +4,7 @@ using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class PlayMusic : MonoBehaviour {
-
+	public static PlayMusic playMusica;
 
 	public AudioClip titleMusic;					//Assign Audioclip for title music loop
 	public AudioClip mainMusic;						//Assign Audioclip for main 
@@ -20,12 +20,13 @@ public class PlayMusic : MonoBehaviour {
 	{
 		//Get a component reference to the AudioSource attached to the UI game object
 		musicSource = GetComponent<AudioSource> ();
+		playMusica = this;
 		//Call the PlayLevelMusic function to start playing music
 	}
 
-
 	public void PlayLevelMusic()
 	{
+		musicSource = GetComponent<AudioSource> ();
 		//This switch looks at the last loadedLevel number using the scene index in build settings to decide which music clip to play.
 		switch (SceneManager.GetActiveScene().buildIndex)
 		{

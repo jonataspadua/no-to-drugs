@@ -364,6 +364,7 @@ public class DialogManager : MonoBehaviour
 				this.Funk = 1;
 				this.Estilo = 1;
 				ControleMusica.mainMusic = musicas [0];
+				//ControleMusica.PlayLevelMusic();
 				break;
 			}
 		case 2:
@@ -371,6 +372,7 @@ public class DialogManager : MonoBehaviour
 				this.Rock = 1;
 				this.Estilo = 2;
 				ControleMusica.mainMusic = musicas [1];
+				//ControleMusica.PlayLevelMusic();
 				break;
 			}
 		case 3:
@@ -378,6 +380,7 @@ public class DialogManager : MonoBehaviour
 				this.Reggae = 1;
 				this.Estilo = 3;
 				ControleMusica.mainMusic = musicas [2];
+				//ControleMusica.PlayLevelMusic ();
 				break;
 			}
 		case 4:
@@ -385,6 +388,7 @@ public class DialogManager : MonoBehaviour
 				this.Eletronica = 1;
 				this.Estilo = 4;
 				ControleMusica.mainMusic = musicas [3];
+				//ControleMusica.PlayLevelMusic ();
 				break;
 			}
 		default:
