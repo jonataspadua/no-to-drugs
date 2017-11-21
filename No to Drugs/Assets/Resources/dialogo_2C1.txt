@@ -1,5 +1,4 @@
 ﻿[cena0]
-[trocaestilo]
 [entranpc2]
 [iniciotitulo]
 Algum tempo depois
