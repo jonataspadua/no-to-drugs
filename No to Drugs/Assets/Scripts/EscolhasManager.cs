@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class EscolhasManager : MonoBehaviour
 {
@@ -110,6 +111,7 @@ public class EscolhasManager : MonoBehaviour
 
 	private void AtivaMaconha(bool escolha, string tipoDialogo){
 		if (escolha) {//se aceitou
+			Analytics.CustomEvent ("AceitouMaconha");
 			dialogManager.Maconha = 1;
 			dialogManager.olhoVermelhoP = true; //muda os olhos para vermelho 
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
@@ -143,6 +145,7 @@ public class EscolhasManager : MonoBehaviour
 				}
 			}
 		} else {
+			Analytics.CustomEvent ("RecusouMaconha");
 			dialogManager.Maconha = 0;
 			dialogManager.olhoVermelhoP = false;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
@@ -180,6 +183,7 @@ public class EscolhasManager : MonoBehaviour
 
 	private void AtivaInalantes(bool escolha){
 		if (escolha) {//se ele aceitou inalantes entra aqui
+			Analytics.CustomEvent ("AceitouInalante");
 			dialogManager.Inalantes = 1;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaInalante (true);//habilita o controle dos inalantes
@@ -190,6 +194,7 @@ public class EscolhasManager : MonoBehaviour
 			//AnimInalante.SetBool ("start", true);//define que vai começar a animação
 			//Invoke ("CarregaFase3", animClipConsInalante.length + animAceitaClipInalante.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 		} else {
+			Analytics.CustomEvent ("RecusouInalante");
 			dialogManager.Inalantes = 0;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaInalante (true);//habilita o controle dos inalantes e desativa o dialogo
@@ -203,6 +208,7 @@ public class EscolhasManager : MonoBehaviour
 
 	private void AtivaCocaina(bool escolha){
 		if (escolha) {//se ele aceitou fumar cigarro entra aqui
+			Analytics.CustomEvent ("AceitouCocaina");
 			dialogManager.Cocaina = 1;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaCocaina (true);//habilita o controle do cigarro
@@ -213,6 +219,7 @@ public class EscolhasManager : MonoBehaviour
 			//AnimCocaina.SetBool ("start", true);//define que vai começar a animação
 			//Invoke ("CarregaFase3", animClipConsCocaina.length + animAceitaClipCocaina.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 		} else {
+			Analytics.CustomEvent ("RecusouCocaina");
 			dialogManager.Cocaina = 0;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaCocaina (true);//habilita o controle do cigarro e desativa o dialogo
@@ -226,6 +233,7 @@ public class EscolhasManager : MonoBehaviour
 
 	private void AtivaAlucinogeno(bool escolha){
 		if (escolha) {//se ele aceitou fumar cigarro entra aqui
+			Analytics.CustomEvent ("AceitouLSD");
 			dialogManager.Alucinogeno = 1;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaAlucinogeno (true);//habilita o controle do cigarro
@@ -236,6 +244,7 @@ public class EscolhasManager : MonoBehaviour
 			//AnimAlucinogeno.SetBool ("start", true);//define que vai começar a animação
 			//Invoke ("CarregaFase3", animClipConsAlucinogeno.length + animAceitaClipAlucinogeno.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 		} else {
+			Analytics.CustomEvent ("RecusouLSD");
 			dialogManager.Alucinogeno = 0;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaAlucinogeno (true);//habilita o controle do cigarro e desativa o dialogo
@@ -249,6 +258,7 @@ public class EscolhasManager : MonoBehaviour
 
 	private void AtivaEcstasy(bool escolha){
 		if (escolha) {//se ele aceitou fumar cigarro entra aqui
+			Analytics.CustomEvent ("AceitouEcstasy");
 			dialogManager.Ecstasy = 1;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaEcstasy (true);//habilita o controle do cigarro
@@ -259,6 +269,7 @@ public class EscolhasManager : MonoBehaviour
 			//AnimEcstasy.SetBool ("start", true);//define que vai começar a animação
 			//Invoke ("CarregaFase3", animClipConsEcstasy.length + animAceitaClipEcstasy.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 		} else {
+			Analytics.CustomEvent ("RecusouEcstasy");
 			dialogManager.Ecstasy = 1;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaEcstasy (true);//habilita o controle do cigarro e desativa o dialogo
@@ -272,6 +283,7 @@ public class EscolhasManager : MonoBehaviour
 
 	private void AtivaCrack(bool escolha){
 		if (escolha) {//se ele aceitou fumar cigarro entra aqui
+			Analytics.CustomEvent ("AceitouCrack");
 			dialogManager.Crack = 1;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaCrack (true);//habilita o controle do cigarro
@@ -282,6 +294,7 @@ public class EscolhasManager : MonoBehaviour
 			//AnimCrack.SetBool ("start", true);//define que vai começar a animação
 			//Invoke ("CarregaFase3", animClipConsCrack.length + animAceitaClipCrack.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 		} else {
+			Analytics.CustomEvent ("RecusouCrack");
 			dialogManager.Crack = 0;
 			dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 			AceitaCrack (true);//habilita o controle do cigarro e desativa o dialogo
@@ -303,6 +316,7 @@ public class EscolhasManager : MonoBehaviour
 				case "dialogo_1a"://caso seja a primeira fase e o primeiro dialogo faz as seguintes ações - ALCOOL
 					{
 						if (escolha) {
+							Analytics.CustomEvent ("AceitouAlcool");
 							dialogManager.Alcool = 1;
 							dialogManager.olhoVermelhoP = true; //muda os olhos para vermelho
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
@@ -313,6 +327,7 @@ public class EscolhasManager : MonoBehaviour
 							//AnimAlcool.SetBool ("start", true);//define que vai começar a animação
 							Invoke ("CarregaDialogoB", animClipAceitaAlcool.length);//Prepara a função que carrega o dialogo B após as duas animações ocorrem
 						} else {
+							Analytics.CustomEvent ("RecusouAlcool");
 							dialogManager.Alcool = 0;
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaAlcool (true);//habilita o controle do alcool e desativa o dialogo
@@ -327,6 +342,7 @@ public class EscolhasManager : MonoBehaviour
 				case "dialogo_1b"://caso seja a primeira fase e o dialogo seja depois de aceitar a bebida faz as seguintes ações - CIGARRO
 					{
 						if (escolha) {//se ele aceitou fumar cigarro entra aqui
+							Analytics.CustomEvent ("AceitouCigarro");
 							dialogManager.Cigarro = 1;
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaCigarro (true);//habilita o controle do cigarro
@@ -338,6 +354,7 @@ public class EscolhasManager : MonoBehaviour
 							//AnimCigarro.SetBool ("start", true);//define que vai começar a animação
 							//Invoke ("CarregaFase2", animClipConsCigarro.length + animAceitaClipCigarro.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 						} else {
+							Analytics.CustomEvent ("RecusouCigarro");
 							dialogManager.Cigarro = 0;
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaCigarro (true);//habilita o controle do cigarro e desativa o dialogo
@@ -352,6 +369,7 @@ public class EscolhasManager : MonoBehaviour
 				case "dialogo_1c"://caso seja a primeira fase e o dialogo seja depois de recusar a bebida faz as seguintes ações - CIGARRO
 					{
 						if (escolha) {//se ele aceitou fumar cigarro entra aqui
+							Analytics.CustomEvent ("AceitouCigarro");
 							dialogManager.Cigarro = 1;
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaCigarro (true);//habilita o controle do cigarro
@@ -363,6 +381,7 @@ public class EscolhasManager : MonoBehaviour
 							//AnimCigarro.SetBool ("start", true);//define que vai começar a animação
 							//Invoke ("CarregaFase2", animClipConsCigarro.length + animAceitaClipCigarro.length);//Prepara a função que carrega a proxima fase após as duas animações ocorrem
 						} else {
+							Analytics.CustomEvent ("RecusouCigarro");
 							dialogManager.Cigarro = 0;
 							dialogManager.choiceBox.SetActive (false);//tira a escolha da tela
 							AceitaCigarro (true);//habilita o controle do cigarro e desativa o dialogo
@@ -772,8 +791,7 @@ public class EscolhasManager : MonoBehaviour
 	}
 
 	void AceitaAlcool (bool aceita)
-	{
-		
+	{		
 		if (aceita) {
 			dialogo.SetActive (false);
 			ctrlAl = Instantiate (controlAlcool,new Vector3(0,0,-10),Quaternion.identity);

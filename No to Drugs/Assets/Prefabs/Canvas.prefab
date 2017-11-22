@@ -8744,6 +8744,8 @@ GameObject:
   - component: {fileID: 224364034562128918}
   - component: {fileID: 222685849979736184}
   - component: {fileID: 114578797718327780}
+  - component: {fileID: 114261725196269506}
+  - component: {fileID: 114632122006730610}
   m_Layer: 5
   m_Name: Final
   m_TagString: Untagged
@@ -16717,6 +16719,58 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114261725196269506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1894838188580368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 114578797718327780}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114632122006730610}
+        m_MethodName: VoltaMen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114263655202202632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20207,7 +20261,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114559900856928916}
   m_HandleRect: {fileID: 224007694295214826}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -23815,8 +23869,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114292148469728920}
   m_HandleRect: {fileID: 224136217867545422}
   m_Direction: 2
-  m_Value: 0.995283
-  m_Size: 0.58849585
+  m_Value: 0.5000001
+  m_Size: 0.58849573
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -24683,6 +24737,17 @@ MonoBehaviour:
     pois eles descobriram que ele fumava e isso n\xE3o era para adolescentes, ele
     ent\xE3o disse que ia parar, mas passou a fumar escondido ou na escola, assim
     seus pais n\xE3o saberiam."
+--- !u!114 &114632122006730610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1894838188580368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b921ea3109c9a5140af4206d45688fa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114633854480595616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25132,7 +25197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -25191,7 +25256,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114284286303431486}
   m_HandleRect: {fileID: 224418353548520828}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -25616,8 +25681,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.3
-  m_Text: "Outros danos: queimaduras nos l\xE1bios, l\xEDngua e rosto; tontura; dor
-    de\r\ncabe\xE7a.\nGravidez: aborto, partos prematuros e atraso cognitivo na crian\xE7a."
+  m_Text: "Outros danos: \nQueimaduras nos l\xE1bios, l\xEDngua e rosto; \nTontura;
+    \nDor de\r cabe\xE7a.\nGravidez: Aborto, partos prematuros e atraso cognitivo
+    na crian\xE7a."
 --- !u!114 &114680499067352726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27510,8 +27576,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114054060527904160}
   m_HandleRect: {fileID: 224516743108754074}
   m_Direction: 2
-  m_Value: 0.96551675
-  m_Size: 0.83963853
+  m_Value: 1
+  m_Size: 0.6357417
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -31813,7 +31879,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: f3c2e7560804ab241950b57362183558, type: 3}
     m_FontSize: 22
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
@@ -31829,7 +31895,7 @@ MonoBehaviour:
     e escarro com\r presen\xE7a de sangue e de\r muco enegrecido. \nSistema Cardiovascular:
     aumento da press\xE3o\r arterial e dos batimentos\r\ncard\xEDacos; enfarto card\xEDaco.\nSistema
     Digestivo: n\xE1usea, perda de\r\napetite, dor abdominal,\r gases intestinais
-    e diarreia. O resultado \xE9 o emagrecimento do usu\xE1rio, que passa\r\na ter
+    e diarreia. \nO resultado \xE9 o emagrecimento do usu\xE1rio, que passa\r\na ter
     uma apar\xEAncia esquel\xE9tica, com os\r ossos da face e das\r costelas  salientes
     e as canelas finas.\n"
 --- !u!114 &114979423184827210
@@ -35581,7 +35647,7 @@ RectTransform:
   m_Father: {fileID: 224523021516237886}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.00000011920929}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -36958,8 +37024,8 @@ RectTransform:
   m_Father: {fileID: 224099007891051332}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.4095631}
-  m_AnchorMax: {x: 1, y: 0.9980589}
+  m_AnchorMin: {x: 0, y: 0.20575218}
+  m_AnchorMax: {x: 1, y: 0.7942479}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -37242,8 +37308,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -27}
-  m_SizeDelta: {x: -15, y: 58}
+  m_AnchoredPosition: {x: 0, y: -87}
+  m_SizeDelta: {x: -15, y: 174}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224167594770030426
 RectTransform:
@@ -40235,7 +40301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000030517578, y: -105}
+  m_AnchoredPosition: {x: 0, y: -0.000061035156}
   m_SizeDelta: {x: -15, y: 212}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224434762170820248
@@ -41026,8 +41092,8 @@ RectTransform:
   m_Father: {fileID: 224528133595017760}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.15483168}
-  m_AnchorMax: {x: 1, y: 0.99447024}
+  m_AnchorMin: {x: 0, y: 0.3642583}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -45514,7 +45580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.000030517578, y: -0.000015258789}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224915189910451276

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class MenuDrogas : MonoBehaviour
 {
@@ -64,6 +65,7 @@ public class MenuDrogas : MonoBehaviour
 
 	public void MostraAlcool ()
 	{
+		Analytics.CustomEvent ("VisualizouAlcool");
 		TipoDroga = 0;
 		EscondePaineis ();
 		InfoAlcool.SetActive (true);
@@ -72,6 +74,7 @@ public class MenuDrogas : MonoBehaviour
 
 	public void MostraCigarro ()
 	{
+		Analytics.CustomEvent ("VisualizouCigarro");
 		TipoDroga = 1;
 		EscondePaineis ();
 		InfoCigarro.SetActive (true);
@@ -80,6 +83,7 @@ public class MenuDrogas : MonoBehaviour
 
 	public void MostraMaconha ()
 	{
+		Analytics.CustomEvent ("VisualizouMaconha");
 		TipoDroga = 2;
 		EscondePaineis ();
 		InfoMaconha.SetActive (true);
@@ -88,6 +92,7 @@ public class MenuDrogas : MonoBehaviour
 
 	public void MostraCocaina ()
 	{
+		Analytics.CustomEvent ("VisualizouCocaina");
 		TipoDroga = 3;
 		EscondePaineis ();
 		InfoCocaina.SetActive (true);
@@ -96,6 +101,7 @@ public class MenuDrogas : MonoBehaviour
 
 	public void MostraInalante ()
 	{
+		Analytics.CustomEvent ("VisualizouInalante");
 		TipoDroga = 4;
 		EscondePaineis ();
 		InfoInalante.SetActive (true);
@@ -104,6 +110,7 @@ public class MenuDrogas : MonoBehaviour
 
 	public void MostraEcstasy ()
 	{
+		Analytics.CustomEvent ("VisualizouEcstasy");
 		TipoDroga = 5;
 		EscondePaineis ();
 		InfoEcstasy.SetActive (true);
@@ -112,6 +119,7 @@ public class MenuDrogas : MonoBehaviour
 
 	public void MostraAlucinogeno ()
 	{
+		Analytics.CustomEvent ("VisualizouAlucinogeno");
 		TipoDroga = 6;
 		EscondePaineis ();
 		InfoAlucinogeno.SetActive (true);
@@ -120,6 +128,7 @@ public class MenuDrogas : MonoBehaviour
 
 	public void MostraCrack ()
 	{
+		Analytics.CustomEvent ("VisualizouCrack");
 		TipoDroga = 7;
 		EscondePaineis ();
 		InfoCrack.SetActive (true);
@@ -131,48 +140,56 @@ public class MenuDrogas : MonoBehaviour
 		switch (TipoDroga) {
 		case 0:
 			{
+				Analytics.CustomEvent ("MostraDescricao_Alcool");
 				EscondeInfos ();
 				descAlcool.SetActive (true);
 				break;
 			}
 		case 1:
 			{
+				Analytics.CustomEvent ("MostraDescricao_Cigarro");
 				EscondeInfos ();
 				descCigarro.SetActive (true);
 				break;
 			}
 		case 2:
 			{
+				Analytics.CustomEvent ("MostraDescricao_Maconha");
 				EscondeInfos ();
 				descMaconha.SetActive (true);
 				break;
 			}
 		case 3:
 			{
+				Analytics.CustomEvent ("MostraDescricao_Cocaina");
 				EscondeInfos ();
 				descCocaina.SetActive (true);
 				break;
 			}
 		case 4:
 			{
+				Analytics.CustomEvent ("MostraDescricao_Inalante");
 				EscondeInfos ();
 				descInalante.SetActive (true);
 				break;
 			}
 		case 5:
 			{
+				Analytics.CustomEvent ("MostraDescricao_Ecstasy");
 				EscondeInfos ();
 				descEcstasy.SetActive (true);
 				break;
 			}
 		case 6:
 			{
+				Analytics.CustomEvent ("MostraDescricao_Alucinogeno");
 				EscondeInfos ();
 				descAlucinogeno.SetActive (true);
 				break;
 			}
 		case 7:
 			{
+				Analytics.CustomEvent ("MostraDescricao_Crack");
 				EscondeInfos ();
 				descCrack.SetActive (true);
 				break;
@@ -188,48 +205,56 @@ public class MenuDrogas : MonoBehaviour
 		switch (TipoDroga) {
 		case 0:
 			{
+				Analytics.CustomEvent ("MostraEfeitos_Alcool");
 				EscondeInfos ();
 				efeitoAlcool.SetActive (true);
 				break;
 			}
 		case 1:
 			{
+				Analytics.CustomEvent ("MostraEfeitos_Cigarro");
 				EscondeInfos ();
 				efeitoCigarro.SetActive (true);
 				break;
 			}
 		case 2:
 			{
+				Analytics.CustomEvent ("MostraEfeitos_Maconha");
 				EscondeInfos ();
 				efeitoMaconha.SetActive (true);
 				break;
 			}
 		case 3:
 			{
+				Analytics.CustomEvent ("MostraEfeitos_Cocaina");
 				EscondeInfos ();
 				efeitoCocaina.SetActive (true);
 				break;
 			}
 		case 4:
 			{
+				Analytics.CustomEvent ("MostraEfeitos_Inalante");
 				EscondeInfos ();
 				efeitoInalante.SetActive (true);
 				break;
 			}
 		case 5:
 			{
+				Analytics.CustomEvent ("MostraEfeitos_Ecstasy");
 				EscondeInfos ();
 				efeitoEcstasy.SetActive (true);
 				break;
 			}
 		case 6:
 			{
+				Analytics.CustomEvent ("MostraEfeitos_Alucinogeno");
 				EscondeInfos ();
 				efeitoAlucinogeno.SetActive (true);
 				break;
 			}
 		case 7:
 			{
+				Analytics.CustomEvent ("MostraEfeitos_Crack");
 				EscondeInfos ();
 				efeitoCrack.SetActive (true);
 				break;
@@ -244,48 +269,56 @@ public class MenuDrogas : MonoBehaviour
 		switch (TipoDroga) {
 		case 0:
 			{
+				Analytics.CustomEvent ("MostraDanos_Alcool");
 				EscondeInfos ();
 				danoAlcool.SetActive (true);
 				break;
 			}
 		case 1:
 			{
+				Analytics.CustomEvent ("MostraDanos_Cigarro");
 				EscondeInfos ();
 				danoCigarro.SetActive (true);
 				break;
 			}
 		case 2:
 			{
+				Analytics.CustomEvent ("MostraDanos_Maconha");
 				EscondeInfos ();
 				danoMaconha.SetActive (true);
 				break;
 			}
 		case 3:
 			{
+				Analytics.CustomEvent ("MostraDanos_Cocaina");
 				EscondeInfos ();
 				danoCocaina.SetActive (true);
 				break;
 			}
 		case 4:
 			{
+				Analytics.CustomEvent ("MostraDanos_Inalante");
 				EscondeInfos ();
 				danoInalante.SetActive (true);
 				break;
 			}
 		case 5:
 			{
+				Analytics.CustomEvent ("MostraDanos_Ecstasy");
 				EscondeInfos ();
 				danoEcstasy.SetActive (true);
 				break;
 			}
 		case 6:
 			{
+				Analytics.CustomEvent ("MostraDanos_Alucinogeno");
 				EscondeInfos ();
 				danoAlucinogeno.SetActive (true);
 				break;
 			}
 		case 7:
 			{
+				Analytics.CustomEvent ("MostraDanos_Crack");
 				EscondeInfos ();
 				danoCrack.SetActive (true);
 				break;
@@ -300,48 +333,56 @@ public class MenuDrogas : MonoBehaviour
 		switch (TipoDroga) {
 		case 0:
 			{
+				Analytics.CustomEvent ("MostraOutrosDanos_Alcool");
 				EscondeInfos ();
 				outrosDanosAlcool.SetActive (true);
 				break;
 			}
 		case 1:
 			{
+				Analytics.CustomEvent ("MostraOutrosDanos_Cigarro");
 				EscondeInfos ();
 				outrosDanosCigarro.SetActive (true);
 				break;
 			}
 		case 2:
 			{
+				Analytics.CustomEvent ("MostraOutrosDanos_Maconha");
 				EscondeInfos ();
 				outrosDanosMaconha.SetActive (true);
 				break;
 			}
 		case 3:
 			{
+				Analytics.CustomEvent ("MostraOutrosDanos_Cocaina");
 				EscondeInfos ();
 				outrosDanosCocaina.SetActive (true);
 				break;
 			}
 		case 4:
 			{
+				Analytics.CustomEvent ("MostraOutrosDanos_Inalante");
 				EscondeInfos ();
 				outrosDanosInalante.SetActive (true);
 				break;
 			}
 		case 5:
 			{
+				Analytics.CustomEvent ("MostraOutrosDanos_Ecstasy");
 				EscondeInfos ();
 				outrosDanosEcstasy.SetActive (true);
 				break;
 			}
 		case 6:
 			{
+				Analytics.CustomEvent ("MostraOutrosDanos_Alucinogeno");
 				EscondeInfos ();
 				outrosDanosAlucinogeno.SetActive (true);
 				break;
 			}
 		case 7:
 			{
+				Analytics.CustomEvent ("MostraOutrosDanos_Crack");
 				EscondeInfos ();
 				outrosDanosCrack.SetActive (true);
 				break;
@@ -413,6 +454,7 @@ public class MenuDrogas : MonoBehaviour
 			isActive = false;
 			menu.SetActive (false);
 		} else {
+			Analytics.CustomEvent ("VisualizouMenuDrogas");
 			isActive = true;
 			Time.timeScale = 0;
 			menu.SetActive (true);
@@ -428,7 +470,7 @@ public class MenuDrogas : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown (KeyCode.Escape)) {
+		if (Input.GetButtonDown ("Cancel")) {
 			menu.SetActive (false);
 		}
 	}

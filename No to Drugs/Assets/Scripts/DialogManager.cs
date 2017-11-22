@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine.Analytics;
 
 public class DialogManager : MonoBehaviour
 {
@@ -364,6 +365,7 @@ public class DialogManager : MonoBehaviour
 				this.Funk = 1;
 				this.Estilo = 1;
 				ControleMusica.mainMusic = musicas [0];
+				Analytics.CustomEvent ("Escolheu:Funk");
 				//ControleMusica.PlayLevelMusic();
 				break;
 			}
@@ -372,6 +374,7 @@ public class DialogManager : MonoBehaviour
 				this.Rock = 1;
 				this.Estilo = 2;
 				ControleMusica.mainMusic = musicas [1];
+				Analytics.CustomEvent ("Escolheu:Rock");
 				//ControleMusica.PlayLevelMusic();
 				break;
 			}
@@ -380,6 +383,7 @@ public class DialogManager : MonoBehaviour
 				this.Reggae = 1;
 				this.Estilo = 3;
 				ControleMusica.mainMusic = musicas [2];
+				Analytics.CustomEvent ("Escolheu:Reggae");
 				//ControleMusica.PlayLevelMusic ();
 				break;
 			}
@@ -388,6 +392,7 @@ public class DialogManager : MonoBehaviour
 				this.Eletronica = 1;
 				this.Estilo = 4;
 				ControleMusica.mainMusic = musicas [3];
+				Analytics.CustomEvent ("Escolheu:Eletrônica");
 				//ControleMusica.PlayLevelMusic ();
 				break;
 			}
