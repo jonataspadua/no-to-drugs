@@ -19,7 +19,6 @@ public class DialogManager : MonoBehaviour
 	private GameObject luz;
 	public GameObject ControleEstilo;
 	public ControleTrocaFases CtrlTrocaFase;
-	public PlayMusic ControleMusica;
 	public AudioClip[] musicas;
 	[HideInInspector] public bool olhoVermelhoP;
 	public GameObject[] npc;
@@ -364,36 +363,39 @@ public class DialogManager : MonoBehaviour
 			{
 				this.Funk = 1;
 				this.Estilo = 1;
-				ControleMusica.mainMusic = musicas [0];
+				PlayMusic.playMusica.mainMusic = musicas [0];
+				PlayMusic.playMusica.PlayLevelMusic();
+
 				Analytics.CustomEvent ("Escolheu:Funk");
-				//ControleMusica.PlayLevelMusic();
 				break;
 			}
 		case 2:
 			{
 				this.Rock = 1;
 				this.Estilo = 2;
-				ControleMusica.mainMusic = musicas [1];
+				PlayMusic.playMusica.mainMusic = musicas [1];
+				PlayMusic.playMusica.PlayLevelMusic();
+
 				Analytics.CustomEvent ("Escolheu:Rock");
-				//ControleMusica.PlayLevelMusic();
 				break;
 			}
 		case 3:
 			{
 				this.Reggae = 1;
 				this.Estilo = 3;
-				ControleMusica.mainMusic = musicas [2];
+				PlayMusic.playMusica.mainMusic = musicas [2];
+				PlayMusic.playMusica.PlayLevelMusic();
+
 				Analytics.CustomEvent ("Escolheu:Reggae");
-				//ControleMusica.PlayLevelMusic ();
 				break;
 			}
 		case 4:
 			{
 				this.Eletronica = 1;
 				this.Estilo = 4;
-				ControleMusica.mainMusic = musicas [3];
+				PlayMusic.playMusica.mainMusic = musicas [3];
+				PlayMusic.playMusica.PlayLevelMusic();
 				Analytics.CustomEvent ("Escolheu:Eletrônica");
-				//ControleMusica.PlayLevelMusic ();
 				break;
 			}
 		default:

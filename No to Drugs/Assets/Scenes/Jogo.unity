@@ -792,6 +792,11 @@ Prefab:
       propertyPath: musicas.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: 8cba59f482cb88c4d917c0032ed8bf26, type: 3}
+    - target: {fileID: 114646926646108960, guid: c8d12238729d76f4cbd54baa93bae5b8,
+        type: 2}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8d12238729d76f4cbd54baa93bae5b8, type: 2}
   m_IsPrefabParent: 0
